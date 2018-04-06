@@ -46,7 +46,7 @@
     </style>
     <div class='wrapper' style="">
         <div id="topside" style="width: 50%; float: top; background-color: #F5F5DC;  margin-left: 25%; margin-bottom: 1%;">
-            <section headerLabel="Pediatric Initial Clinical Evaluation">
+            <section headerLabel="Client Intake Form">
                 <table class="baseline-aligned" cellspacing="10" cellpadding="5">
                     <tr>
                         <td>Visit Date (Date of first evaluation):</td>
