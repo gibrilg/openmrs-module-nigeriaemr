@@ -66,7 +66,7 @@ table.gridtable td{
     </table>
 </section><br/>
 <section headerLabel="Demographic Details" style="margin-top: 20px;">
-<table cellspacing="8" cellpadding="5" style="width: 100%;">
+<table cellspacing="7" cellpadding="5" style="width: 100%;">
 <tr><td><b>Surname</b><font color='blue'><lookup expression="patient.personName.familyName"/></font></td><td><b>Other name</b><font color='blue'><lookup expression="patient.personName.givenName"/></font></td><td><b>Middle Name</b><font color='blue'><lookup expression="patient.personName.middleName"/></font></td></tr>
 <tr><td><b>Sex</b> <lookup class="value" expression="patient.gender"/></td><td><b>Date of Birth</b> <lookup class="value" complexExpression="#if( \$patient.birthdateEstimated ) ~#end"/> <lookup class="value" expression="patient.birthdate"/>
 					(Age: <lookup class="value" expression="patient.age"/>)</td>
@@ -121,15 +121,42 @@ table.gridtable td{
 </table>
 </section>
 <section headerLabel="Physical Exam">
+<table cellpadding="10" cellspacing="7" class="gridtable" style="width: 80%;">
+<tr><td><b>General appearance</b><br/></td><td><b>Skin</b><br/></td><td><b>Cardiovascular</b><br/></td><td><b>Glands</b><br/></td></tr>
+<tr><td><b>Respiratory</b><br/></td><td><b>Neurological</b><br/></td><td><b>Head/Eye/ENT</b><br/></td><td><b>Genitalia</b><br/></td></tr>
+<tr><td colspan="2"><b>Gastrointestinal</b></td><td colspan="2"><b>Mental status</b></td></tr>
+<tr><td colspan="4"><b>Additional physical examination findings:</b></td></tr>
+</table>
 </section>
 <section headerLabel="Plan (Order on specific requisition form)">
-</section>
-<section headerLabel="ART Regimen">
+<table cellpadding="8" cellspacing="7" style="width: 80%;">
+<tr><td colspan="2">Lab evaluation</td><td colspan="2">OI therapy</td><td></td></tr>
+<tr><td colspan="2">Screen for tuberculosis</td><td colspan="2">Admission</td><td></td></tr>
+<tr><td>Palliative Care</td><td>Psychosocial Support</td><td>OVC Care</td><td>End of Life Care</td><td>CXR</td></tr>
+<tr><td>Counseling: </td><td>Adherence</td><td>HTS</td><td>Nutrition</td><td>Peer Health Support</td></tr>
+<tr><td>Referrals: </td><td>Support</td><td>PMTCT</td><td>Other</td><td></td></tr>
+<tr><td><b>32. Enroll in:</b> </td><td>General medical follow-up</td><td>ARV therapy</td><td>Pending lab results</td><td></td></tr>
+<tr><td colspan="4"><b>33. ART Plan (if applicable)</b></td></tr>
+<tr><td></td><td></td><td colspan="2"></td></tr>
+<tr><td colspan="2"></td><td colspan="2"></td><td></td></tr>
+</table>
+
+
 
 </section>
+<section headerLabel="ART Regimen">
+<table cellpadding="8" cellspacing="7" style="width: 80%;">
+     <tr><td><b>Regimen line</b></td><td></td></tr>
+     <tr><td><b>1st Line</b></td><td></td></tr>
+     <tr><td><b>2nd Line</b></td><td></td></tr>
+     <tr><td><b>3rd Line</b></td><td></td></tr>
+     <tr><td><b>36. Additional comments</b></td><td></td></tr>
+ </table>
+</section>
 <section headerLabel="Next Appointment">
-<table>
-   <tr><td><submit submitLabel="Submit"/></td></tr>
+<table cellpadding="8" cellspacing="7" style="width: 80%;">
+    <tr><td><b>37. Next appointment</b></td><td><b>Next appointment date</b></td></tr>
+   <tr><td colspan="2"><submit submitLabel="Submit"/></td></tr>
 </table>
 </section>
 </div>
