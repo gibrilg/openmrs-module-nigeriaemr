@@ -66,7 +66,7 @@ table.gridtable td{
     </table>
 </section><br/>
 <section headerLabel="Demographic Details" style="margin-top: 20px;">
-<table cellspacing="7" cellpadding="5" style="width: 100%;">
+<table cellspacing="8" cellpadding="5" style="width: 100%;">
 <tr><td><b>Surname</b><font color='blue'><lookup expression="patient.personName.familyName"/></font></td><td><b>Other name</b><font color='blue'><lookup expression="patient.personName.givenName"/></font></td><td><b>Middle Name</b><font color='blue'><lookup expression="patient.personName.middleName"/></font></td></tr>
 <tr><td><b>Sex</b> <lookup class="value" expression="patient.gender"/></td><td><b>Date of Birth</b> <lookup class="value" complexExpression="#if( \$patient.birthdateEstimated ) ~#end"/> <lookup class="value" expression="patient.birthdate"/>
 					(Age: <lookup class="value" expression="patient.age"/>)</td>
