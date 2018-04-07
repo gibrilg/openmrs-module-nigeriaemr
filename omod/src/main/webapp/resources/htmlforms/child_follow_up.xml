@@ -163,7 +163,100 @@
 
         </table>
     </section>
+    <section headerLabel="Infant Testiing (PCR): Confirmatory PCR">
+        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
+            <tr>
+                <td><obs conceptId="165004" labelText="Age at Test months:"/></td>
+            </tr>
+            <tr>
+                <td><obs conceptId="165007" labelText="Date Sample Collected dd/mm/yy:"/></td>
+            </tr>
+            <tr>
+                <td><obs conceptId="165015" labelText="Result:"/></td>
+            </tr>
 
+        </table>
+    </section>
+    <section headerLabel="1st Rapid Antibody Test (9 months of age or 1st contact after)">
+        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
+            <tr>
+                <td><obs conceptId="165004" labelText="Age at Test months:"/></td>
+            </tr>
+            <tr>
+                <td><obs conceptId="165007" labelText="Date of Test dd/mm/yy:"/></td>
+            </tr>
+            <tr>
+                <td><obs conceptId="165015" labelText="Result:"/></td>
+            </tr>
+
+        </table>
+    </section>
+    <section headerLabel="2nd Rapid Antibody Test (18 months of age or thereafter)">
+        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
+            <tr>
+                <td><obs conceptId="165004" labelText="Age at Test months:"/></td>
+            </tr>
+            <tr>
+                <td><obs conceptId="165007" labelText="Date of Test dd/mm/yy:"/></td>
+            </tr>
+            <tr>
+                <td><obs conceptId="165015" labelText="Result:"/></td>
+            </tr>
+
+        </table>
+    </section>
+    <section headerLabel="Health Facility Visit">
+        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
+            <!--<tr>-->
+                <!--<td><obs conceptId="165004" labelText="Visit Status:"/></td>-->
+            <!--</tr>-->
+            <tr>
+                <td>Visit Status:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><obs conceptId="105281" labelText="CTX:"/></td>
+            </tr>
+            <tr>
+                <td><obs conceptId="5089" labelText="Weight:"/></td>
+            </tr>
+            <tr>
+                <td>BF:</td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+    <section headerLabel="Infant Outcome at 18 Months">
+        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
+            <tr>
+                <td><obs conceptId="165033" labelText="Infant Outcome at 18 Months:"/></td>
+            </tr>
+
+        </table>
+    </section>
+    <section headerLabel="Infant 19. ART Enrollment (If HIV-positive)">
+        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
+            <tr>
+                <td>ART Enrollment (If HIV-positive)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Date Linked to ART clinic dd/mm/yy:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><obs conceptId="165560" labelText="ART Enrollment No:"/></td>
+            </tr>
+
+        </table>
+    </section>
+    <section headerLabel="Comments">
+        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
+            <tr>
+                <td><obs conceptId="165033" labelText="ART Enrollment (If HIV-positive):"/></td>
+            </tr>
+        </table>
+    </section>
     <submit/>
 
     <!-- END OF FORM
