@@ -1,5 +1,5 @@
 
-package org.openmrs.module.nigeriaemr.model;
+package org.openmrs.module.nigeriaemr.model.ndr;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -8,17 +8,17 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for CodedSimpleType complex type.
+ * <p>Java class for IdentifierType complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="CodedSimpleType">
+ * &lt;complexType name="IdentifierType">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="Code" type="{}CodeType"/>
- *         &lt;element name="CodeDescTxt" type="{}CodeDescTxtType" minOccurs="0"/>
+ *         &lt;element name="IDNumber" type="{}StringType" minOccurs="0"/>
+ *         &lt;element name="IDTypeCode" type="{}CodeType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -28,63 +28,63 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "CodedSimpleType", propOrder = {
-    "code",
-    "codeDescTxt"
+@XmlType(name = "IdentifierType", propOrder = {
+    "idNumber",
+    "idTypeCode"
 })
-public class CodedSimpleType {
+public class IdentifierType {
 
-    @XmlElement(name = "Code", required = true)
-    protected String code;
-    @XmlElement(name = "CodeDescTxt")
-    protected String codeDescTxt;
+    @XmlElement(name = "IDNumber")
+    protected String idNumber;
+    @XmlElement(name = "IDTypeCode")
+    protected String idTypeCode;
 
     /**
-     * Gets the value of the code property.
+     * Gets the value of the idNumber property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getCode() {
-        return code;
+    public String getIDNumber() {
+        return idNumber;
     }
 
     /**
-     * Sets the value of the code property.
+     * Sets the value of the idNumber property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setCode(String value) {
-        this.code = value;
+    public void setIDNumber(String value) {
+        this.idNumber = value;
     }
 
     /**
-     * Gets the value of the codeDescTxt property.
+     * Gets the value of the idTypeCode property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getCodeDescTxt() {
-        return codeDescTxt;
+    public String getIDTypeCode() {
+        return idTypeCode;
     }
 
     /**
-     * Sets the value of the codeDescTxt property.
+     * Sets the value of the idTypeCode property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setCodeDescTxt(String value) {
-        this.codeDescTxt = value;
+    public void setIDTypeCode(String value) {
+        this.idTypeCode = value;
     }
 
 }

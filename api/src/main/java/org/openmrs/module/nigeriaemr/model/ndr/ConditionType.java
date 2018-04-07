@@ -1,5 +1,5 @@
 
-package org.openmrs.module.nigeriaemr.model;
+package org.openmrs.module.nigeriaemr.model.ndr;
 
 import java.util.ArrayList;
 import java.util.List;

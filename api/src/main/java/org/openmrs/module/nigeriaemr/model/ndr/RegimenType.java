@@ -1,5 +1,5 @@
 
-package org.openmrs.module.nigeriaemr.model;
+package org.openmrs.module.nigeriaemr.model.ndr;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
