@@ -116,7 +116,7 @@
             </tr>
         </table>
     </section>
-    <section headerLabel="3. Delivery Register">
+    <section headerLabel="3. Womans Information">
         <table class="baseline-aligned">
             <tr>
                 <td>3.) ANC No:</td>
@@ -138,6 +138,10 @@
             <tr></tr>
             <tr></tr>
             <tr></tr>
+        </table>
+        </section>
+            <section headerLabel="3. Partners Information">
+            <table>
             <tr>
                 <td>7.) Partner Age:</td>
                 <td></td>
