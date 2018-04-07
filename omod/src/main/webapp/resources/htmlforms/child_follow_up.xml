@@ -20,34 +20,46 @@
         padding: 2px;
         font-weight: bold;
         }
-        table.baseline-aligned td {
-        vertical-align: baseline;
+        .alnright { text-align: right; }
+        td {
+        border: none;
         }
+
+        table th, table td {
+        padding: 5px 10px;
+        border: None;
+        }
+        table th, table td {
+        padding: 5px 10px;
+        /* border: 1px solid #DDD; */
+        }
+        table tr {
+        border: None;
+        }
+
+        <!--table.baseline-aligned td {-->
+        <!--vertical-align: baseline;-->
+        <!--}-->
     </style>
 
     <span style="float:right">Paper Form ID: $paperFormId</span>
-    <h2>Child Follow Up (v1)</h2>
 
-    <section>
-        <table class="baseline-aligned" cellspacing="10" cellpadding="5">
+    <section headerLabel="Hospital Information">
+        <table class="table" width="100%">
             <tr>
-                <td>State:</td>
+                <td class="alnright">State:</td>
+                <td><encounterLocation default="GlobalProperty:default_location"/></td>
+                <td class="alnright">LGA:</td>
                 <td><encounterLocation default="GlobalProperty:default_location"/></td>
             </tr>
             <tr>
-                <td>LGA:</td>
+                <td class="alnright">Facility Name:</td>
                 <td><encounterLocation default="GlobalProperty:default_location"/></td>
-            </tr>
-            <tr>
-                <td>Facility Name:</td>
-                <td><encounterLocation default="GlobalProperty:default_location"/></td>
-            </tr>
-            <tr>
-                <td>Birth Cohort Month:</td>
+                <td class="alnright">Birth Cohort Month:</td>
                 <td></td>
             </tr>
             <tr>
-                <td>Birth Cohort Year</td>
+                <td class="alnright">Birth Cohort Year</td>
                 <td><encounterProvider/></td>
             </tr>
 
@@ -215,7 +227,8 @@
                 <td></td>
             </tr>
             <tr>
-                <td><obs conceptId="105281" labelText="CTX:"/></td>
+                <td>Visit Status:</td>
+                <td></td>
             </tr>
             <tr>
                 <td><obs conceptId="5089" labelText="Weight:"/></td>
