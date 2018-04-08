@@ -84,11 +84,210 @@ table.gridtable td{
 <tr><td>12. Is mother of child alive?</td><td colspan="2"> If yes: Mother's Name    Mother's Address</td></tr>
 <tr><td>13. Is the father of child alive?</td><td colspan="2"> If yes: Father's Name    Father's Address</td></tr>
 <tr><td>14. Child's parent/caregivers are:</td><td colspan="2">Married:<br/> Co-habiting:<br/> Single: <br/></td></tr>
-<tr><td colspan="3">15. How many siblings does the child have?</td></tr>
+<tr><td colspan="3">15. How many siblings does the child have? <obs conceptId="5573"/></td></tr>
 </table>
 </section>
 <section headerLabel="Medical History">
+<div class="wrapper" style="width: 100%;">
+<div style="float: left; width: 50%; margin-left: 0%;">
 <table width="100%" border="0">
+    <tr>
+          <td><b>20 . Symptoms </b></td>
+          <td><font color='red'>Please tick</font></td>
+          <td><b>Duration Value </b></td>
+          <td><b>Duration Unit</b></td>
+     </tr>
+     <tr>
+          <obsgroup groupingConceptId="1727">
+             <td> Fever </td>
+              <td><obs conceptId="1728" answerConceptId="140238" answerLabel=""/></td>
+             <td><obs conceptId="1731" /></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+     <tr>
+          <obsgroup groupingConceptId="1727">
+             <td> Weight loss</td>
+              <td> <obs conceptId="1728" answerConceptId="832" answerLabel=""/></td>
+             <td><obs conceptId="1731" /></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+     <tr>
+          <obsgroup groupingConceptId="1727">
+             <td> Night Sweats</td><td><obs conceptId="1728" answerConceptId="133027" answerLabel=""/></td>
+             <td><obs conceptId="1731" /></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+     <tr>
+          <obsgroup groupingConceptId="1727">
+             <td> Irritability</td>
+             <td><obs conceptId="1728" answerConceptId="6023" answerLabel=""/></td>
+             <td><obs conceptId="1731" /></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+     <tr>
+          <obsgroup groupingConceptId="1727">
+             <td> Difficulty Sleeping</td>
+              <td> <obs conceptId="1728" answerConceptId="142371" answerLabel=""/></td>
+             <td><obs conceptId="1731" /></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+     <tr>
+          <obsgroup groupingConceptId="1727">
+             <td> Headache </td>
+             <td><obs conceptId="1728" answerConceptId="139084" answerLabel=""/></td>
+             <td><obs conceptId="1731" /></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+    <tr>
+          <obsgroup groupingConceptId="1727">
+             <td> New Visual Impairment</td>
+              <td> </td>
+             <td><obs conceptId="1731" /></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+</table>
+<table width="100%" border="0">
+     <tr>
+          <td><b>Symptoms </b></td>
+          <td><font color='red'>Please tick</font></td>
+          <td><b>Duration Value </b></td>
+          <td><b>Duration Unit</b></td>
+     </tr>
+    <tr>
+          <obsgroup groupingConceptId="1727">
+             <td>Pain on micturition</td>
+              <td><obs conceptId="1728" answerConceptId="163606" answerLabel=""/></td>
+             <td><obs conceptId="1731" /></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+     <tr>
+          <obsgroup groupingConceptId="1727">
+             <td>Genital Sores</td>
+              <td><obs conceptId="1728" answerConceptId="864" answerLabel=""/></td>
+             <td><obs conceptId="1731" /></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+      <tr>
+          <obsgroup groupingConceptId="1727">
+             <td>Numbness/tingling</td>
+              <td><obs conceptId="1728" answerConceptId="163074" answerLabel=""/></td>
+             <td><obs conceptId="1731" /></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+      <tr>
+          <obsgroup groupingConceptId="1727">
+             <td>Convulsion</td>
+              <td><obs conceptId="1728" answerConceptId="113054" answerLabel=""/></td>
+             <td><obs conceptId="1731" /></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+      <tr>
+          <obsgroup groupingConceptId="1727">
+             <td>Rash</td>
+              <td><obs conceptId="1728" answerConceptId="512" answerLabel=""/></td>
+             <td><obs conceptId="1731" /></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+      <tr>
+          <obsgroup groupingConceptId="1727">
+             <td>Itching</td>
+              <td><obs conceptId="1728" answerConceptId="879" answerLabel=""/></td>
+             <td><obs conceptId="1731" /></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+      <tr>
+          <obsgroup groupingConceptId="1727">
+             <td>Others Specify</td>
+              <td></td>
+             <td><obs conceptId="1731" /></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+</table>
+</div>
+
+<div style="float: right; width: 45%;">
+<table width="100%" border="0">
+    <tr>
+          <td><b>Symptoms </b></td>
+          <td><font color='red'>Please tick</font></td>
+          <td><b>Duration Value </b></td>
+          <td><b>Duration Unit</b></td>
+     </tr>
+     <tr>
+          <obsgroup groupingConceptId="1727">
+             <td> Ear discharge</td>
+             <td> <obs conceptId="1728" answerConceptId="873" answerLabel=""/></td>
+             <td><obs conceptId="1731"/></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+     <tr>
+          <obsgroup groupingConceptId="1727">
+             <td> Oral Sores </td>
+              <td><obs conceptId="1728" answerConceptId="5244" answerLabel=""/></td>
+             <td><obs conceptId="1731"/></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+     <tr>
+           <obsgroup groupingConceptId="1727">
+             <td> Cough </td>
+             <td><obs conceptId="1728" answerConceptId="143264" answerLabel=""/></td>
+             <td><obs conceptId="1731"/></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+     <tr>
+           <obsgroup groupingConceptId="1727">
+             <td> Difficulty Breathing</td>
+              <td></td>
+             <td><obs conceptId="1731"/></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+     <tr>
+           <obsgroup groupingConceptId="1727">
+             <td> Food refusal</td>
+              <td><obs conceptId="1728" answerConceptId="135595" answerLabel=""/></td>
+             <td><obs conceptId="1731"/></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+    <tr>
+           <obsgroup groupingConceptId="1727">
+             <td> Diarrhoea</td>
+              <td><obs conceptId="1728" answerConceptId="142412" answerLabel=""/></td>
+             <td><obs conceptId="1731"/></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+     <tr>
+           <obsgroup groupingConceptId="1727">
+             <td> Diarrhoea</td>
+              <td><obs conceptId="1728" answerConceptId="133473" answerLabel=""/></td>
+             <td><obs conceptId="1731"/></td>
+             <td><obs conceptId="1732" answerConceptIds="1072,1073,1074"/></td>
+            </obsgroup>
+     </tr>
+</table>
+</div>
+
+</div>
+<!--<table width="100%" border="0">
       <tr>
           <td><b>20 . Symptoms </b></td>
           <td><b>Duration Value </b></td>
@@ -98,22 +297,30 @@ table.gridtable td{
          <td><b>Duration Value </b></td>
           <td><b>Duration Unit</b></td>     
       </tr>
-</table>
+      <tr>
+            
+            <obsgroup groupingConceptId="1727">
+             <td> Fever <obs conceptId="1728" answerConceptId="140238" answerLabel=""/></td>
+             <td><obs conceptId="1731"/></td>
+             <td><obs conceptId="1732"/></td>
+            </obsgroup>
+      </tr>
+</table>-->
 <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
-<tr><td>17. Patient assessed for TB</td><td>18. Developmental Assessment </td></tr>
-<tr><td>19. Immunization: Complete for Age</td><td>20. Mode of infant (&#8804; 6 months) feeding: </td></tr>
+<tr><td>17. Patient assessed for TB <obs conceptId="164800"/></td><td>18. Developmental Assessment <obs conceptId="1200"/></td></tr>
+<tr><td>19. Immunization: Complete for Age <obs conceptId="164134"/></td><td>20. Mode of infant (&#8804; 6 months) feeding: <obs conceptId="1151"/></td></tr>
 </table>
 </section>
 <section headerLabel="Previous Care Details">
 <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
-<tr><td>21. Patient has received previous care for HIV/AIDS</td></tr>
+<tr><td>21. Patient has received previous care for HIV/AIDS <obs conceptId="160533"  style="no_yes" noLabel="No" yesLabel="Yes"/></td></tr>
 <tr><td>21a. Name of Facility</td></tr>
 <tr><td>21b. Duration of Care  <b>From: </b> &#160;&#160;&#160;  <b>to: </b>&#160;&#160;&#160;</td></tr>
 <tr><td>22. Previous ARV exposure other than PMTCT</td></tr>
 <tr><td>Months on Treatment  &#160;&#160;&#160; Specify drugs</td></tr>
 <tr><td><b>If Yes, (Care-giver should probe)</b></td></tr>
-<tr><td>23. Known drug allegies</td></tr>
-<tr><td>24. Past medical history (including hospitalization and surgery)</td></tr>
+<tr><td>23. Known drug allegies  </td></tr>
+<tr><td>24. Past medical history (including hospitalization and surgery) <obs conceptId="160221" style="textarea"/></td></tr>
 <tr></tr>
 </table>
 <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
@@ -134,7 +341,8 @@ table.gridtable td{
 <tr><td colspan="2">Screen for tuberculosis</td><td colspan="2">Admission</td><td></td></tr>
 <tr><td>Palliative Care</td><td>Psychosocial Support</td><td>OVC Care</td><td>End of Life Care</td><td>CXR</td></tr>
 <tr><td>Counseling: </td><td>Adherence</td><td>HTS</td><td>Nutrition</td><td>Peer Health Support</td></tr>
-<tr><td>Referrals: </td><td>Support</td><td>PMTCT</td><td>Other</td><td></td></tr>
+<tr><td>Referrals: </td><td>Support <obs conceptId="1272" answerConceptId="5486" answerLabel="" /></td><td>PMTCT <obs  conceptId="1272" answerConceptId="5576" answerLabel="" /></td><td>
+Other <obs conceptId="1272" answerConceptId="5622" answerLabel="" /></td><td></td></tr>
 <tr><td><b>32. Enroll in:</b> </td><td>General medical follow-up</td><td>ARV therapy</td><td>Pending lab results</td><td></td></tr>
 <tr><td colspan="4"><b>33. ART Plan (if applicable)</b></td></tr>
 <tr><td></td><td></td><td colspan="2"></td></tr>
@@ -150,12 +358,12 @@ table.gridtable td{
      <tr><td><b>1st Line</b></td><td></td></tr>
      <tr><td><b>2nd Line</b></td><td></td></tr>
      <tr><td><b>3rd Line</b></td><td></td></tr>
-     <tr><td><b>36. Additional comments</b></td><td></td></tr>
+     <tr><td><b>36. Additional comments</b></td><td><obs conceptId="161011" style="textarea"/></td></tr>
  </table>
 </section>
 <section headerLabel="Next Appointment">
 <table cellpadding="8" cellspacing="7" style="width: 80%;">
-    <tr><td><b>37. Next appointment</b></td><td><b>Next appointment date</b></td></tr>
+    <tr><td><b>37. Next appointment</b></td><td><b>Next appointment date</b><obs conceptId="5096"/></td></tr>
    <tr><td colspan="2"><submit submitLabel="Submit"/></td></tr>
 </table>
 </section>
