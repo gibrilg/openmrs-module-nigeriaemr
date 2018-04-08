@@ -8,131 +8,118 @@
 
 	<style>
 		.section {
-			border: 1px solid $headerColor;
-			padding: 2px;
-			text-align: left;
-			margin-bottom: 1em;
-		}
-		.sectionHeader {
-			background-color: $headerColor;
-			color: $fontOnHeaderColor;
-			display: block;
-			padding: 2px;
-			font-weight: bold;
-		}
-		table.baseline-aligned td {
-			vertical-align: baseline;
-		}
-             .hospitalno{
+        border: 1px solid $headerColor;
+        padding: 2px;
+        text-align: left;
+        margin-bottom: 1em;
+        }
+        .sectionHeader {
+        background-color: $headerColor;
+        color: $fontOnHeaderColor;
+        display: block;
+        padding: 2px;
+        font-weight: bold;
+        }
+        .alnright { text-align: right; }
+        td {
+        border: none;
+        }
 
-                width:120px;
-            }
+        table th, table td {
+        padding: 5px 10px;
+        border: None;
+        }
+        table th, table td {
+        padding: 5px 10px;
+        /* border: 1px solid #DDD; */
+        }
+        table tr {
+        border: None;
+        }
 	</style>
 
 	<span style="float:right">Paper Form ID: $paperFormId</span>
-	<h2>Client Tracking and Termination Form (v1)</h2>
-
-	<section headerLabel="1. Encounter Details">
-		<table class="baseline-aligned">
-			<tr>
+	<section headerLabel=" Client Tracking and Termination">
+		<table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
+		<tr>
 				<td>Date:</td>
 				<td><encounterDate default="today"/></td>
-			</tr>
-			<tr>
+			
 				<td>Location:</td>
 				<td><encounterLocation/></td>
 			</tr>
-			<tr>
-				<td>Provider:</td>
-				<td><encounterProvider/></td>
-			</tr>
-		</table>
-	</section>
 
-	<section headerLabel="2. Client Tracking and Termination">
-		<table class="baseline-aligned">
 			<tr>
-				<td>Facility Number:</td>
-				<td></td>
-			</tr>
-			<tr>
+			<td>Provider:</td>
+				<td><encounterProvider/></td>
 				<td>Serial Enrollment No.:</td>
 				<td><obs conceptId="165560"  /></td>
 			</tr>
-                         <tr>
+            <tr>
 				<td>Sex:</td>
 				<td><obs conceptId="1533"  /></td>
-			</tr>
-			<tr>
+			
 				<td>Hospital (Unit) No.:</td>
 				<td><obs conceptId="164812" class="hospitalno" /></td>
 			</tr>
-                        <tr>
+            <tr>
 				<td>Reason for Tracking:</td>
 				<td><obs conceptId="165460" /></td>
-			</tr>
-                       <tr>
+			
 				<td>Patient Contact Address / Ph. Number:</td>
 				<td><obs conceptId="162725" /></td>
 			</tr>
-                     <tr>
+            <tr>
 				<td>Guardian / Treatment Partner's Name:</td>
 				<td><obs conceptId="161135" /></td>
-			</tr>
-
-                       <tr>
+			
 				<td>Date of Last Actual Contact/ Appointment:</td>
 				<td><obs conceptId="164093" /></td>
 			</tr>
                      
-<tr>
+			<tr>
 				<td>Date of Missed Scheduled Appointment:</td>
-				<td></td>
+				<td colspan="2"></td>
 			</tr>
 
 
 		</table>
 	</section>
 
-<section headerLabel="3. Attempted Contact">
-		<table class="baseline-aligned">
+<section headerLabel="Attempted Contact">
+	<table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
 			<tr>
 				<td>Attempted Contact Date:</td>
 				<td><obs conceptId="165463"  /></td>
-			</tr>
-			<tr>
+			
 				<td>Who Attempted Contact:</td>
 				<td><obs conceptId="165464"  /></td>
 			</tr>
 			<tr>
 				<td>Mode of Communication:</td>
 				<td><obs conceptId="165465"  /></td>
-			</tr>
-			<tr>
+			
 				<td>Person contacted:</td>
 				<td><obs conceptId="165466"  /></td>
 			</tr>
 			<tr>
 				<td>Reason for Defaulting:</td>
 				<td><obs conceptId="165467"  /></td>
-			</tr>
-			<tr>
+			
 				<td>Patient Care in Facility Terminated:</td>
 				<td><obs conceptId="165468"  /></td>
 			</tr>
 			<tr>
 				<td>If Yes, Date of Termination:</td>
 				<td><obs conceptId="165469"  /></td>
-			</tr>
-			<tr>
+			
 				<td>If Yes, Reason for Termination:</td>
 				<td><obs conceptId="165470"  /></td>
 			</tr>
 			<tr>
 				<td>If No, Date Returned to Care:</td>
 				<td></td>
-			</tr>
-			<tr>
+			
 				<td>Referred for:</td>
 				<td></td>
 			</tr>
@@ -143,14 +130,15 @@
 				<td>Contact Tracker Signature:</td>
 				<td></td>
 				
-				<td>Contact Tracker Signature date:</td>
-				<td></td>
-				
 			</tr>
 			<tr>
+			<td>Contact Tracker Signature date:</td>
+				<td></td>
+				
 				<td>Clinician Name:</td>
 				<td><obs conceptId="1473"  /></td>
-			
+			</tr>
+			<tr>
 				<td>Clinician Signature:</td>
 				<td></td>
 				
@@ -164,9 +152,10 @@
 			
 				<td>Consultant  Signature:</td>
 				<td></td>
-				
+				</tr>
+				<tr>
 				<td>Consultant  Signature date:</td>
-				<td></td>
+				<td colspan="2"></td>
 				
 			</tr>
 			
@@ -175,38 +164,5 @@
 
 	<submit/>
 
-<!-- END OF FORM
 
-Simple examples to copy-and-paste. Full reference at http://wiki.openmrs.org/x/kg8z
-
-SECTION
-	<section headerLabel="\#. Title">
-		Content
-	</section>
-
-NUMERIC OBSERVATION
-	<obs conceptId="id-of-numeric-concept" labelText="Label before"/>
-
-DATE OBSERVATION
-	<obs conceptId="id-of-date-concept" labelText="Label before"/>
-
-CODED OBSERVATION
-(as a dropdown)
-	<obs conceptId="id-of-coded-concept" labelText="Label before"/>
-(as radio buttons)
-	<obs conceptId="id-of-coded-concept" labelText="Label before" style="radio"/>
-(as an autocomplete)
-	<obs conceptId="id-of-coded-concept" labelText="Label before" style="autocomplete" answerClasses="Diagnosis"/>
-(as a checkbox for a specific answer)
-	<obs conceptId="id-of-coded-concept" labelText="Label before" answerConceptId="id-of-answer-concept" answerLabel="label for answer"/>
-(as a dropdown with specific choices)
-	<obs conceptId="id-of-coded-concept" labelText="Label before" answerConceptIds="concept-id-1,concept-id-2,concept-id-3" answerLabels="Label 1,Label 2, Label 3"/>
-
-
-FREE TEXT OBSERVATION
-(as a normal text field)
-	<obs conceptId="id-of-text-concept" labelText="Label before"/>
-(as a textarea)
-	<obs conceptId="id-of-text-concept" labelText="Label before" rows="4" cols="80"/>
--->
 </htmlform>
