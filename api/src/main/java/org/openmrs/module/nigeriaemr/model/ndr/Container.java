@@ -1,4 +1,3 @@
-
 package org.openmrs.module.nigeriaemr.model.ndr;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -7,11 +6,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for anonymous complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * Java class for anonymous complex type.
+ * <p>
+ * The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -27,68 +26,52 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "messageHeader",
-    "individualReport"
-})
+@XmlType(name = "", propOrder = { "messageHeader", "individualReport" })
 @XmlRootElement(name = "Container")
 public class Container {
-
-    @XmlElement(name = "MessageHeader", required = true)
-    protected MessageHeaderType messageHeader;
-    @XmlElement(name = "IndividualReport")
-    protected IndividualReportType individualReport;
-
-    /**
-     * Gets the value of the messageHeader property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link MessageHeaderType }
-     *     
-     */
-    public MessageHeaderType getMessageHeader() {
-        return messageHeader;
-    }
-
-    /**
-     * Sets the value of the messageHeader property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link MessageHeaderType }
-     *     
-     */
-    public void setMessageHeader(MessageHeaderType value) {
-        this.messageHeader = value;
-    }
-
-    /**
-     * Gets the value of the individualReport property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link IndividualReportType }
-     *     
-     */
-    public IndividualReportType getIndividualReport() {
-        return individualReport;
-    }
-
-    /**
-     * Sets the value of the individualReport property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link IndividualReportType }
-     *     
-     */
-    public void setIndividualReport(IndividualReportType value) {
-        this.individualReport = value;
-    }
-
+	
+	@XmlElement(name = "MessageHeader", required = true)
+	protected MessageHeaderType messageHeader;
+	
+	@XmlElement(name = "IndividualReport")
+	protected IndividualReportType individualReport;
+	
+	/**
+	 * Gets the value of the messageHeader property.
+	 * 
+	 * @return possible object is {@link MessageHeaderType }
+	 */
+	public MessageHeaderType getMessageHeader() {
+		return messageHeader;
+	}
+	
+	/**
+	 * Sets the value of the messageHeader property.
+	 * 
+	 * @param value allowed object is {@link MessageHeaderType }
+	 */
+	public void setMessageHeader(MessageHeaderType value) {
+		this.messageHeader = value;
+	}
+	
+	/**
+	 * Gets the value of the individualReport property.
+	 * 
+	 * @return possible object is {@link IndividualReportType }
+	 */
+	public IndividualReportType getIndividualReport() {
+		return individualReport;
+	}
+	
+	/**
+	 * Sets the value of the individualReport property.
+	 * 
+	 * @param value allowed object is {@link IndividualReportType }
+	 */
+	public void setIndividualReport(IndividualReportType value) {
+		this.individualReport = value;
+	}
+	
 }

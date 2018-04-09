@@ -9,7 +9,6 @@
  */
 package org.openmrs.module.nigeriaemr.fragment.controller;
 
-
 import org.openmrs.ui.framework.annotation.SpringBean;
 import org.openmrs.ui.framework.fragment.FragmentModel;
 import java.util.Calendar;
@@ -26,7 +25,7 @@ import org.openmrs.ui.framework.UiUtils;
  *  * Controller for a fragment that shows all users  
  */
 public class NdrFragmentController {
-
+	
 	private Date defaultStartDate() {
 		Calendar cal = Calendar.getInstance();
 		cal.set(Calendar.HOUR_OF_DAY, 0);
@@ -35,7 +34,7 @@ public class NdrFragmentController {
 		cal.set(Calendar.MILLISECOND, 0);
 		return cal.getTime();
 	}
-
+	
 	private Date defaultEndDate(Date startDate) {
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(startDate);
@@ -43,36 +42,34 @@ public class NdrFragmentController {
 		cal.add(Calendar.MILLISECOND, -1);
 		return cal.getTime();
 	}
-
-	public void controller(FragmentModel model,
-			@SpringBean("encounterService") EncounterService service,
-			@FragmentParam(value="start", required=false) Date startDate,
-			@FragmentParam(value="end", required=false) Date endDate) {
-
+	
+	public void controller(FragmentModel model, @SpringBean("encounterService") EncounterService service,
+	        @FragmentParam(value = "start", required = false) Date startDate,
+	        @FragmentParam(value = "end", required = false) Date endDate) {
+		
 		if (startDate == null)
 			startDate = defaultStartDate();
 		if (endDate == null)
 			endDate = defaultEndDate(startDate);
-
-		model.addAttribute("encounters", service.getEncounters(null, null, startDate, endDate, null, null, null, false));
+		
+		model.addAttribute("encounters", service.getEncounters("", null, null, false));
 	}
-
-	public List<SimpleObject> getEncounters(@RequestParam(value="start", required=false) Date startDate,
-			@RequestParam(value="end", required=false) Date endDate,
-			@RequestParam(value="properties", required=false) String[] properties,
-			@SpringBean("encounterService") EncounterService service,
-			UiUtils ui) {
-
+	
+	public List<SimpleObject> getEncounters(@RequestParam(value = "start", required = false) Date startDate,
+	        @RequestParam(value = "end", required = false) Date endDate,
+	        @RequestParam(value = "properties", required = false) String[] properties,
+	        @SpringBean("encounterService") EncounterService service, UiUtils ui) {
+		
 		if (startDate == null)
 			startDate = defaultStartDate();
 		if (endDate == null)
 			endDate = defaultEndDate(startDate);
-
+		
 		if (properties == null) {
 			properties = new String[] { "encounterType", "encounterDatetime", "location", "provider" };
 		}
-
-		List<Encounter> encs = service.getEncounters(null, null, startDate, endDate, null, null, null, false);
+		
+		List<Encounter> encs = service.getEncounters("", null, null, null, false);
 		return SimpleObject.fromCollection(encs, ui, properties);
 	}
 	

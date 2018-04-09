@@ -32,6 +32,7 @@
                         row += '</tr>';
                         tbody.append(row);
                     }
+                    alert('success')
                 })
                 .fail(function(xhr, status, err) {
                     alert('AJAX error ' + err);
