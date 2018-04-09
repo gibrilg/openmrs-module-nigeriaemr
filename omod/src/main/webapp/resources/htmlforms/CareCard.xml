@@ -8,119 +8,109 @@
 
 	<style>
 		.section {
-			border: 1px solid $headerColor;
-			padding: 2px;
-			text-align: left;
-			margin-bottom: 1em;
-		}
-		.sectionHeader {
-			background-color: $headerColor;
-			color: $fontOnHeaderColor;
-			display: block;
-			padding: 2px;
-			font-weight: bold;
-		}
-		table.baseline-aligned td {
-			vertical-align: baseline;
-		}
+        border: 1px solid $headerColor;
+        padding: 2px;
+        text-align: left;
+        margin-bottom: 1em;
+        }
+        .sectionHeader {
+        background-color: $headerColor;
+        color: $fontOnHeaderColor;
+        display: block;
+        padding: 2px;
+        font-weight: bold;
+        }
+        .alnright { text-align: right; }
+        td {
+        border: none;
+        }
+
+        table th, table td {
+        padding: 5px 10px;
+        border: None;
+        }
+        table th, table td {
+        padding: 5px 10px;
+        /* border: 1px solid #DDD; */
+        }
+        table tr {
+        border: None;
+        }
+		
 	</style>
 
 	<span style="float:right">Paper Form ID: $paperFormId</span>
-	<h2>Care Care (v1)</h2>
-
-	<section headerLabel="1. Encounter Details">
-		<table class="baseline-aligned">
-			<tr>
-				<td>Date:</td>
-				<td><encounterDate default="today"/></td>
-			</tr>
-			<tr>
+	
+	<section headerLabel="Care Card">
+		<table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
+		<tr>
 				<td>Location:</td>
 				<td><encounterLocation/></td>
-			</tr>
-			<tr>
+			
 				<td>Provider:</td>
 				<td><encounterProvider/></td>
 			</tr>
-		</table>
-	</section>
-
-<section headerLabel="2. Care Card">
-		<table class="baseline-aligned">
-                        <tr>
-                                <td>Visit Date:</td>
-				
-                              
-			</tr>
-
-                        <tr>
-                                <td>Duration (in Months) on ART:</td>
+            <tr>
+             <td>Visit Date:</td>
+			<td><encounterDate default="today"/></td> 
+			<td>Duration (in Months) on ART:</td>
 				<td><obs conceptId="165281"   /></td>
+				
 			</tr>
 
 			<tr>
+							
 				<td>Weight (kg):</td>
 				<td><obs conceptId="5089"  /></td>
-			
-				<td>Height/Length (cm):</td>
+                 <td>Height/Length (cm):</td>
 				<td><obs conceptId="5090"  /></td>
-
-                                <td>BMI/MUAC:</td>
+			   </tr>
+			   
+			   <tr>
+                 <td>BMI/MUAC:</td>
 				<td><obs conceptId="165243"  /></td>
-                            </tr>
-                           <tr>
-                                <td>Blood Pressure:</td>
+               <td>Blood Pressure:</td>
 				<td><obs conceptId="5085" labelText="Systolic:"  /><b> /</b> <obs conceptId="5086" labelText="Diastolic:"  /></td>
-			</tr>
-                   <tr>
-                                <td>Pregnancy/ Breastfeeding Status:</td>
+			   </tr>
+                   
+            <tr>
+                <td>Pregnancy/ Breastfeeding Status:</td>
 				<td><obs conceptId="5272"  /></td>
+				<td>Family Planning :</td>
+				<td><obs conceptId="5271" style="no_yes"  /></td>
 			</tr>
 			
 			<tr>
-                     <td>Family Planning :</td>
-				<td></td>
-			</tr>
-			<tr>
-                     <td>Functional status :</td>
+                <td>Functional status :</td>
 				<td><obs conceptId="165039"  /></td>
-			</tr>
-			
-			<tr>
-                     <td>WHO Clinical Stage :</td>
 				
+				<td>WHO Clinical Stage :</td>
+				<td><obs conceptId="165286"  /></td>
 			</tr>
 			
 			<tr>
-                     <td>TB Status :</td>
+               <td>TB Status :</td>
 				<td><obs conceptId="1659"  /></td>
-			</tr>
-			
-			<tr>
-                     <td>Other OIs/Other Problems :</td>
+				<td>Other OIs/Other Problems :</td>
 				<td></td>
 			</tr>
+			
 
 			<tr>
-                     <td>Noted Side Effects :</td>
-				
+              <td>Noted Side Effects :</td>
+				<td></td>
+				<td>Consult Hospitalise Refer Link :</td>
+				<td></td>
 			</tr>
-			
+						
 			<tr>
-                     <td>Consult Hospitalise Refer Link :</td>
-				
-			</tr>
-			
-			<tr>
-                     <td>Next Appointment Date :</td>
+                <td>Next Appointment Date :</td>
 				<td><obs conceptId="165036"  /></td>
+				 <td>Signature :</td>
+				 <td></td>
 			</tr>
 			
-			<tr>
-                     <td>Signature :</td>
-				
-			</tr>
-			
+	
 			
 			
 
@@ -132,38 +122,5 @@
 
 	<submit/>
 
-<!-- END OF FORM
 
-Simple examples to copy-and-paste. Full reference at http://wiki.openmrs.org/x/kg8z
-
-SECTION
-	<section headerLabel="\#. Title">
-		Content
-	</section>
-
-NUMERIC OBSERVATION
-	<obs conceptId="id-of-numeric-concept" labelText="Label before"/>
-
-DATE OBSERVATION
-	<obs conceptId="id-of-date-concept" labelText="Label before"/>
-
-CODED OBSERVATION
-(as a dropdown)
-	<obs conceptId="id-of-coded-concept" labelText="Label before"/>
-(as radio buttons)
-	<obs conceptId="id-of-coded-concept" labelText="Label before" style="radio"/>
-(as an autocomplete)
-	<obs conceptId="id-of-coded-concept" labelText="Label before" style="autocomplete" answerClasses="Diagnosis"/>
-(as a checkbox for a specific answer)
-	<obs conceptId="id-of-coded-concept" labelText="Label before" answerConceptId="id-of-answer-concept" answerLabel="label for answer"/>
-(as a dropdown with specific choices)
-	<obs conceptId="id-of-coded-concept" labelText="Label before" answerConceptIds="concept-id-1,concept-id-2,concept-id-3" answerLabels="Label 1,Label 2, Label 3"/>
-
-
-FREE TEXT OBSERVATION
-(as a normal text field)
-	<obs conceptId="id-of-text-concept" labelText="Label before"/>
-(as a textarea)
-	<obs conceptId="id-of-text-concept" labelText="Label before" rows="4" cols="80"/>
--->
 </htmlform>

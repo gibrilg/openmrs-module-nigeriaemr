@@ -3,58 +3,47 @@
     <macros>
         paperFormId = 1 headerColor =#4C177D fontOnHeaderColor = white
     </macros>
-    <style>
-    .section {
+   <style>
+		.section {
         border: 1px solid $headerColor;
         padding: 2px;
         text-align: left;
-        margin-bottom: 0em;
-    }
-
-    .sectionHeader {
+        margin-bottom: 1em;
+        }
+        .sectionHeader {
         background-color: $headerColor;
         color: $fontOnHeaderColor;
         display: block;
         padding: 2px;
         font-weight: bold;
-    }
+        }
+        .alnright { text-align: right; }
+        td {
+        border: none;
+        }
 
-    table.baseline-aligned td {
-        vertical-align: baseline;
-    }
+        table th, table td {
+        padding: 5px 10px;
+        border: None;
+        }
+        table th, table td {
+        padding: 5px 10px;
+        /* border: 1px solid #DDD; */
+        }
+        table tr {
+        border: None;
+        }
+		
+	</style>
+ <section headerLabel="Client Intake">
 
-    table.gridtable {
-        border-collapse: collapse;
-    }
-
-    table.gridtable td {
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: black;
-        border-top-width: 1px;
-        border-top-style: solid;
-        border-top-color: black;
-    }
-
-    .wrapper {
-        margin-top: 0;
-        margin-left: auto;
-        width: 100%;
-        max-height: auto;
-        overflow: auto;
-    }
-    </style>
-    <div class='wrapper' style="">
-        <div id="topside" style="width: 50%; float: top; background-color: #F5F5DC;  margin-left: 25%; margin-bottom: 1%;">
-            <section headerLabel="Client Intake Form">
-                <table class="baseline-aligned" cellspacing="10" cellpadding="5">
+<table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
                     <tr>
                         <td>Visit Date (Date of first evaluation):</td>
                         <td>
                             <encounterDate allowFutureDates="false" />
                         </td>
-                    </tr>
-                    <tr>
+						
                         <td>Number of Children:</td>
                         <td>
                             <obs conceptId="1053" />
@@ -65,75 +54,66 @@
                         <td>
                             <obs conceptId="5557" />
                         </td>
-                    </tr>
-                    <tr>
-                        <td>Tytre of Session:</td>
+                    
+                        <td>Type of Session:</td>
                         <td> </td>
                     </tr>
                     <tr>
                         <td>Index Testing:</td>
                         <td> </td>
-                    </tr>
-                    <tr>
-                        <td>Index Tytre:</td>
+                    
+                        <td>Index Type:</td>
                         <td> </td>
                     </tr>
                     <tr>
                         <td>Knowledge Assesment:</td>
                         <td> </td>
-                    </tr>
-                    <tr>
-                        <td>trreviously tested HIV negative:</td>
+                    
+                        <td>Previously tested HIV negative:</td>
                         <td> </td>
                     </tr>
                     <tr>
                         <td>Client informed about HIV transmission routes :</td>
                         <td> </td>
-                    </tr>
-                    <tr>
-                        <td>Client trregnant (Test and ensure linkage to trMTCT trrogram): </td>
+                    
+                        <td>Client Pregnant (Test and ensure linkage to PMTCT Program): </td>
                         <td> </td>
                     </tr>
                     <tr>
                         <td>Client informed about risk factors for HIV transmission: </td>
                         <td> </td>
-                    </tr>
-                    <tr>
-                        <td>Client informed on trreventing HIV transmission methods: </td>
+                    
+                        <td>Client informed on preventing HIV transmission methods: </td>
                         <td> </td>
                     </tr>
                     <tr>
                         <td>Informed consent for HIV testing given: </td>
                         <td> </td>
-                    </tr>
-                    <tr>
+                    
                         <td>Ever had sexual intercours</td>
                         <td> </td>
                     </tr>
                     <tr>
                         <td>Blood transfusion in last 3 months</td>
                         <td> </td>
-                    </tr>
-                    <tr>
-                        <td>Untrrotected sex with casual trartner in last 3 months</td>
+                    
+                        <td>Unprotected sex with casual partner in last 3 months</td>
                         <td> </td>
                     </tr>
                     <tr>
-                        <td>Untrrotected sex with regular trartner in the last 3months: </td>
+                        <td>Unprotected sex with regular partner in the last 3months: </td>
                         <td>
                         </td>
-                    </tr>
-                    <tr>
+                    
                         <td>STI in last 3 months:</td>
                         <td>
                         </td>
                     </tr>
                     <tr>
-                        <td>More than 374 sex trartner during last 3 months:</td>
+                        <td>More than 374 sex partner during last 3 months:</td>
                         <td>
                         </td>
-                    </tr>
-                    <tr>
+                    
                         <td>HIV Risk Assesment Score:</td>
                         <td>
                         </td>
@@ -142,8 +122,7 @@
                         <td>Current cough:</td>
                         <td>
                         </td>
-                    </tr>
-                    <tr>
+                    
                         <td>Weight loss:</td>
                         <td>
                         </td>
@@ -152,8 +131,7 @@
                         <td>Fever:</td>
                         <td>
                         </td>
-                    </tr>
-                    <tr>
+                   
                         <td>Night sweats:</td>
                         <td>
                         </td>
@@ -162,29 +140,26 @@
                         <td>TB Screening Score:</td>
                         <td>
                         </td>
-                    </tr>
-                    <tr>
-                        <td>Female: Comtrlaints of vaginal discharge or burning when urinating?:</td>
+                   
+                        <td>Female: Complaints of vaginal discharge or burning when urinating?:</td>
                         <td>
                         </td>
                     </tr>
                     <tr>
-                        <td>Female: Comtrlaints of lower abdominal trains with or without vaginal discharge?:</td>
+                        <td>Female: Complaints of lower abdominal trains with or without vaginal discharge?:</td>
+                        <td>
+                        </td>
+                    
+                        <td>Male: Complaints of urethral discharge or burning when urinating?:</td>
                         <td>
                         </td>
                     </tr>
                     <tr>
-                        <td>Male: Comtrlaints of urethral discharge or burning when urinating?:</td>
+                        <td>Male: Complaints of scrotal swelling and train:</td>
                         <td>
                         </td>
-                    </tr>
-                    <tr>
-                        <td>Male: Comtrlaints of scrotal swelling and train:</td>
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Comtrlaints of genital sore(s) or swollen inguinal lymtrh nodes with or without trains?:</td>
+                   
+                        <td>Complaints of genital sore(s) or swollen inguinal lymph nodes with or without pains?:</td>
                         <td>
                         </td>
                     </tr>
@@ -192,28 +167,25 @@
                         <td>STI Screening Risk Score:</td>
                         <td>
                         </td>
-                    </tr>
-                    <tr>
+                    
                         <td> HIV Test Result:</td>
                         <td>
                         </td>
                     </tr>
                     <tr>
-                        <td> Not trreviously tested:</td>
+                        <td> Not previously tested:</td>
+                        <td>
+                        </td>
+                    
+                        <td>Previously tested negative:</td>
                         <td>
                         </td>
                     </tr>
                     <tr>
-                        <td>trreviously tested negative:</td>
+                        <td>Previously tested positive in HIV Care:</td>
                         <td>
                         </td>
-                    </tr>
-                    <tr>
-                        <td>trreviously tested trositive in HIV Care:</td>
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
+                    
                         <td>HIV Request and Result form signed by tester(s):</td>
                         <td>
                         </td>
@@ -222,18 +194,16 @@
                         <td>HIV Request and Result form filled with CT Intake Form:</td>
                         <td>
                         </td>
-                    </tr>
-                    <tr>
+                    
                         <td>Client received HIV test result: </td>
                         <td>
                         </td>
                     </tr>
                     <tr>
-                        <td>trost test counseling done: </td>
+                        <td>Post test counseling done: </td>
                         <td>
                         </td>
-                    </tr>
-                    <tr>
+                    
                         <td>Risk reduction trlan develotred:</td>
                         <td>
                         </td>
@@ -242,8 +212,7 @@
                         <td>DateI5:</td>
                         <td>
                         </td>
-                    </tr>
-                    <tr>
+                   
                         <td>Will bring trartner(s) for HIV testing:</td>
                         <td>
                         </td>
@@ -252,62 +221,50 @@
                         <td>Will bring own children less than 5 years for HIV testing:</td>
                         <td>
                         </td>
-                    </tr>
-                    <tr>
-                        <td>trrovided with information on Ftr and dual contracetrtion:</td>
+                    
+                        <td>Provided with information on Ftr and dual contracetrtion:</td>
                         <td>
                         </td>
                     </tr>
                     <tr>
-                        <td>Client/trartner use Ftr methods (other than condom):</td>
+                        <td>Client/partner use FP methods (other than condom):</td>
                         <td>
                         </td>
-                    </tr>
-                    <tr>
+                   
                         <td>Correct condom use demonstrated:</td>
                         <td>
                         </td>
                     </tr>
                     <tr>
-                        <td>Condoms trrovided to client:</td>
+                        <td>Condoms provided to client:</td>
                         <td>
                         </td>
-                    </tr>
-                    <tr>
+                   
                         <td>Client referred to other services:</td>
                         <td>
                         </td>
                     </tr>
                     <tr>
-                        <td>Sytrhilis Testing:</td>
+                        <td>Syphilis Testing:</td>
+                        <td>
+                        </td>
+                   
+                        <td>Hepatitis B Virus Test Result:</td>
                         <td>
                         </td>
                     </tr>
                     <tr>
-                        <td>Hetratitis B Virus Test Result:</td>
+                        <td>Hepatitis C Virus Test Result:</td>
                         <td>
                         </td>
-                    </tr>
-                    <tr>
-                        <td>Hetratitis C Virus Test Result:</td>
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
+                    
                         <td>Comments:</td>
                         <td>
                         </td>
                     </tr>
                 </table>
-                <br/>
-                <table>
-                    <tr>
-                        <td>
-                            <submit submitLabel="Submit" />
-                        </td>
-                    </tr>
-                </table>
+                
             </section>
-        </div>
-    </div>
+			<submit/>
+       
 </htmlform>
