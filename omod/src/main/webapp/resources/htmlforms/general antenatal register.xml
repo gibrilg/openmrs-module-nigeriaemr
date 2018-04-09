@@ -59,7 +59,7 @@
                                        <tr><td colspan='1'> Name: <lookup class="value" expression="patient.personName"/> </td><td> </td></tr>
 <tr><td>Address:<lookup expression="patient.personAddress.address1"/>
                                      &#160;&#160;
-                                     <lookup expression="patient.personAddress.cityVillage"/></td><td>Phone: <lookup complexExpression="$fn.latestObs(159635).valueCoded.name"/></td></tr>
+                                     <lookup expression="patient.personAddress.cityVillage"/></td><td>Phone: <lookup complexExpression="$fn.latestObs(159635)"/></td></tr>
                                       
                                        <tr><td>Hospital Reg. No: <lookup class="value" complexExpression="#foreach( $patId in $patientIdentifiers.get('Hosp Registration No') ) $patId #end "/></td>
 
@@ -122,12 +122,12 @@
                  <fieldset>
                        <legend>SYPHILIS</legend>
                         <table>
-                            <tr><td>Tested for Syphilis</td><td><p class='left'></p></td></tr>
-                           <tr><td>Syphilis test date</td><td></td></tr>
+                            <tr><td>Tested for Syphilis</td><td><obs conceptId="165280"/><p class='left'></p></td></tr>
+                           <tr><td>Syphilis test date</td><td><obs conceptId="164952"/></td></tr>
                             <tr><td>Syphilis test result</td><td><p class='left'></p></td></tr>
                             <tr><td>Treated for syphilis(penicillin)</td><td><p class='left'></p></td></tr>
-                            <tr><td><label>Syphilis treatment date</label></td><td></td><td></td></tr>
-                            <tr><td>Referred Syphilis +ve client</td><td><p class='left'></p></td></tr>
+                            <tr><td><label>Syphilis treatment date</label></td><td><obs conceptId="164953"/></td><td></td></tr>
+                            <tr><td>Referred Syphilis +ve client</td><td><p class='left'><obs conceptId="165517"/></p></td></tr>
                      
                         </table>
                         

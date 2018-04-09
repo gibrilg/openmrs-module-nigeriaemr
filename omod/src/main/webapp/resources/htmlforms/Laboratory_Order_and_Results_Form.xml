@@ -176,12 +176,12 @@
                                 CD4+ cell count
                             </td>
                             <td>
-                                CD4%
+                                <obs conceptId="730" labelText="CD4%"></obs>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                WBC
+                                <obs conceptId="678" labelText="WBC"></obs>
                             </td>
 
                             <td>
@@ -190,39 +190,39 @@
                         </tr>
                         <tr>
                             <td>
-                                Lymphocytes
+                                <obs conceptId="1021" labelText="Lymphocytes"></obs>
                             </td>
                             <td>
-                                Monocytes
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Eosinophils
-                            </td>
-                            <td>
-                                Basophils
+                                <obs conceptId="1023" labelText="Monocytes"></obs>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                PCV/Hb
+                                <obs conceptId="1024" labelText="Eosinophils"></obs>
                             </td>
                             <td>
-                                Platelets
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                HCV antibody
-                            </td>
-                            <td>
-                                HBsAG
+                                <obs conceptId="1025" labelText="Basophils"></obs>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                VDRL
+                                <obs conceptId="165395" labelText="PCV/Hb"></obs>
+                            </td>
+                            <td>
+                                <obs conceptId="729" labelText="Platelets"></obs>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <obs conceptId="161471" labelText="HCV Antibody"></obs>
+                            </td>
+                            <td>
+                                <obs conceptId="159430" labelText="HBsAG"></obs>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <obs conceptId="299" labelText="VDRL"></obs>
                             </td>
                             <td>
                                 Creatinine
@@ -238,15 +238,15 @@
                         </tr>
                         <tr>
                             <td>
-                                Alk.Phospatase
+                                <obs conceptId="165397" labelText="Alk.Phospatase"></obs>
                             </td>
                             <td>
-                                Total Bilirubin
+                                <obs conceptId="655" labelText="Total Bilirubin"></obs>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Na+
+                                <obs conceptId="1132" labelText="Na+"></obs>
                             </td>
                             <td>
                                 K+
@@ -254,39 +254,39 @@
                         </tr>
                         <tr>
                             <td>
-                                Fasting Glucose
+                                <obs conceptId="160053" labelText="Fasting Glucose"></obs>
                             </td>
                             <td>
-                                Total Chrolestrol
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                LDL
-                            </td>
-                            <td>
-                                HDL
+                                <obs conceptId="1006" labelText="Total Chrolestrol"></obs>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Urinalysis
+                                LDL<obs conceptId="1008" labelText="LDL"></obs>
                             </td>
                             <td>
-                                Cytology VIA/Pap Smear
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Triglyceride
-                            </td>
-                            <td>
-                                Pregnancy
+                                <obs conceptId="1007" labelText="HDL"></obs>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Malaria Smear
+                                <obs conceptId="160987" labelText="Urinalysis"></obs>
+                            </td>
+                            <td>
+                                <obs conceptId="885" labelText="Cytology VIA/Pap Smear"></obs>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <obs conceptId="1009" labelText="Triglyceride"></obs>
+                            </td>
+                            <td>
+                                <obs conceptId="1983" labelText="Pregnancy"></obs>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <obs conceptId="32" labelText="Malaria Smear"></obs>
                             </td>
                             <td>
                                 PCR Lab Sample No.
@@ -304,7 +304,7 @@
                                 Sample Type
                             </td>
                             <td>
-                                Collection Date
+                                <obs conceptId="159951" labelText="Collection Date"></obs>
                             </td>
                         </tr>
                         <tr>
@@ -320,7 +320,15 @@
                                 Time received at PCR Lab
                             </td>
                             <td>
-                                Indication for viral load
+                                <label><b>Indication for viral load</b></label><br /><br />
+                                <obs conceptId="164980" answerConceptId="164973" style="checkbox"></obs><br />
+                                <obs conceptId="164980" answerConceptId="159598" style="checkbox"></obs><br />
+                                <obs conceptId="164980" answerConceptId="160566" style="checkbox"></obs><br />
+                                <obs conceptId="164980" answerConceptId="163523" style="checkbox"></obs><br />
+                                <obs conceptId="164980" answerConceptId="164974" style="checkbox"></obs><br />
+                                <obs conceptId="164980" answerConceptId="164975" style="checkbox"></obs><br />
+                                <obs conceptId="164980" answerConceptId="5622" style="checkbox"></obs><br />
+                                <obs conceptId="164980" answerConceptId="164978" style="checkbox"></obs><br />
                             </td>
                         </tr>
                         <tr>
