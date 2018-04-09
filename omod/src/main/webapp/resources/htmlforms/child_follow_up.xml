@@ -13,9 +13,9 @@
             margin-bottom: 1em;
         }
         .sectionHeader {
-            background-color: $headerColor;
-            color: $fontOnHeaderColor;
-            display: block;
+            background-color: #2f1c55;
+            color: white;
+            /* display: block; */
             padding: 2px;
             font-weight: bold;
         }
@@ -32,6 +32,23 @@
             table th, table td {
             padding: 5px 10px;
             border: None;
+        }
+        .legend_style {
+            max-width: 35%;
+            background: #FAFAFA;
+            padding: 5px;
+            margin: 0px left;
+            box-shadow: 1px 1px 25px rgba(0,0,0,0.10);
+            border-radius: 2px;
+            border: 1px solid #305a72;
+            border-bottom-left-radius: 25px;
+
+        }
+        form fieldset, .form fieldset {
+            min-width: 98%;
+            border: none;
+            border-top: 1px solid #305a72;
+
         }
         table th, table td {
             padding: 5px 10px;
@@ -52,7 +69,28 @@
     </style>
 
     <span style="float:right">Paper Form ID: $paperFormId</span>
+    <fieldset>
+        <legend class="legend_style">Hospital Information</legend>
+        <table class="table" width="100%">
+            <tr>
+                <td class="alnright">State:</td>
+                <td><encounterLocation default="GlobalProperty:default_location"/></td>
+                <td class="alnright">LGA:</td>
+                <td><encounterLocation default="GlobalProperty:default_location"/></td>
+            </tr>
+            <tr>
+                <td class="alnright">Facility Name:</td>
+                <td><encounterLocation default="GlobalProperty:default_location"/></td>
+                <td class="alnright">Birth Cohort Month:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="alnright">Birth Cohort Year</td>
+                <td><encounterProvider/></td>
+            </tr>
 
+        </table>
+    </fieldset>
     <section headerLabel="Hospital Information">
         <table class="table" width="100%">
             <tr>
@@ -209,7 +247,8 @@
     <section headerLabel="2nd Rapid Antibody Test (18 months of age or thereafter)">
         <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
             <tr>
-                <td><obs conceptId="165004" labelText="Age at Test months:"/></td>
+                <td>Age at Test months:</td>
+                <td><obs conceptId="165004"/></td>
                 <td><obs conceptId="165007" labelText="Date of Test dd/mm/yy:"/></td>
             </tr>
             <tr>
