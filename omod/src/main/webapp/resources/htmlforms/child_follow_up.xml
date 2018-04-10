@@ -42,12 +42,13 @@
         .legend_style {
             max-width: 35%;
             background: #FAFAFA;
-            padding: 5px;
+            <!--padding: 5px;-->
             margin: 0px left;
             box-shadow: 1px 1px 25px rgba(0,0,0,0.10);
             border-radius: 2px;
             border: 1px solid #305a72;
             border-bottom-left-radius: 25px;
+            text-transform:initial;
 
         }
         form fieldset, .form fieldset {
@@ -71,6 +72,11 @@
         }
         form select, .form select {
             max-width: 200px;
+        }
+        body {
+            font-family: "OpenSans", Arial, sans-serif;
+            color: #363463;
+            font-size: 14px;
         }
         <!--table.baseline-aligned td {-->
         <!--vertical-align: baseline;-->
@@ -225,68 +231,75 @@
     <legend class="legend_style">2nd Rapid Antibody Test (18 months of age or thereafter)</legend>
         <table width="100%">
             <tr>
-                <td>Age at Test months:</td>
-                <td><obs conceptId="165004"/></td>
-                <td><obs conceptId="165007" labelText="Date of Test dd/mm/yy:"/></td>
+                <td class="alnright">Age at Test months:</td>
+                <td class="alnleft"><obs conceptId="165004"/></td>
+                <td class="alnright">Date Sample Collected dd/mm/yy:</td>
+                <td class="alnleft"><obs conceptId="165007"/></td>
             </tr>
             <tr>
-                <td><obs conceptId="165015" labelText="Result:"/></td>
+                <td class="alnright">Result:</td>
+                <td class="alnleft"><obs conceptId="165015"/></td>
             </tr>
         </table>
     </fieldset><br/>
-    <section headerLabel="Health Facility Visit">
-        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
-            <!--<tr>-->
-            <!--<td><obs conceptId="165004" labelText="Visit Status:"/></td>-->
-            <!--</tr>-->
+    <fieldset>
+    <legend class="legend_style">Health Facility Visit</legend>
+        <table width="100%">
             <tr>
-                <td>Visit Status:</td>
+                <td class="alnright">Visit Status:</td>
                 <td></td>
+                <td class="alnright">Weight:</td>
+                <td class="alnleft"><obs conceptId="5089" labelText="Weight:"/></td>
             </tr>
             <tr>
-                <td>Visit Status:</td>
+                <td class="alnright">BF:</td>
                 <td></td>
-            </tr>
-            <tr>
-                <td><obs conceptId="5089" labelText="Weight:"/></td>
-            </tr>
-            <tr>
-                <td>BF:</td>
+                <td></td>
                 <td></td>
             </tr>
         </table>
-    </section>
-    <section headerLabel="Infant Outcome at 18 Months">
-        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
+    </fieldset><br/>
+    <fieldset>
+    <legend class="legend_style">Infant Outcome at 18 Months</legend>
+        <table width="100%">
             <tr>
-                <td><obs conceptId="165033" labelText="Infant Outcome at 18 Months:"/></td>
+                <td class="alnright">Infant Outcome at 18 Months:</td>
+                <td class="alnleft"><obs conceptId="165033"/></td>
+                <td class="alnright"></td>
+                <td></td>
+            </tr>
+        </table>
+    </fieldset><br/>
+    <fieldset>
+        <legend class="legend_style">Infant 19. ART Enrollment (If HIV-positive)</legend>
+        <table width="100%">
+            <tr>
+
+                <td class="alnright">ART Enrollment (If HIV-positive)</td>
+                <td></td>
+                <td class="alnright">Date Linked to ART clinic dd/mm/yy:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="alnright">ART Enrollment No:</td>
+                <td><obs conceptId="165560"/></td>
+                <td></td>
+                <td></td>
             </tr>
 
         </table>
-    </section>
-    <section headerLabel="Infant 19. ART Enrollment (If HIV-positive)">
-        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
+    </fieldset><br/>
+    <fieldset>
+        <legend class="legend_style">Comments</legend>
+        <table width="100%">
             <tr>
-                <td>ART Enrollment (If HIV-positive)</td>
+                <td class="alnright">Comment:</td>
+                <td class="alnleft"><obs conceptId="165033"/></td>
+                <td></td>
                 <td></td>
             </tr>
-            <tr>
-                <td>Date Linked to ART clinic dd/mm/yy:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td><obs conceptId="165560" labelText="ART Enrollment No:"/></td>
-            </tr>
-
         </table>
-    </section>
-    <section headerLabel="Comments">
-        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
-            <tr>
-                <td><obs conceptId="165033" labelText="ART Enrollment (If HIV-positive):"/></td>
-            </tr>
-        </table>
-    </section>
+    </fieldset><br/>
     <submit/>
 
     <!-- END OF FORM
