@@ -1,56 +1,107 @@
 <htmlform>
 	<!-- General Antenatal Register 10-Apr-2018 -->
-	<macros>
-		paperFormId = (Fill this in)
-		headerColor =#009d8e
-		fontOnHeaderColor = white
-	</macros>
+    <macros>
+        paperFormId = (Fill this in)
+        headerColor =#2f1c55
+        fontOnHeaderColor = white
+    </macros>
+    <style>
+        .section {
+            border: 1px solid $headerColor;
+            padding: 2px;
+            text-align: left;
+            margin-bottom: 1em;
+        }
+        .sectionHeader {
+            background-color: #2f1c55;
+            color: white;
+            /* display: block; */
+            padding: 2px;
+            font-weight: bold;
+        }
+        table tr:nth-child(even) {
+            background: #ffffff;
+        }
+        .alnright{
+            text-align: right;
+            color:#000000;
+            width: 25%;
+        }
+        td {
+            border: none;
+        }
+            table th, table td {
+            padding: 5px 10px;
+            border: None;
+        }
+        .legend_style {
+            max-width: 35%;
+            background: #FAFAFA;
+            padding: 5px;
+            margin: 0px left;
+            box-shadow: 1px 1px 25px rgba(0,0,0,0.10);
+            border-radius: 2px;
+            border: 1px solid #305a72;
+            border-bottom-left-radius: 25px;
 
-	<style>
-		.section {
-			border: 1px solid $headerColor;
-			padding: 2px;
-			text-align: left;
-			margin-bottom: 1em;
-		}
-		.sectionHeader {
-			background-color: $headerColor;
-			color: $fontOnHeaderColor;
-			display: block;
-			padding: 2px;
-			font-weight: bold;
-		}
-		table.baseline-aligned td {
-			vertical-align: baseline;
-		}
-	</style>
+        }
+        form fieldset, .form fieldset {
+            min-width: 98%;
+            border: none;
+            border-top: 1px solid #305a72;
+
+        }
+        table th, table td {
+            padding: 5px 10px;
+            /* border: 1px solid #DDD; */
+        }
+        table tr {
+            border: None;
+        }
+        ul.select, .form input, .form select, .form textarea, .form ul.select {
+            padding: 2px 10px;
+        }
+        form input, form select, form textarea, form ul.select, .form input, .form select, .form textarea, .form ul.select {
+            padding: 2px 10px;
+        }
+        form select, .form select {
+            max-width: 200px;
+        }
+
+    </style>
+	
          <script type="text/javascript">
          </script>
+		 
 	<span style="float:right">Paper Form ID: General Antenatal Register</span>
 	
       <div class="hidden" id="encounter-details" sectionTag="section" headerStyle="title" headerLabel="Encounter Details">
          <section headerLabel="Encounter Details" style="width: 40%; margin-left: 30%;">
               
              <fieldset>
-            <legend>ANC Enrollment Date</legend>
+            <legend class="legend_style">ANC Enrollment Date</legend>
             <label>ANC Enrollment Date</label>
 
             <encounterDate default="now" showTime="false" allowFutureDates="false"/>
         </fieldset>
          <fieldset>
-            <legend>Facility</legend>
+            <legend class="legend_style">Facility</legend>
             <label>Facility</label>
             <encounterLocation default="SessionAttribute:emrContext.sessionLocationId"/>
         </fieldset>
          <fieldset>
-            <legend>Service Provider</legend>
+            <legend class="legend_style">Service Provider</legend>
             <label>Service Provider</label>
             <encounterProviderAndRole default="currentUser" encounterRole="240b26f9-dd88-4172-823d-4a8bfeb7841f" required="true"/>
         </fieldset>
 </section>
 </div>
- <section headerLabel="General Antenatal Form" id="genanc" sectionTag="section" headerStyle="title">
- <table style="margin-bottom: 20px;">
+
+ <section id="genanc" sectionTag="section" headerStyle="title">
+ 
+ <fieldset>
+	<legend class="legend_style">Antenatal Care Form</legend>
+		<table style="margin-bottom: 20px;">
                                 <thead>
                                             <tr><th colspan='2' style="text-align: center">NATIONAL ANTENATAL REGISTER</th></tr>
                                     
@@ -73,13 +124,11 @@
                                 </tbody>
                          </table>
         
-       
-                 <fieldset>
+   </fieldset>    
 
-</fieldset>
 
 <fieldset>
-                        <legend>Visit</legend>
+                        <legend class="legend_style">Visit</legend>
                         <p class="left"><table class='left'>
                              
                              <tbody>
@@ -93,7 +142,7 @@
               </fieldset>       
                
                   <fieldset>
-                       <legend>CLINICAL</legend>
+                       <legend class="legend_style">CLINICAL</legend>
                        <table>
                       
                            <tbody> <tr><td>Date of Birth: <lookup class="value" complexExpression="#if( \$patient.birthdateEstimated ) ~#end"/> <lookup class="value" expression="patient.birthdate"/></td>
@@ -108,7 +157,7 @@
                  </fieldset>
                    
                  <fieldset>
-                       <legend>SYPHILIS</legend>
+                       <legend class="legend_style">SYPHILIS</legend>
                         <table>
                             <tr><td>Tested for Syphilis</td><td><obs conceptId="165280"/><p class='left'></p></td></tr>
                            <tr><td>Syphilis test date</td><td><obs conceptId="164952"/></td></tr>
