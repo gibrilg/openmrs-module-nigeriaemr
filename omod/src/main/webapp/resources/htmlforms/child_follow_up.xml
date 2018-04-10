@@ -27,6 +27,11 @@
             color:#000000;
             width: 25%;
         }
+        .alnleft{
+            text-align: left;
+            color:#000000;
+            width: 25%;
+        }
         td {
             border: none;
         }
@@ -152,60 +157,73 @@
         <table width="100%">
             <tr>
                 <td  class="alnright">Age at Test months:</td>
-                <td><obs conceptId="164985"/></td>
+                <td class="alnleft"><obs conceptId="164985"/></td>
                 <td  class="alnright">Date Sample Collected dd/mm/yy:</td>
-                <td><obs conceptId="164986"/></td>
+                <td class="alnleft"><obs conceptId="164986"/></td>
             </tr>
             <tr>
                 <td  class="alnright">Date Sample Sent dd/mm/yy:</td>
-                <td><obs conceptId="164988"/></td>
+                <td class="alnleft"><obs conceptId="164988"/></td>
                 <td  class="alnright">Date Result Received at Facility:</td>
-                <td><obs conceptId="164990"/></td>
+                <td class="alnleft"><obs conceptId="164990"/></td>
             </tr>
             <tr>
                 <td  class="alnright">Date Caregiver Given Result dd/mm/yy:</td>
-                <td><obs conceptId="164995"/></td>
+                <td class="alnleft"><obs conceptId="164995"/></td>
                 <td  class="alnright">Result:</td>
-                <td><obs conceptId="164993"/></td>
+                <td class="alnleft"><obs conceptId="164993"/></td>
             </tr>
         </table>
     </fieldset><br/>
-    <section headerLabel="Infant Testiing (PCR): 2nd PCR">
-        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
+    <fieldset>
+    <legend class="legend_style">Infant Testiing (PCR): 2nd PCR</legend>
+        <table width="100%">
             <tr>
-                <td><obs conceptId="165004" labelText="Age at Test months:"/></td>
-                <td><obs conceptId="165007" labelText="Date Sample Collected dd/mm/yy:"/></td>
+                <td class="alnright">Age at Test months:</td>
+                <td class="alnleft"><obs conceptId="165004"/></td>
+                <td class="alnright">Date Sample Collected dd/mm/yy:</td>
+                <td class="alnleft"><obs conceptId="165007"/></td>
             </tr>
             <tr>
-                <td><obs conceptId="165015" labelText="Result:"/></td>
+                <td class="alnright">Result:</td>
+                <td class="alnleft"><obs conceptId="165015"/></td>
             </tr>
 
         </table>
-    </section>
-    <section headerLabel="Infant Testiing (PCR): Confirmatory PCR">
-        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
+    </fieldset><br/>
+    <fieldset>
+        <legend class="legend_style">Infant Testiing (PCR): Confirmatory PCR</legend>
+        <table width="100%">
             <tr>
-                <td><obs conceptId="165004" labelText="Age at Test months:"/></td>
-                <td><obs conceptId="165007" labelText="Date Sample Collected dd/mm/yy:"/></td>
+                <td class="alnright">Age at Test months:</td>
+                <td class="alnleft"><obs conceptId="165004"/></td>
+                <td class="alnright">Date Sample Collected dd/mm/yy:</td>
+                <td class="alnleft"><obs conceptId="165007"/></td>
             </tr>
             <tr>
-                <td><obs conceptId="165015" labelText="Result:"/></td>
-            </tr>
-        </table>
-    </section>
-    <section headerLabel="1st Rapid Antibody Test (9 months of age or 1st contact after)">
-        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
-            <tr>
-                <td><obs conceptId="165004" labelText="Age at Test months:"/></td>
-                <td><obs conceptId="165007" labelText="Date of Test dd/mm/yy:"/></td>
-            </tr>
-            <tr>
-                <td><obs conceptId="165015" labelText="Result:"/></td>
+                <td class="alnright">Result:</td>
+                <td class="alnleft"><obs conceptId="165015"/></td>
             </tr>
         </table>
-    </section>
-    <section headerLabel="2nd Rapid Antibody Test (18 months of age or thereafter)">
-        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
+    </fieldset><br/>
+    <fieldset>
+    <legend class="legend_style">1st Rapid Antibody Test (9 months of age or 1st contact after)</legend>
+        <table width="100%">
+            <tr>
+                <td class="alnright">Age at Test months:</td>
+                <td class="alnleft"><obs conceptId="165004"/></td>
+                <td class="alnright">Date Sample Collected dd/mm/yy:</td>
+                <td class="alnleft"><obs conceptId="165007"/></td>
+            </tr>
+            <tr>
+                <td class="alnright">Result:</td>
+                <td class="alnleft"><obs conceptId="165015"/></td>
+            </tr>
+        </table>
+    </fieldset><br/>
+    <fieldset>
+    <legend class="legend_style">2nd Rapid Antibody Test (18 months of age or thereafter)</legend>
+        <table width="100%">
             <tr>
                 <td>Age at Test months:</td>
                 <td><obs conceptId="165004"/></td>
@@ -215,7 +233,7 @@
                 <td><obs conceptId="165015" labelText="Result:"/></td>
             </tr>
         </table>
-    </section>
+    </fieldset><br/>
     <section headerLabel="Health Facility Visit">
         <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
             <!--<tr>-->
