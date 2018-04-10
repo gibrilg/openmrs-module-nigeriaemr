@@ -74,27 +74,25 @@
          </script>
 		 
 
-      <div class="hidden" id="encounter-details" sectionTag="section" headerStyle="title" headerLabel="Encounter Details">
-         <section headerLabel="Encounter Details" style="width: 40%; margin-left: 30%;">
-              
-             <fieldset>
-            <legend class="legend_style">ANC Enrollment Date</legend>
-            <label>ANC Enrollment Date</label>
-
-            <encounterDate default="now" showTime="false" allowFutureDates="false"/>
-        </fieldset>
-         <fieldset>
-            <legend class="legend_style">Facility</legend>
-            <label>Facility</label>
-            <encounterLocation default="SessionAttribute:emrContext.sessionLocationId"/>
-        </fieldset>
-         <fieldset>
-            <legend class="legend_style">Service Provider</legend>
-            <label>Service Provider</label>
-            <encounterProviderAndRole default="currentUser" encounterRole="240b26f9-dd88-4172-823d-4a8bfeb7841f" required="true"/>
-        </fieldset>
-</section>
-</div>
+			<div class="hidden" id="encounter-details" sectionTag="section" headerStyle="title" headerLabel="Encounter Details">
+				<section headerLabel="Encounter Details" style="width: 40%; margin-left: 30%;">					  
+					<fieldset>
+						<legend class="legend_style">ANC Enrollment Date</legend>
+						<label>ANC Enrollment Date</label>
+						<encounterDate default="now" showTime="false" allowFutureDates="false"/>
+					</fieldset>
+					 <fieldset>
+						<legend class="legend_style">Facility</legend>
+						<label>Facility</label>
+						<encounterLocation default="SessionAttribute:emrContext.sessionLocationId"/>
+					</fieldset>
+					<fieldset>
+						<legend class="legend_style">Service Provider</legend>
+						<label>Service Provider</label>
+						<encounterProviderAndRole default="currentUser" encounterRole="240b26f9-dd88-4172-823d-4a8bfeb7841f" required="true"/>
+					</fieldset>
+				</section>
+			</div>
 
 			<section id="genanc" sectionTag="section" headerStyle="title">
  
