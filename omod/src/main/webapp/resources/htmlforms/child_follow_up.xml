@@ -24,7 +24,8 @@
         }
         .alnright{
             text-align: right;
-            color:#000000
+            color:#000000;
+            width: 25%;
         }
         td {
             border: none;
@@ -63,6 +64,9 @@
         form input, form select, form textarea, form ul.select, .form input, .form select, .form textarea, .form ul.select {
             padding: 2px 10px;
         }
+        form select, .form select {
+            max-width: 200px;
+        }
         <!--table.baseline-aligned td {-->
         <!--vertical-align: baseline;-->
         <!--}-->
@@ -81,135 +85,91 @@
             <tr>
                 <td class="alnright">Facility Name:</td>
                 <td><encounterLocation default="GlobalProperty:default_location"/></td>
-                <td class="alnright">Birth Cohort Month:</td>
                 <td></td>
-            </tr>
-            <tr>
-                <td class="alnright">Birth Cohort Year</td>
-                <td><encounterProvider/></td>
+                <td></td>
             </tr>
 
         </table>
-    </fieldset>
-    <section headerLabel="Hospital Information">
-        <table class="table" width="100%">
-            <tr>
-                <td class="alnright">State:</td>
-                <td><encounterLocation default="GlobalProperty:default_location"/></td>
-                <td class="alnright">LGA:</td>
-                <td><encounterLocation default="GlobalProperty:default_location"/></td>
-            </tr>
-            <tr>
-                <td class="alnright">Facility Name:</td>
-                <td><encounterLocation default="GlobalProperty:default_location"/></td>
-                <td class="alnright">Birth Cohort Month:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="alnright">Birth Cohort Year</td>
-                <td><encounterProvider/></td>
-            </tr>
-
-        </table>
-    </section><br/>
-    <section headerLabel="Infant's Registration Information">
+    </fieldset><br/>
+    <fieldset>
+    <legend class="legend_style">Mother's Registration Information</legend>
         <table width="100%">
             <tr>
-                <td class="alnright">Date of Birth:</td>
-                <td><lookup class="value" complexExpression="#if( \$patient.birthdateEstimated ) ~#end"/> <lookup class="value" expression="patient.birthdate"/></td>
-                <td class="alnright">Age: </td>
-                <td><lookup class="value" expression="patient.age"/></td>
-
+                <td class="alnright">Mother Hosp. Reg. No.</td>
+                <td>:</td>
+                <td class="alnright">Mother's ANC No</td>
+                <td>:</td>
             </tr>
             <tr>
-                <td class="alnright">Surname:</td>
-                <td><lookup expression="patient.personName.familyName"/></td>
-                <td class="alnright">Other name:</td>
-                <td><lookup expression="patient.personName.givenName"/></td>
-                <td class="alnright">Middle Name:</td>
-                <td><lookup expression="patient.personName.middleName"/></td>
-                <td class="alnright">Sex</td>
-                <td><lookup class="value" expression="patient.gender"/></td>
+                <td class="alnright">Mother's Surname</td>
+                <td>:</td>
+                <td class="alnright">Mother's Othername</td>
+                <td>:</td>
             </tr>
             <tr>
-                <td><obs conceptId="163260" labelText="Date of 1st Visit:"/></td>
-                <td></td>
-
+                <td class="alnright">Mother's Phone No</td>
+                <td>:</td>
+                <td class="alnright">Mother's Address</td>
+                <td>:</td>
             </tr>
         </table>
-    </section><br/>
-    <section headerLabel="Mother's Registration Information">
+    </fieldset><br/>
+    <fieldset>
+        <legend class="legend_style">Mother's ART</legend>
         <table width="100%">
             <tr>
-                <td>Mother Hosp. Reg. No.</td>
-                <td></td>
-                <td>Mother's ANC No</td>
-                <td></td>
+                <td class="alnright">Timing of Mother's ART Initiation:</td>
+                <td><obs conceptId="165518"/></td>
+                <td class="alnright">Mother's ART Regimen :</td>
+                <td><obs conceptId="164855"/></td>
             </tr>
+        </table>
+    </fieldset><br/>
+    <fieldset>
+    <legend class="legend_style">Infant ARV Prophlaxis</legend>
+        <table width="100%">
             <tr>
-                <td>Mother's Surname</td>
-                <td></td>
-                <td>Mother's Othername</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Mother's Phone No</td>
-                <td></td>
-                <td>Mother's Address</td>
+                <td  class="alnright">Infant ARV Type:</td>
+                <td width="25%"><obs conceptId="164971"/></td>
+                <td class="alnright">Timing of ARV Prophylaxis:</td>
                 <td></td>
             </tr>
         </table>
-    </section><br/>
-    <section headerLabel="Mother's ART">
-        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
+    </fieldset><br/>
+    <fieldset>
+    <legend class="legend_style">Infant CTX</legend>
+    <table width="100%">
+        <tr>
+            <td class="alnright">Age at CTX Initiation:</td>
+            <td width="25%"><obs conceptId="164971"/></td>
+            <td class="alnright">Age at CTX Initiation:</td>
+            <td></td>
+        </tr>
+    </table>
+    </fieldset><br/>
+    <fieldset>
+    <legend class="legend_style">Infant Testiing (PCR): 1st PCR</legend>
+        <table width="100%">
             <tr>
-                <td><obs conceptId="165518" labelText="Timing of Mother's ART Initiation:"/></td>
-                <td><obs conceptId="164855" labelText=" Mother's ART Regimen :"/></td>
+                <td  class="alnright">Age at Test months:</td>
+                <td><obs conceptId="164985"/></td>
+                <td  class="alnright">Date Sample Collected dd/mm/yy:</td>
+                <td><obs conceptId="164986"/></td>
+            </tr>
+            <tr>
+                <td  class="alnright">Date Sample Sent dd/mm/yy:</td>
+                <td><obs conceptId="164988"/></td>
+                <td  class="alnright">Date Result Received at Facility:</td>
+                <td><obs conceptId="164990"/></td>
+            </tr>
+            <tr>
+                <td  class="alnright">Date Caregiver Given Result dd/mm/yy:</td>
+                <td><obs conceptId="164995"/></td>
+                <td  class="alnright">Result:</td>
+                <td><obs conceptId="164993"/></td>
             </tr>
         </table>
-    </section>
-    <section headerLabel="Infant ARV Prophlaxis">
-        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
-            <tr>
-                <td><obs conceptId="164971" labelText="Infant ARV Type:"/></td>
-            </tr>
-
-            <tr>
-                <td>Timing of ARV Prophylaxis:</td>
-                <td></td>
-            </tr>
-
-        </table>
-    </section>
-    <section headerLabel="Infant CTX">
-        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
-            <tr>
-                <td><obs conceptId="164971" labelText="Age at CTX Initiation:"/></td>
-            </tr>
-
-            <tr>
-                <td>Age at CTX Initiation:</td>
-                <td></td>
-            </tr>
-
-        </table>
-    </section>
-    <section headerLabel="Infant Testiing (PCR): 1st PCR">
-        <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
-            <tr>
-                <td><obs conceptId="164985" labelText="Age at Test months:"/></td>
-                <td><obs conceptId="164986" labelText=" Date Sample Collected dd/mm/yy:"/></td>
-            </tr>
-            <tr>
-                <td><obs conceptId="164988" labelText=" Date Sample Sent dd/mm/yy:"/></td>
-                <td><obs conceptId="164990" labelText="Date Result Received at Facility:"/></td>
-            </tr>
-            <tr>
-                <td><obs conceptId="164995" labelText="Date Caregiver Given Result dd/mm/yy:"/></td>
-                <td><obs conceptId="164993" labelText="Result:"/></td>
-            </tr>
-        </table>
-    </section>
+    </fieldset><br/>
     <section headerLabel="Infant Testiing (PCR): 2nd PCR">
         <table cellpadding="10" cellspacing="7" style="width: 80%; margin-left:10%;">
             <tr>
