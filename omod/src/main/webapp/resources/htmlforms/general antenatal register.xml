@@ -90,19 +90,7 @@
                              </tbody>
                        </table></p>
 
-              </fieldset>
-
-               <fieldset>
-                              <legend>IDENTIFICATION</legend>
-                              <table>
-                                   
-                                    <tbody>
-                                 <p class='left'><tr><td>Date</td><td><p class='left'></p></td></tr></p>
-                                 <p class='left'><tr><td>ANC No</td><td><p class='left'></p></td></tr></p>
-                                 
-                                    </tbody>
-                              </table>
-                      </fieldset>        
+              </fieldset>       
                
                   <fieldset>
                        <legend>CLINICAL</legend>
@@ -136,19 +124,6 @@
                  </fieldset>
                  
         </section>
-
-
-
-
-
-
-
-
-      
-      
-	
-
-	
 
 
 </htmlform>
