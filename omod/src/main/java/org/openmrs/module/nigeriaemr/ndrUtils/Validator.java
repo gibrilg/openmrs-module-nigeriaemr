@@ -3,10 +3,10 @@ package org.openmrs.module.nigeriaemr.ndrUtils;
 import javax.xml.bind.ValidationEvent;
 import javax.xml.bind.ValidationEventHandler;
 
-public class Validator  implements ValidationEventHandler {
-
+public class Validator implements ValidationEventHandler {
+	
 	//private FileManager mgr;
-
+	
 	public Validator() {
 		//mgr=new FileManager();
 		/* try {
@@ -17,7 +17,7 @@ public class Validator  implements ValidationEventHandler {
 		 //String[] headers={"SEVERITY","MESSAGE","LINKED EXCEPTION","LINE NO","COLUMN NO","OFFSET","OBJECT","NODE","URL"};
 		 //mgr.writeHeader(headers);*/
 	}
-
+	
 	@Override
 	public boolean handleEvent(ValidationEvent event) {
 		System.out.println("\nEVENT");
@@ -31,7 +31,7 @@ public class Validator  implements ValidationEventHandler {
 		System.out.println("    OBJECT:  " + event.getLocator().getObject());
 		System.out.println("    NODE:  " + event.getLocator().getNode());
 		System.out.println("    URL:  " + event.getLocator().getURL());
-
+		
 		/*String[] errors=new String[9];
 		errors[0]=String.valueOf(event.getSeverity());
 		errors[1]=event.getMessage();
@@ -43,13 +43,13 @@ public class Validator  implements ValidationEventHandler {
 		errors[7]=String.valueOf(event.getLocator().getNode());
 		errors[8]=String.valueOf(event.getLocator().getURL());
 		mgr.writeHeader(errors);*/
-
+		
 		return true;
 	}
-
+	
 	public void project(ValidationEvent event) throws Throwable {
-
+		
 		throw event.getLinkedException();
 	}
-
+	
 }

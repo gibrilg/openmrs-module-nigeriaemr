@@ -16,6 +16,7 @@ import org.openmrs.module.nigeriaemr.model.ndr.FacilityType;
 import org.openmrs.module.nigeriaemr.model.ndr.IndividualReportType;
 import org.openmrs.module.nigeriaemr.model.ndr.MessageHeaderType;
 import org.openmrs.module.nigeriaemr.model.ndr.PatientDemographicsType;
+import org.openmrs.module.nigeriaemr.ndrUtils.Utils;
 import org.openmrs.module.nigeriaemr.ndrfactory.NDRConverter;
 import org.openmrs.module.nigeriaemr.util.ZipUtil;
 import org.openmrs.ui.framework.annotation.SpringBean;
@@ -36,7 +37,10 @@ import java.util.GregorianCalendar;
 import org.openmrs.api.EncounterService;
 import org.openmrs.ui.framework.annotation.FragmentParam;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.xml.sax.SAXException;
+
 import javax.servlet.http.HttpServletRequest;
+import javax.xml.bind.JAXBException;
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
@@ -58,7 +62,7 @@ public class NdrFragmentController {
 	public String generateNDRFile(@RequestParam(value = "start", required = false) Date startDate,
 	        @RequestParam(value = "end", required = false) Date endDate,
 	        @SpringBean("encounterService") EncounterService service, HttpServletRequest request)
-	        throws DatatypeConfigurationException {
+	        throws DatatypeConfigurationException, IOException, SAXException, JAXBException {
 		
 		//create report download folder at the server. skip if already exist
 		String folder = new File(request.getRealPath(request.getContextPath())).getParentFile().toString() + "\\downloads"; //request.getRealPath(request.getContextPath()) + "\\reports";
@@ -81,14 +85,26 @@ public class NdrFragmentController {
 		//delete folder content in case it exist before
 		
 		//Create an xml file and save in today's folder
-		NDRConverter generator = new NDRConverter(new Date(), "Initial","TestIP","TestCode");
+		NDRConverter generator = new NDRConverter(new Date(), "Initial", "TestIP", "TestCode");
 		List<Patient> patients = Context.getPatientService().getAllPatients();
-
-		for (Patient patient:patients){
-			Container cnt = generator.createContainer(patient);
-			writeContainerXMLToFile(todayFolders + "\\" + patient.getPatientId().toString().replaceAll("[^a-zA-Z0-9]", "") + ".xml", cnt);
+		FacilityType facility = Utils.createFacilityType("ABC HOSPITAL", "as231errt", "FAC");
+		
+		Container cnt = null;
+		
+		for (Patient patient : patients) {
+			cnt = generator.createContainer(patient, facility);
+			String xmlfile = todayFolders + "\\" + patient.getPatientId().toString().replaceAll("[^a-zA-Z0-9]", "") + ".xml";
+			File aXMLFile = new File(xmlfile);
+			if (aXMLFile.exists()) {
+				aXMLFile.delete();
+			}
+			b = aXMLFile.createNewFile();
+			
+			System.out.println("creating file : " + xmlfile + "was successful : " + b);
+			generator.writeFile(cnt, aXMLFile);
+			/*writeContainerXMLToFile(todayFolders + "\\" + patient.getPatientId().toString().replaceAll("[^a-zA-Z0-9]", "")
+			        + ".xml", cnt);*/
 		}
-
 		
 		//Zip today's folder and name it with today's date
 		String zipFileName = new SimpleDateFormat("dd-MM-yyyy").format(new Date()) + ".zip";
@@ -101,11 +117,9 @@ public class NdrFragmentController {
 		
 		return fileUrl;
 	}
-
-
-
+	
 	public void writeContainerXMLToFile(String filePath, Container xmlContainer) {
-
+		
 		XMLEncoder encoder = null;
 		try {
 			encoder = new XMLEncoder(new BufferedOutputStream(new FileOutputStream(filePath)));
@@ -115,10 +129,9 @@ public class NdrFragmentController {
 		}
 		encoder.writeObject(xmlContainer);
 		encoder.close();
-
+		
 	}
-
-
+	
 	public Container generateXMLObject() throws DatatypeConfigurationException {
 		
 		FacilityType IPInfo = new FacilityType();
@@ -162,8 +175,6 @@ public class NdrFragmentController {
 		
 		return xmlContainer;
 	}
-	
-
 	
 	public void writeToFile(String filePath, String content) {
 		

@@ -1,6 +1,5 @@
 <%
 
-
     def id = config.id
     def props = config.properties ?: ["encounterType", "encounterDatetime", "location", "provider"]
 %>
@@ -11,28 +10,26 @@
 
     jq(function() {
         jq('#${ id }_button').click(function() {
-
-            jq.getJSON('${ ui.actionLink("generateNDRFile") }',
+            jq.getJSON('${ ui.actionLink("getRADETReport") }',
                 {
                     'start': '${ config.start }',
                     'end': '${ config.end }',
                     'properties': [ <%= props.collect { "'${it}'" }.join(",") %> ]
                 })
-                .success(function(filename) {
-                    alert(filename)
-                    window.location = filename;
+                .success(function(data) {
 
+                    alert('generating RADET was successful')
                 })
-                .error(function(xhr, status, err) {
+                .fail(function(xhr, status, err) {
                     alert('AJAX error ' + err);
                 })
         });
     });
 </script>
-
+ 
 
 
 <a id="${ id }_button"  class="button app big">
     <i class="icon-list-alt"></i>
-    Generate NDR Report
+    Generate RADET Report
 </a>
