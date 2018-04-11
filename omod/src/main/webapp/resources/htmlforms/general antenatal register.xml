@@ -69,10 +69,7 @@
         }
 
     </style>
-	
-         <script type="text/javascript">
-         </script>
-		 
+			 
 
 			<div class="hidden" id="encounter-details" sectionTag="section" headerStyle="title" headerLabel="Encounter Details">
 				<section headerLabel="Encounter Details" style="width: 40%; margin-left: 30%;">					  
@@ -144,7 +141,7 @@
 									<td>Age: <lookup class="value" expression="patient.age"/></td>
 								</tr>
 								<tr>
-									<td>LMP</td><td><p class='left'><obs conceptId="1427"/></p></td>
+									<td>LMP</td><td><p class='left'><obs conceptId="1427" id="LMP" /></p></td>
 									<td>GA Weeks</td><td><p class='left'><obs conceptId="1438"/></p></td>
 								</tr>
 								<tr>
@@ -153,7 +150,7 @@
 								</tr>
                                 <tr>
 									<td>Source of referral</td><td><p class='left'></p></td>
-									<td>EDD</td><td><p class='left'><obs conceptId="5596"/></p></td>
+									<td>EDD</td><td><p class='left'><obs conceptId="5596" id="EDD"/></p></td>							
 								</tr>
                        </table>
                         
@@ -179,5 +176,16 @@
                  
         </section>
 
+		
+	<ifMode mode="VIEW" include="false">
+        <div id="buttons">
+            <submit submitClass="confirm right" submitCode="general.save" />
+            <button type="button" class="cancel">
+                <uimessage code="general.cancel" />
+            </button>
+        </div>
+    </ifMode>
+		
+		
 
 </htmlform>
