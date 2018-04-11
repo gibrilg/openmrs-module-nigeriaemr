@@ -1,0 +1,431 @@
+
+<!--
+  ~ The contents of this file are subject to the OpenMRS Public License
+  ~ Version 1.0 (the "License"); you may not use this file except in
+  ~ compliance with the License. You may obtain a copy of the License at
+  ~ http://license.openmrs.org
+  ~
+  ~ Software distributed under the License is distributed on an "AS IS"
+  ~ basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+  ~ License for the specific language governing rights and limitations
+  ~ under the License.
+  ~
+  ~ Copyright (C) OpenMRS, LLC.  All Rights Reserved.
+  -->
+
+<htmlform formUuid="6b2428f4-ec7e-4e83-947a-8607c216be0d" formName="initialcarecard" formEncounterType="5519fc4e-01c3-461a-b34b-c7843a2a7395 " formVersion="2016-2017">
+    <style>
+        #calculated-bmi {
+        font-weight: bold;
+        font-size: 1.4em;
+        }
+
+        .encounter-summary-container #calculated-bmi {
+        font-size: 1em;
+        font-weight: normal;
+        }
+    </style>
+
+
+    <div class="hidden" id="encounter-details" sectionTag="section" headerStyle="title" headerLabel="Encounter Details">
+        <fieldset>
+            <legend>When?</legend>
+            <label>When?</label>
+
+            <encounterDate default="now" showTime="false" allowFutureDates="false"/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Who?</legend>
+            <label>Who?</label>
+
+            <encounterProviderAndRole default="currentUser" encounterRole="240b26f9-dd88-4172-823d-4a8bfeb7841f" required="true"/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Where?</legend>
+            <label>Where?</label>
+
+            <encounterLocation default="SessionAttribute:emrContext.sessionLocationId"/>
+        </fieldset>
+    </div>
+
+    <section id="InitialCareCard" sectionTag="section" headerStyle="title" headerCode="Initial Clinical Evaluation Form">
+
+        <fieldset>
+
+            <legend>Facility Name</legend>
+            <tr>
+                <td>Facility Name:  </td><td><encounterLocation default="5"/></td>
+            </tr>
+        </fieldset>
+
+        <fieldset>
+            <!--<includeIf   velocityTest="$patient.age &gt; 15 ">-->
+            <section headerLabel="PERSONAL HISTORY (ADULTS)" id="initial" style="width: 100%;">
+                <legend>Lab Form</legend>
+                <p><font color="red">FILL ONLY ONCE FOR ADULTS</font><htmlformflowsheet formId="20"  addAnotherButtonLabel="PERSONAL HISTORY"/></p>
+            </section>
+        </fieldset>
+
+
+        <fieldset>
+            <!-- concept need STATE-->
+            <legend><lookup expression="fn.getConcept('CIEL:164429').name"/></legend>
+            <h3><lookup expression="fn.getConcept('CIEL:164429').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="CIEL:164429" id="STATE"  />
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend><lookup expression="fn.getConcept('CIEL:160554').name"/></legend>
+            <h3><lookup expression="fn.getConcept('CIEL:160554').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="CIEL:160554" id="DATE HIV CONFIRMED" allowFutureDates="false" />
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('165186').name"/></legend>
+            <h3><lookup expression="fn.getConcept('165186').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="165186" id="sex"  />
+            </p>
+
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('164935').name"/></legend>
+            <h3><lookup expression="fn.getConcept('164935').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="164935" id="Is Mother of Child Alive"  />
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('164938').name"/></legend>
+            <h3><lookup expression="fn.getConcept('164938').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="164938" id="Is Father Of Child Alive"  />
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('164942').name"/></legend>
+            <h3><lookup expression="fn.getConcept('164942').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="164942" id="CHILD'S PARENT/CAREGIVER ARE"  />
+            </p>
+
+        </fieldset>
+
+    </section>
+
+    <section id="Medical History" sectionTag="section" headerStyle="title" headerCode="Medical History">
+
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('165291').name"/></legend>
+            <h3><lookup expression="fn.getConcept('165291').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="165291" id="Patient assessed for TB"  />
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('165296').name"/></legend>
+            <h3><lookup expression="fn.getConcept('165296').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="165296" id="Developmental Assessment"  />
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('165297').name"/></legend>
+            <h3><lookup expression="fn.getConcept('165297').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="165297" id="Immunisation: Complete for Age"  />
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('CIEL:1151').name"/></legend>
+            <h3><lookup expression="fn.getConcept('CIEL:1151').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="CIEL:1151" id="Infant feeding method"  answerLabels="EBF,EBMS,Mixed" answerConceptIds="5526,165298,6046"/>
+            </p>
+
+        </fieldset>
+
+        <!-- Coded answer for if answering yes on previous Care for HIV/AIDS -->
+
+
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('165300').name"/></legend>
+            <h3><lookup expression="fn.getConcept('165300').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="165300" id="Patient has received previous care for HIV/AIDS"/>
+            </p>
+
+        </fieldset>
+
+
+        <!-- Previous ARV exposure other than PMTCT uses coded answer as well as text input-->
+
+
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('165301').name"/></legend>
+            <h3><lookup expression="fn.getConcept('165301').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="165301" id="Previous ARV exposure other than PMTCT"    answerConceptIds="1185,1107" answerLabels="Yes,No" />
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('165302').name"/></legend>
+            <h3><lookup expression="fn.getConcept('165302').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="165302" id="Known Drug Allergies" />
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('160221').name"/></legend>
+            <h3><lookup expression="fn.getConcept('160221').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="160221" id="Past medical history"/>
+            </p>
+
+        </fieldset>
+
+        <!--For Previous ARV eposure through PMTCT, can't see the answer on printed sheet-->
+
+
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('165305').name"/></legend>
+            <h3><lookup expression="fn.getConcept('165305').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="165305" id="CurrentMedications"  answerLabels="None,CTX,ART,Anti-TB drugs" answerConceptIds="1107,105281,165303,165304"/>
+            </p>
+
+        </fieldset>
+
+
+        <!-- All fieldsets within Physical Exam require text input in answer-->
+        <fieldset>
+            <legend>Physical Exam</legend>
+            <table>
+                <tr><td><p><label>General Appearance</label><obs conceptId="165313" id="generalappearance" answerLabels="Pale,Dehydrated,Jaundiced,Edematous,NSF" answerConceptIds="147096,142630,136443,165311,165312"/></p></td></tr>
+
+
+                <!-- Breathing Rate and Auscultation Findings need to be inserted manually -->
+                <tr>
+                    <td><p><label>Respiratory</label><obs conceptId="165316" id="respiratory" answerLabels="Rate,Labored Breathing,Wheezing,Inter/Subcostal Recession,Cyanosis,Auscultation Finding,NSF"
+                                                          answerConceptIds="5242,136201,122863,165314,143050,165315,165312"/></p></td>
+                </tr>
+
+                <tr>
+                    <td><p><label>Skin</label><obs conceptId="165318" id="skin" answerLabels="Pruritic Dapular Dermatitis,Scabies,Herpes Zoster,Abscesses,Kaposi's Lesions,Seborrheic Dermatitis, Fungal Infection,NSF"
+                                                   answerConceptIds="1249,140,117543,150632,165317,113116,171,165312"/></p></td>
+                </tr>
+
+                <tr>
+                    <td><p><label>Neurological</label><obs conceptId="165325" id="neurological" answerLabels="Disoriented in TPP,Impaired consciousness,Slurred Speech,Neck Stiffness,Blindness 1 or 2 eyes,Weakness/Paralysis, Numbness of extremities,
+          Fisting/Spasticity,NSF" answerConceptIds="165319,165320,126351,5170,165321,165322,165323,165324,165312"/></p></td>
+                </tr>
+
+                <!-- Auscultation Findings needs to be text input-->
+                <tr>
+                    <td><p><label>Cardiovascular</label><obs conceptId="165326" id="cardiovascular" answerLabels="Irregular Heartbeat,Auscultation Finding,NSF" answerConceptIds="136522,165315,165312"/></p></td>
+                </tr>
+
+
+                <tr>
+                    <td><p><label>Head/Eye/ENT</label><obs conceptId="165327" id="neurological" answerLabels="Thrush,Oral KS,Gingivitis,Otitis Media,Ear Discharge,Oral Ulcer,NSF" answerConceptIds="5334,644,139438,131113,873,111721,165312"/></p></td>
+                </tr>
+
+
+                <tr>
+                    <td><p><label>Gastrointestinal</label><obs conceptId="165330" id="gastrointestinal" answerLabels="Hepatomegaly,Splenomegaly,Tenderness,Distention,NSF" answerConceptIds="5008,5009,165328,165329,165312"/></p></td>
+                </tr>
+
+
+                <tr>
+                    <td><p><label>Glands</label><obs conceptId="165331" id="glands" answerLabels="Parotid Swelling,Lymphadenopathy,NSF" answerConceptIds="130792,135488,165312"/></p></td>
+                </tr>
+
+                <!-- tanner stage concepts divided into Qualitative and Quantitative-->
+                <tr>
+                    <td><p><label>Genitalia</label><obs conceptId="165333" id="genitalia" answerLabels="Genital Lesions,NSF" answerConceptIds="165332,165312"/></p></td>
+                </tr>
+
+
+                <tr>
+                    <td><p><label>Mental Status</label><obs conceptId="165339" id="mental status" answerLabels="Slow Mentation,Memory Loss,Mood Swings,Depression,Anxiety,Suicidal ideation,NSF"
+                                                            answerConceptIds="165335,121657,165336,119537,121543,165338,165312"/></p></td>
+                </tr>
+
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('165306').name"/></legend>
+            <h3><lookup expression="fn.getConcept('165306').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="165306" id="Additional physical examination findings"/>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('165286').name"/></legend>
+            <h3><lookup expression="fn.getConcept('165286').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="165286" id="WHO Clinical Stage"/>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Plan</legend>
+            <label>Plan</label>
+
+            <table>
+                <tr>
+                    <td>
+                        <p><obs conceptId="165352" answerConceptId="165341" /><br/></p>
+                        <p><obs conceptId="161011"/><br/></p>
+                        <p><obs conceptId="165352" answerConceptId="164800" answerLabel="Screen for Tuberculosis"/><br/></p>
+                        <p><obs conceptId="161011"/><br/></p>
+                        <p><obs conceptId="165352" answerConceptId="165344"/><br/></p>
+                        <p><obs conceptId="161011"/><br/></p>
+                        <p><obs conceptId="165352" answerConceptId="165346"/><br/></p>
+                        <p><obs conceptId="165352" answerConceptId="5490" answerLabel="Psychosocial Support"/><br/></p>
+                        <p><obs conceptId="165352" answerConceptId="165347"/><br/></p>
+                        <p><obs conceptId="165352" answerConceptId="165350" answerLabel="Counseling:"/><br/></p>
+                        <p><obs conceptId="165350" answerConceptId="5488" answerLabel="Adherence" style="checkbox"/><br/></p>
+                        <p><obs conceptId="165350" answerConceptId="160539" answerLabel="VCT" style="checkbox"/><br/></p>
+                        <p><obs conceptId="165350" answerConceptId="1380" answerLabel="Nutrition" style="checkbox"/><br/></p>
+                        <p><obs conceptId="165350" answerConceptId="165349" answerLabel="Peer Health Support" style="checkbox"/><br/></p>
+                    </td>
+                    <td>
+
+                        <p><obs conceptId="165352" answerConceptId="165342" /><br/></p>
+                        <p><obs conceptId="161011"/><br/></p>
+                        <p><obs conceptId="165352" answerConceptId="165343" /><br/></p>
+                        <p><obs conceptId="161011"/><br/></p>
+                        <p><obs conceptId="165352" answerConceptId="165345" /><br/></p>
+                        <p><obs conceptId="161011"/><br/></p>
+                        <p><obs conceptId="165352" answerConceptId="165348" /><br/></p>
+                        <p><obs conceptId="165352" answerConceptId="12" answerLabel="CXR"/><br/></p>
+                        <p><obs conceptId="161011"/><br/></p>
+                        <p><obs conceptId="165352" answerConceptId="165351" answerLabel="Referrals:"/><br/></p>
+                        <p><obs conceptId="165351" answerConceptId="165012" answerLabel="Support" style="checkbox"/><br/></p>
+                        <p><obs conceptId="165351" answerConceptId="160538" answerLabel="PMTCT" style="checkbox"/><br/></p>
+                        <p><obs conceptId="165351" answerConceptId="5622" answerLabel="Other" style="checkbox"/><br/></p>
+                        <p><obs conceptId="161011"/><br/></p>
+                    </td>
+
+
+                </tr>
+            </table>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Enroll In</legend>
+            <label>Enroll In</label>
+
+            <table>
+                <tr>
+                    <td>
+
+
+                        <p><obs conceptId="165355" answerConceptId="165353" /><br/></p>
+                        <p><obs conceptId="165355" answerConceptId="165303" answerLabel="ARV Therapy"/><br/></p>
+                        <p><obs conceptId="165355" answerConceptId="165354"/><br/></p>
+                    </td>
+
+
+                </tr>
+            </table>
+
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend>ART Plan</legend>
+            <h3>ART Plan</h3>
+
+            <p class="left">
+                <obs conceptId="165361" id="ART Plan"/>
+            </p>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('165362').name"/></legend>
+            <h3><lookup expression="fn.getConcept('165362').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="165362" id="DrugsInRegimen"  />
+            </p>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('165045').name"/></legend>
+            <h3><lookup expression="fn.getConcept('165045').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="165045" id="AdditionalComments"/>
+            </p>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend><lookup expression="fn.getConcept('165090').name"/></legend>
+            <h3><lookup expression="fn.getConcept('165090').name"/></h3>
+
+            <p class="left">
+                <obs conceptId="165090" id="NextAppointment"/>
+            </p>
+
+        </fieldset>
+
+
+    </section>
+
+    <submit/>
+</htmlform>
