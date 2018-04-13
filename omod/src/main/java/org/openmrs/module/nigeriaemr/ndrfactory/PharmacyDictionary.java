@@ -27,17 +27,10 @@ import static org.openmrs.module.nigeriaemr.ndrUtils.Utils.getXmlDate;
 
 public class PharmacyDictionary {
 
-	private static Map<Integer, String> map = new HashMap<Integer, String>();
-
 	private static Map<Integer, String> regimenMap = new HashMap<Integer, String>();
 
 	private static List<Integer> arvList = new ArrayList<Integer>();
 
-	//TODO: comment on what this dictionary does
-	//and change the name to a more useful name
-	public static void loadDictionary() {
-		map.put(123, "123");
-	}
 
 	/*
 		Concept ID for regimen to be gotten from
@@ -120,10 +113,6 @@ public class PharmacyDictionary {
 
 	public static String getRegimenMapValue(int value_coded) {
 		return regimenMap.get(value_coded);
-	}
-
-	public static String getMappedValue(int value_coded) {
-		return map.get(value_coded);
 	}
 
 
@@ -217,7 +206,8 @@ public class PharmacyDictionary {
 			regimenType.setVisitID(visitID);
 			regimenType.setVisitDate(Utils.getXmlDate(visitDate));
 			cst = new CodedSimpleType();
-			cst.setCode(getMappedValue(obs.getValueCoded().getConceptId()));
+			cst.setCode(getRegimenMapValue(obs.getValueCoded().getConceptId()));
+
 			cst.setCodeDescTxt(obs.getValueCoded().getName().getName());
 			regimenType.setPrescribedRegimen(cst);
 			prescribedRegimenCodeType = "OI";
