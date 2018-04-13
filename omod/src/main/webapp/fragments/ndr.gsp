@@ -1,8 +1,5 @@
 <%
-
-
     def id = config.id
-    def props = config.properties ?: ["encounterType", "encounterDatetime", "location", "provider"]
 %>
 <%= ui.resourceLinks() %>
 
@@ -16,12 +13,10 @@
                 {
                     'start': '${ config.start }',
                     'end': '${ config.end }',
-                    'properties': [ <%= props.collect { "'${it}'" }.join(",") %> ]
                 })
                 .success(function(filename) {
-                    alert(filename)
+                    //alert(filename)
                     window.location = filename;
-
                 })
                 .error(function(xhr, status, err) {
                     alert('AJAX error ' + err);
@@ -32,7 +27,8 @@
 
 
 
-<a id="${ id }_button"  class="button app big">
-    <i class="icon-list-alt"></i>
-    Generate NDR Report
+<a id="${ id }_button"  class="button app big" style="font-size:12px;min-height: 10px;">
+    <i class="icon-file-alt"></i>
+    <br/>
+    <p>Generate NDR Report</p>
 </a>

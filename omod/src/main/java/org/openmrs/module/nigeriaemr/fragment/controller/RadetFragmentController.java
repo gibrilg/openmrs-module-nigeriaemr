@@ -11,6 +11,8 @@ package org.openmrs.module.nigeriaemr.fragment.controller;
 
 import org.openmrs.Encounter;
 import org.openmrs.api.EncounterService;
+import org.openmrs.module.nigeriaemr.ndrUtils.Utils;
+import org.openmrs.module.nigeriaemr.radetFactory.RadetGenerator;
 import org.openmrs.ui.framework.SimpleObject;
 import org.openmrs.ui.framework.UiUtils;
 import org.openmrs.ui.framework.annotation.FragmentParam;
@@ -18,6 +20,7 @@ import org.openmrs.ui.framework.annotation.SpringBean;
 import org.openmrs.ui.framework.fragment.FragmentModel;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -33,6 +36,7 @@ public class RadetFragmentController {
 		cal.set(Calendar.MINUTE, 0);
 		cal.set(Calendar.SECOND, 0);
 		cal.set(Calendar.MILLISECOND, 0);
+		cal.add(Calendar.MONTH, -3);
 		return cal.getTime();
 	}
 	
@@ -56,22 +60,23 @@ public class RadetFragmentController {
 		model.addAttribute("encounters", service.getEncounters("", null, null, false));
 	}
 	
-	public List<SimpleObject> getRADETReport(@RequestParam(value = "start", required = false) Date startDate,
-	        @RequestParam(value = "end", required = false) Date endDate,
-	        @RequestParam(value = "properties", required = false) String[] properties,
-	        @SpringBean("encounterService") EncounterService service, UiUtils ui) {
+	public String getRADETReport(@RequestParam(value = "start", required = false) Date startDate,
+	        @RequestParam(value = "end", required = false) Date endDate, HttpServletRequest request) {
 		
 		if (startDate == null)
 			startDate = defaultStartDate();
 		if (endDate == null)
 			endDate = defaultEndDate(startDate);
 		
-		if (properties == null) {
-			properties = new String[] { "dataList" };
-		}
+		Utils util = new Utils();
+		String reportType = "NDR";
+		String reportFolder = util.ensureReportFolderExist(request, reportType);
 		
-		List<Encounter> encs = service.getEncounters("", null, null, null, false);
-		return SimpleObject.fromCollection(encs, ui, properties);
+		//RadetGenerator generator = new RadetGenerator();
+		//String count = generator.generatePatientListing();
+		
+		String fileUrl = util.ZipFolder(request, reportFolder, reportType);
+		return fileUrl;
 	}
 	
 }

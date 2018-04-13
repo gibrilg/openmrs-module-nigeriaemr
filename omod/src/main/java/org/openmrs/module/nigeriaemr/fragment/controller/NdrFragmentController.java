@@ -60,29 +60,14 @@ public class NdrFragmentController {
 	}
 	
 	public String generateNDRFile(@RequestParam(value = "start", required = false) Date startDate,
-	        @RequestParam(value = "end", required = false) Date endDate,
-	        @SpringBean("encounterService") EncounterService service, HttpServletRequest request)
+	        @RequestParam(value = "end", required = false) Date endDate, HttpServletRequest request)
 	        throws DatatypeConfigurationException, IOException, SAXException, JAXBException {
 		
 		//create report download folder at the server. skip if already exist
-		String folder = new File(request.getRealPath(request.getContextPath())).getParentFile().toString() + "\\downloads"; //request.getRealPath(request.getContextPath()) + "\\reports";
-		File dir = new File(folder);
-		Boolean b = dir.mkdir();
-		System.out.println("Creating folder : " + folder + "was successful : " + b);
-		
-		//create today's folder
-		String dateString = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
-		String todayFolders = folder + "/" + dateString;
-		dir = new File(todayFolders);
-		
-		if (dir.exists()) {
-			dir.delete();
-		}
-		
-		b = dir.mkdir();
-		System.out.println("creating folder : " + todayFolders + "was successful : " + b);
-		
-		//delete folder content in case it exist before
+		Utils util = new Utils();
+		String reportType = "RADET";
+		String reportFolder = util.ensureReportFolderExist(request, reportType);
+
 		
 		//Create an xml file and save in today's folder
 		NDRConverter generator = new NDRConverter(new Date(), "Initial", "TestIP", "TestCode");
@@ -93,118 +78,23 @@ public class NdrFragmentController {
 		
 		for (Patient patient : patients) {
 			cnt = generator.createContainer(patient, facility);
-			String xmlfile = todayFolders + "\\" + patient.getPatientId().toString().replaceAll("[^a-zA-Z0-9]", "") + ".xml";
+			String xmlfile = reportFolder + "\\" + patient.getPatientId().toString().replaceAll("[^a-zA-Z0-9]", "") + ".xml";
 			File aXMLFile = new File(xmlfile);
 			if (aXMLFile.exists()) {
 				aXMLFile.delete();
 			}
-			b = aXMLFile.createNewFile();
-			
+			Boolean b = aXMLFile.createNewFile();
 			System.out.println("creating file : " + xmlfile + "was successful : " + b);
 			generator.writeFile(cnt, aXMLFile);
-			/*writeContainerXMLToFile(todayFolders + "\\" + patient.getPatientId().toString().replaceAll("[^a-zA-Z0-9]", "")
-			        + ".xml", cnt);*/
 		}
 		
-		//Zip today's folder and name it with today's date
-		String zipFileName = new SimpleDateFormat("dd-MM-yyyy").format(new Date()) + ".zip";
-		
-		ZipUtil appZip = new ZipUtil(todayFolders);
-		appZip.generateFileList(new File(todayFolders));
-		appZip.zipIt(folder + "/" + zipFileName);
-		
-		String fileUrl = request.getContextPath() + "/downloads/" + zipFileName;
+
+		String fileUrl =util.ZipFolder(request, reportFolder, reportType);  //request.getContextPath() + "/downloads/" + zipFileName;
 		
 		return fileUrl;
 	}
+
+
 	
-	public void writeContainerXMLToFile(String filePath, Container xmlContainer) {
-		
-		XMLEncoder encoder = null;
-		try {
-			encoder = new XMLEncoder(new BufferedOutputStream(new FileOutputStream(filePath)));
-		}
-		catch (FileNotFoundException fileNotFound) {
-			System.out.println("ERROR: While Creating or Opening the File dvd.xml");
-		}
-		encoder.writeObject(xmlContainer);
-		encoder.close();
-		
-	}
-	
-	public Container generateXMLObject() throws DatatypeConfigurationException {
-		
-		FacilityType IPInfo = new FacilityType();
-		IPInfo.setFacilityID("ABCD");
-		IPInfo.setFacilityName("this is a long name of IP");
-		IPInfo.setFacilityTypeCode("IP");
-		
-		MessageHeaderType msgHeader = new MessageHeaderType();
-		
-		GregorianCalendar c = new GregorianCalendar();
-		c.setTime(new Date());
-		XMLGregorianCalendar xdate = DatatypeFactory.newInstance().newXMLGregorianCalendar(c);
-		
-		msgHeader.setMessageCreationDateTime(xdate);
-		msgHeader.setMessageSchemaVersion(new BigDecimal(1.2));
-		msgHeader.setMessageSendingOrganization(IPInfo);
-		msgHeader.setMessageStatusCode("UPDATED");
-		
-		Container xmlContainer = new Container();
-		xmlContainer.setMessageHeader(msgHeader);
-		
-		FacilityType facilityType = new FacilityType();
-		facilityType.setFacilityID("1000002");
-		facilityType.setFacilityName("this is a facilityName");
-		facilityType.setFacilityTypeCode("FAC");
-		
-		PatientDemographicsType patientDemographicsType = new PatientDemographicsType();
-		patientDemographicsType.setTreatmentFacility(facilityType);
-		
-		c.set(1980, 9, 29);
-		XMLGregorianCalendar birthDate = DatatypeFactory.newInstance().newXMLGregorianCalendar(c);
-		patientDemographicsType.setPatientDateOfBirth(birthDate);
-		patientDemographicsType.setPatientSexCode("M");
-		patientDemographicsType.setPatientMaritalStatusCode("M");
-		patientDemographicsType.setPatientIdentifier("A0029");
-		
-		IndividualReportType individualReportType = new IndividualReportType();
-		individualReportType.setPatientDemographics(patientDemographicsType);
-		
-		xmlContainer.setIndividualReport(individualReportType);
-		
-		return xmlContainer;
-	}
-	
-	public void writeToFile(String filePath, String content) {
-		
-		BufferedWriter bw = null;
-		FileWriter fw = null;
-		
-		try {
-			
-			fw = new FileWriter(filePath);
-			bw = new BufferedWriter(fw);
-			bw.write(content);
-			System.out.println("Done");
-			
-		}
-		catch (IOException e) {
-			e.printStackTrace();
-		}
-		finally {
-			
-			try {
-				if (bw != null)
-					bw.close();
-				
-				if (fw != null)
-					fw.close();
-				
-			}
-			catch (IOException ex) {
-				ex.printStackTrace();
-			}
-		}
-	}
+
 }
