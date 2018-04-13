@@ -111,15 +111,6 @@
 			</table>
 			</fieldset>
 
-
-
-	<br/>
-		
-	<fieldset>
-    <legend class="legend_style">Demographic</legend>
-	</fieldset>
-
-
 	
 	<br/>
 	
@@ -164,7 +155,7 @@
 			<br/>
 				<tr>
 					<th>
-						<label>(A) Number of missed doeses per month</label>
+						<label>(A) Number of missed doses per month</label>
 						<!-- <obs conceptId="99999" answerConceptIds="9999,99999"/> -->
 							<select name="Pregnancy Status">
 								<option></option>
@@ -187,11 +178,74 @@
 				</tr>
 			</table>
 			</fieldset>
+			
+		<br/>
+		
+		<fieldset>
+		<legend class="legend_style">Specifics</legend>
+			<table class="baseline-aligned">
+			<br/>
+				<tr>
+				<!-- <obsgroup groupingConceptId="999999"> -->
+					<th>						
+						<label>Patient Age Range</label>
+						<!-- <obs conceptId="99999" answerConceptIds="9999,99999" id="ageRange"/> -->
+							<select name="Age Range">
+								<option></option>
+								<option>Adult</option>
+								<option>Pediatric</option>
+							</select>
+					</th> <th></th><th></th>
+					<th>						
+						<label>Current Regimen</label>
+						<!-- <obs conceptId="99999" answerConceptIds="9999,99999" id="currentRegimen"/> -->
+							<select name="Current Regimen">
+								<option></option>
+								<option>1st Line</option>
+								<option>2nd Line</option>
+								<option>Savage</option>
+							</select>
+					</th> <th></th><th></th>
+					<th>						
+						<label>Adult 1st Line Regimens</label>
+						<!-- <obs conceptId="99999" answerConceptIds="9999,99999" id="1stLine"/> -->
+							<select name="Fisrt Line">
+								<option></option>
+								<option>First Line</option>
+								<option>Second Line</option>
+								<option>Savage</option>
+							</select>
+					</th>
+					<th>						
+						<label>Adult 2nd Line Regimens</label>
+						<!-- <obs conceptId="99999" answerConceptIds="9999,99999" id="2ndLine"/> -->
+							<select name="Second Line">
+								<option></option>
+								<option>First Line</option>
+								<option>Second Line</option>
+								<option>Savage</option>
+							</select>
+					</th>
+					<th>						
+						<label>Adult 3rd Line Regimens</label>
+						<!-- <obs conceptId="99999" answerConceptIds="9999,99999" id="3rdLine"/> -->
+							<select name="Second Line">
+								<option></option>
+								<option>First Line</option>
+								<option>Second Line</option>
+								<option>Savage</option>
+							</select>
+					</th>
+				<!-- </obsgroup> -->
+				</tr>
+			</table>
+			</fieldset>
 		
 		
 		<br/>
 		
  
+		<includeIf velocityTest = "($patient.age &gt;= 14)">
 		<fieldset>
  		<legend class="legend_style">2. Adult ARV Medications</legend>
 			<br/>
@@ -287,14 +341,14 @@
                     </tr> 
 				</table>
 				</fieldset>
-			
+			</includeIf>
 
 			
 			<br/><br/>
 
-			
+		<includeIf velocityTest = "($patient.age &lt;= 14)">		
 		<fieldset>	
-		<legend class="legend_style">Pediatric ART(Please refer to dosing wheel)</legend>
+		<legend class="legend_style">2. Pediatric ART(Please refer to dosing wheel)</legend>
 			<table class="baseline-aligned">
 				<br/>
 				<tr>
@@ -387,7 +441,7 @@
                     </tr>
 				</table>
 				</fieldset>
-			
+			</includeIf>
 			
 
 	<br/>
