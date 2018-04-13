@@ -82,8 +82,8 @@
 			<br/>
 				<tr>
 					<th>
-					<label>Program Area</label>
-						<!-- <obs conceptId="9999" id="ProgramArea" answerConceptIds="99999,99999"/> -->						
+					<label>Treatment Status</label>
+						<!-- <obs conceptId="999999" id="treatmentStatus" answerConceptIds="99999,999999"/> -->						
 						<select name="Program Area">
 							<option></option>
 							<option>ART</option>
@@ -100,12 +100,7 @@
 					<th></th> <th></th> <th></th> <th></th>
 					<th>
 					<label>Visit Type</label>
-						<!-- <obs conceptId="99999" id="VisitType" answerConceptIds="99999,9999"/> -->						
-						<select name="Visit Type">
-							<option></option>
-							<option>Initial Visit</option>
-							<option>Follow-Up Visit</option>
-						</select>
+						<obs conceptId="164181" id="VisitType" answerConceptIds="164180,160530" answerLabels="New Visit,Retuern Visit"/>						
 					</th>
 				</tr>
 			</table>
