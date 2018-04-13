@@ -1,44 +1,83 @@
-@@ -0,0 +1,446 @@
-<htmlform>
-	<!-- Pharmacy Order Form Initial development 09-April-2018 -->
-	<macros>
-		paperFormId = (Fill this in)
-		headerColor =#009d8e
-		fontOnHeaderColor = white
-	</macros>
+<htmlform formUuid="4cc06c71-06c3-4cd4-b459-75bc55f9adf8" formName="Pharmacy Order Form" formEncounterType="ca3aed11-1aa4-42a1-b85c-8332fc8001fc" formVersion="2018">
+	<!-- Pharmacy Order Form Initial development 06-April-2018 -->
 
-	<style>
-		.section {
-			border: 1px solid $headerColor;
-			padding: 2px;
-			text-align: left;
-			margin-bottom: 1em;
-		}
-		.sectionHeader {
-			background-color: $headerColor;
-			color: $fontOnHeaderColor;
-			display: block;
-			padding: 2px;
-			font-weight: bold;
-		}
-		table.baseline-aligned td {
-			vertical-align: baseline;
-		}
-		
-		table {
-			font-size: 12px; 
-			font-weight: normal;
-			
-		}
-		
-	</style>
+    <macros>
+        paperFormId = (Fill this in)
+        headerColor =#2f1c55
+        fontOnHeaderColor = white
+    </macros>
+    <style>
+        .section {
+            border: 1px solid $headerColor;
+            padding: 2px;
+            text-align: left;
+            margin-bottom: 1em;
+        }
+        .sectionHeader {
+            background-color: #2f1c55;
+            color: white;
+            /* display: block; */
+            padding: 2px;
+            font-weight: bold;
+        }
+        table tr:nth-child(even) {
+            background: #ffffff;
+        }
+        .alnright{
+            text-align: right;
+            color:#000000;
+            width: 25%;
+        }
+        td {
+            border: none;
+        }
+            table th, table td {
+            padding: 5px 10px;
+            border: None;
+        }
+        .legend_style {
+            max-width: 35%;
+            background: #FAFAFA;
+            padding: 5px;
+            margin: 0px left;
+            box-shadow: 1px 1px 25px rgba(0,0,0,0.10);
+            border-radius: 2px;
+            border: 1px solid #305a72;
+            border-bottom-left-radius: 25px;
+
+        }
+        form fieldset, .form fieldset {
+            min-width: 98%;
+            border: none;
+            border-top: 1px solid #305a72;
+
+        }
+        table th, table td {
+            padding: 5px 10px;
+            /* border: 1px solid #DDD; */
+        }
+        table tr {
+            border: None;
+        }
+        ul.select, .form input, .form select, .form textarea, .form ul.select {
+            padding: 2px 10px;
+        }
+        form input, form select, form textarea, form ul.select, .form input, .form select, .form textarea, .form ul.select {
+            padding: 2px 10px;
+        }
+        form select, .form select {
+            max-width: 200px;
+        }
+
+    </style>
 	
 	
 
     <h2>Pharmacy Order Form</h2>
 
 	
-	    <section headerLabel="">
+		<fieldset>
+	    <legend class="legend_style"></legend>
 			<table class="baseline-aligned">
 			<br/>
 				<tr>
@@ -51,8 +90,9 @@
 							<option>Non-ART</option>
 							<option>Occup PEP</option>
 							<option>Non-Occup PEP</option>
-							<option>HIV-Exposed Infant</option>
-							<option>PrEP</option>
+							<option>HIV-Exposed Infant</option>						
+							<option>High-Risk HIV Exposed Infant</option>
+							<option>PrEP</option>							
 						</select>
 						
 						
@@ -69,23 +109,22 @@
 					</th>
 				</tr>
 			</table>
-		</section>
+			</fieldset>
 
 
 
 	<br/>
 		
-
-    <section headerLabel="Demographic">
-		
-    </section>
+	<fieldset>
+    <legend class="legend_style">Demographic</legend>
+	</fieldset>
 
 
 	
 	<br/>
 	
-	
-		<section headerLabel="PHARMACY ORDER">
+		<fieldset>
+		<legend class="legend_style">PHARMACY ORDER</legend>
 			<table class="baseline-aligned">
 			<br/>
 				<tr>
@@ -108,24 +147,54 @@
 						<th></th> <th></th> <th></th> <th></th>
 						
 					<th>
-						<label>ARV  Change</label>
-
+						<label>Regimen Change</label>
 							<obs conceptId="165663" id="ART Change" />
 					</th>
 				</tr>
 			</table>
-		</section>
+			</fieldset>
 
 
 
 		<br/>
 		
- 
- 		<section headerLabel="1. ARV Medications">
+		<fieldset>
+		<legend class="legend_style">1. Medication Adherence</legend>
+			<table class="baseline-aligned">
 			<br/>
-                       
-
-			<section headerLabel="Adult ART">
+				<tr>
+					<th>
+						<label>(A) Number of missed doeses per month</label>
+						<!-- <obs conceptId="99999" answerConceptIds="9999,99999"/> -->
+							<select name="Pregnancy Status">
+								<option></option>
+								<option>Less than 3 doeses</option>
+								<option>4 - 8 doeses</option>
+								<option>Greater than 9 doeses</option>
+							</select>
+					</th>
+						<th></th> <th></th> <th></th> <th></th>
+					<th>
+							
+						<label>(B) Adherence councelling offering</label>
+						<!-- <obs conceptId="99999" answerConceptIds="9999,99999"/> -->
+							<select name="ARV Adherence">
+								<option></option>
+								<option>Yes</option>
+								<option>No</option>
+							</select>
+					</th>
+				</tr>
+			</table>
+			</fieldset>
+		
+		
+		<br/>
+		
+ 
+		<fieldset>
+ 		<legend class="legend_style">2. Adult ARV Medications</legend>
+			<br/>
 				<table class="baseline-aligned">
 				<br/>
 				<tr>
@@ -215,18 +284,17 @@
                                 <obs conceptId="165630"/>
                             </th>
                         </obsgroup>
-                    </tr>
-
-                   
+                    </tr> 
 				</table>
-			</section>
+				</fieldset>
+			
 
 			
 			<br/><br/>
 
 			
-			
-		<section headerLabel="Pediatric ART(Please refer to dosing wheel)">
+		<fieldset>	
+		<legend class="legend_style">Pediatric ART(Please refer to dosing wheel)</legend>
 			<table class="baseline-aligned">
 				<br/>
 				<tr>
@@ -317,19 +385,16 @@
                             </th>
                         </obsgroup>
                     </tr>
-					
-					
-		
-			</table>
-		</section>	
+				</table>
+				</fieldset>
 			
 			
-	</section>
 
 	<br/>
 
 
-		<section headerLabel="2. OI Prophylaxis/Treatment">
+		<fieldset>
+		<legend class="legend_style">3. Drugs for OI Prophylaxis/Treatment</legend>
 			<table class="baseline-aligned">
 			<br/>
 				<tr>
@@ -419,18 +484,165 @@
                         </th>
                     </obsgroup>
 				</tr>
+			</table>
+			</fieldset>
+		
+		
+		<br/>
+		
+		<fieldset>
+		<legend class="legend_style">4. Anti-TB Drugs</legend>
+			<table class="baseline-aligned">
+			<br/>
+				<tr>
+						<th>Anti-TB Drugs</th> <th></th><th></th>
+						<th>Strength</th> <th></th><th></th>
+						<th>Frequency</th> <th></th><th></th>
+						<th>Medication Duration</th> <th></th><th></th>
+						<th>Units</th> <th></th><th></th>
+						<th>Quantity Prescribed</th> <th></th><th></th>
+						<th>Quantity Dispensed</th>	 								
+				</tr>
 
-
+				<tr>
+                    <obsgroup groupingConceptId="165629">                                
+                        <th>
+                            <obs conceptId="165632" answerConceptIds="105281,76488,78280" answerLabels="RHZE/RH,Rifabutin,Others" />
+                        </th> <th></th><th></th>
+						<th>
+                            <obs conceptId="165628" answerConceptIds="165068,165062,165641"  />
+                        </th> <th></th><th></th>
+						<th>
+                            <obs conceptId="160855" answerConceptIds="160862,160858,160870" answerLabels="OD,BD,QDS" />
+                        </th> <th></th><th></th>
+						<th>
+                            <obs conceptId="159368" />
+                        </th> <th></th><th></th>
+						<th>
+                            <obs conceptId="1732" answerConceptIds="162583,1733,1822,1072,1073,1074,1734" />
+                        </th> <th></th><th></th>
+						<th>
+                            <obs conceptId="160856" />
+                        </th> <th></th><th></th>
+						<th>
+                            <obs conceptId="165630"/>
+                        </th>
+                    </obsgroup>
+				</tr>
+				
+				<tr>
+                    <obsgroup groupingConceptId="165629">                                
+                        <th>
+                            <obs conceptId="165632" answerConceptIds="105281,76488,78280" answerLabels="RHZE/RH,Rifabutin,Others" />
+                        </th> <th></th><th></th>
+						<th>
+                            <obs conceptId="165628" answerConceptIds="165068,165062,165641"  />
+                        </th> <th></th><th></th>
+						<th>
+                            <obs conceptId="160855" answerConceptIds="160862,160858,160870" answerLabels="OD,BD,QDS" />
+                        </th> <th></th><th></th>
+						<th>
+                            <obs conceptId="159368" />
+                        </th> <th></th><th></th>
+						<th>
+                            <obs conceptId="1732" answerConceptIds="162583,1733,1822,1072,1073,1074,1734" />
+                        </th> <th></th><th></th>
+						<th>
+                            <obs conceptId="160856" />
+                        </th> <th></th><th></th>
+						<th>
+                            <obs conceptId="165630"/>
+                        </th>
+                    </obsgroup>
+				</tr>
 
 			</table>
-		</section>
+			</fieldset>
 
-
-
-
-
-
-
+		<br/>
+		
+		<fieldset>
+		<legend class="legend_style">Provider Sign Off</legend>
+			<table>
+				<tr>
+					<th>							
+						<label>Provider(s) Name</label>
+						<!-- <obs conceptId="99999" answerConceptIds="9999,99999"/> -->
+						<encounterProvider role="Provider"/>
+					</th>
+						<th></th> <th></th> <th></th> <th></th> <th></th>
+					<th>							
+						<label>Date</label>
+						<!-- <obs conceptId="99999" answerConceptIds="9999,99999"/> -->
+						 <encounterDate default="today"/>
+					</th>
+				</tr>
+			</table>
+		</fieldset>
+		
+	
+		<br/>
+	
+		<fieldset>
+		<legend class="legend_style">Feedback from the Pharmacist in case of any observed medication error (attach additional sheets if needed)</legend>
+			<table class="baseline-aligned">
+			<br/>
+				<tr>
+					<th>
+						<label>1. Name of the drug(s)</label>
+						<!-- <obs conceptId="99999" answerConceptIds="9999,99999"/> -->
+						<obs conceptId="165632" answerConceptIds="792,1652,161364,630,103166,75523,86663,159809,794,74258,83412,165631" answerLabels="TDF&#45;3TC&#45;EFV,AZT&#45;3TC&#45;NVP,TDF&#45;3TC,AZT&#45;3TC ,ABC&#45;3TC,EFV, AZT, ATV&#45;RTV, LPV/R,Darunavir,RTV,Dolutegravir" /> 
+					</th>
+						<th></th> <th></th> <th></th> <th></th>
+					<th>
+							
+						<label>2. Nature of ARV medication error(s)</label>
+						<!-- <obs conceptId="99999" answerConceptIds="99999,99999"/> -->
+							<select name="Type of ARV">
+								<option></option>
+								<option>ARV Regimen</option>
+								<option>Strenght</option>
+								<option>Duration</option>
+							</select>
+					</th>
+						<th></th> <th></th> <th></th> <th></th>
+					<th>
+							
+						<label>3. Consequence(s) of the error</label>
+						<!-- <obs conceptId="99999" answerConceptIds="9999,99999"/> -->
+							<select name="ARV Adherence">
+								<option></option>
+								<option>Poly Pharmacy</option>
+								<option>Drug-Drug interception</option>
+								<option>Wrong Doesage</option>
+								<option>Inaccuracy of writting</option>
+							</select>
+					</th>
+				</tr>
+			</table>
+			</fieldset>
+		
+		
+		<fieldset>
+		<legend class="legend_style"></legend> 
+			<table>
+				<tr>
+					<th>							
+						<label>Provider(s) Name</label>
+						<!-- <obs conceptId="99999" answerConceptIds="9999,99999"/> -->
+						<encounterProvider role="Provider"/>
+					</th>
+						<th></th> <th></th> <th></th> <th></th> <th></th>
+					<th>							
+						<label>Date</label>
+						<!-- <obs conceptId="99999" answerConceptIds="9999,99999"/> -->
+						 <encounterDate default="today"/>
+					</th>
+				</tr>
+			</table>
+			</fieldset>
+		
+	
 
 
     <ifMode mode="VIEW" include="false">
