@@ -1,4 +1,4 @@
-<htmlform formUuid="4cc06c71-06c3-4cd4-b459-75bc55f9adf8" formName="Pharmacy Order Form" formEncounterType="ca3aed11-1aa4-42a1-b85c-8332fc8001fc" formVersion="2018">
+<htmlform formUuid="c75f120a-04ec-11e3-8780-2b40bef9a44b" formName="Pharmacy Order Form" formEncounterType="d7151f82-c1f3-4152-a605-2f9ea7414a79" formVersion="1.0">
 	<!-- Pharmacy Order Form Initial development 06-April-2018 -->
 
     <macros>
@@ -194,71 +194,32 @@
 				<tr>
 				<!-- <obsgroup groupingConceptId="999999"> -->
 					<th>						
-						<label>Patient Age Range</label>
-						<!-- <obs conceptId="99999" answerConceptIds="9999,99999" id="ageRange"/> -->
-							<select name="Age Range">
-								<option></option>
-								<option>Adult</option>
-								<option>Pediatric</option>
-							</select>
-					</th> <th></th><th></th>
-					<th>						
-						<label>Current Regimen</label>
-						<!-- <obs conceptId="99999" answerConceptIds="99999,99999,99999,99999" id="currentRegimen"/> -->
-							<select name="Current Regimen">
-								<option></option>
-								<option>1st Line</option>
-								<option>2nd Line</option>
-								<option>3rd Line/Salvage</option>
-							</select>
+						<label>Regimen Line</label>
+						<obs conceptId="165708" id="currentRegimen"/>
 					</th> <th></th><th></th>
 					<th>						
 						<label>Adult 1st Line Regimens</label>
-						<!-- <obs conceptId="99999" answerConceptIds="9999,99999,99999,99999" id="Adult1stLine"/> -->
-							<select name="Fisrt Line">
-								<option></option>
-								<option>First Line Drugs</option>
-							</select>
+						<obs conceptId="164506" id="Adult1stLine"/>
 					</th>
 					<th>						
 						<label>Adult 2nd Line Regimens</label>
-						<!-- <obs conceptId="99999" answerConceptIds="9999,99999" id="Adult2ndLine"/> -->
-							<select name="Second Line">
-								<option></option>
-								<option>Second Line Drugs</option>
-							</select>
+						<obs conceptId="164513" id="Adult2ndLine"/>
 					</th>
 					<th>						
 						<label>Adult 3rd Line Regimens</label>
-						<!-- <obs conceptId="99999" answerConceptIds="9999,99999" id="Adult3rdLine"/> -->
-							<select name="Second Line">
-								<option></option>
-								<option>Third Line Drugs</option>
-							</select>
+						<obs conceptId="165702" id="Adult3rdLine"/>
 					</th>
 					<th>						
 						<label>Pediatric 1st Line Regimens</label>
-						<!-- <obs conceptId="99999" answerConceptIds="9999,99999,99999,99999" id="Ped1stLine"/> -->
-							<select name="Fisrt Line">
-								<option></option>
-								<option>Ped First Line Drugs</option>
-							</select>
+						<obs conceptId="164507" id="Ped1stLine"/>
 					</th>
 					<th>						
 						<label>Pediatric 2nd Line Regimens</label>
-						<!-- <obs conceptId="99999" answerConceptIds="9999,99999" id="Ped2ndLine"/> -->
-							<select name="Second Line">
-								<option></option>
-								<option>Ped Second Line Drugs</option>
-							</select>
+						<obs conceptId="164514" id="Ped2ndLine"/>
 					</th>
 					<th>						
 						<label>Pediatric 3rd Line Regimens</label>
-						<!-- <obs conceptId="99999" answerConceptIds="9999,99999" id="Ped3rdLine"/> -->
-							<select name="Second Line">
-								<option></option>
-								<option>Ped Third Line Drugs</option>
-							</select>
+						<obs conceptId="165703" id="Ped3rdLine"/>
 					</th>
 				<!-- </obsgroup> -->
 				</tr>
@@ -274,7 +235,11 @@
  		<legend class="legend_style">2. Adult ARV Medications</legend>
 			<br/>
 				<table class="baseline-aligned">
-				<br/>
+				<tr>
+					<th><label>Regimen Line</label></th>
+					<th><obs conceptId="165708" id="currentRegimen"/></th>
+				</tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr>
+				
 				<tr>
 						<th>Medications</th> <th></th><th></th>
 						<th>Strength</th> <th></th><th></th>
@@ -289,10 +254,10 @@
                      <tr>
                         <!-- <obsgroup groupingConceptId="99999"> -->
                             <th>     
-                              <!--  <obs conceptId="99999" answerConceptIds="999,9999,9999,999,999999,9999,99999,999999,9999,9999,9999,9999" answerLabels="TDF&#45;3TC&#45;EFV,AZT&#45;3TC&#45;NVP,TDF&#45;3TC,AZT&#45;3TC ,ABC&#45;3TC,EFV, AZT, ATV&#45;RTV, LPV/R,Darunavir,RTV,Dolutegravir" /> -->                    
+                              <obs conceptId="164506"/>                    
                             </th> <th></th><th></th>
 							<th>
-                               <!-- <obs conceptId="99999" answerConceptIds="99999,9999,9999,9999,99999,99999,99999,99999,99999,99999,99999,99999,9999"  />   -->                                                                        
+                              <!-- <obs conceptId="99999"/>   -->                                                                       
                             </th> <th></th><th></th>
 							<th>
                                <!-- <obs conceptId="9999" answerConceptIds="99999,99999" answerLabels="OD,BD" /> -->
