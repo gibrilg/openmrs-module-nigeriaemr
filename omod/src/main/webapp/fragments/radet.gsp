@@ -1,11 +1,10 @@
 <%
-
     def id = config.id
-    def props = config.properties ?: ["encounterType", "encounterDatetime", "location", "provider"]
 %>
 <%= ui.resourceLinks() %>
 
 <script>
+
     jq = jQuery;
 
     jq(function() {
@@ -14,13 +13,12 @@
                 {
                     'start': '${ config.start }',
                     'end': '${ config.end }',
-                    'properties': [ <%= props.collect { "'${it}'" }.join(",") %> ]
                 })
                 .success(function(data) {
-
-                    alert('generating RADET was successful')
+                    //alert(data)
+                    window.location = data;
                 })
-                .fail(function(xhr, status, err) {
+                .error(function(xhr, status, err) {
                     alert('AJAX error ' + err);
                 })
         });
@@ -29,7 +27,8 @@
  
 
 
-<a id="${ id }_button"  class="button app big">
+<a id="${ id }_button"  class="button app big" style="font-size:12px;min-height: 10px;">
     <i class="icon-list-alt"></i>
+    <br/>
     Generate RADET Report
 </a>

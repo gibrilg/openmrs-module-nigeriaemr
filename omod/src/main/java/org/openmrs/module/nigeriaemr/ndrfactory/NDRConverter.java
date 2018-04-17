@@ -177,8 +177,11 @@ public class NDRConverter {
 		encType.getHIVEncounter().addAll(hivEncounterList);
 		
 		condition.setEncounters(encType);
-		condition.getLaboratoryReport().addAll(createLaboratoryReportTypes(clinicalObs));
+
 		condition.getRegimen().addAll(createAllRegimens(clinicalObs));
+
+		condition.getLaboratoryReport().addAll(createLaboratoryReportTypes(clinicalObs));
+
 		//condition.getImmunization().add(null);
 		
 		individualReport.getCondition().add(condition);

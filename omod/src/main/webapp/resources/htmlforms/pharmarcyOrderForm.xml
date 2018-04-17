@@ -1,4 +1,4 @@
-<htmlform formUuid="4cc06c71-06c3-4cd4-b459-75bc55f9adf8" formName="Pharmacy Order Form" formEncounterType="ca3aed11-1aa4-42a1-b85c-8332fc8001fc" formVersion="2018">
+<htmlform formUuid="c75f120a-04ec-11e3-8780-2b40bef9a44b" formName="Pharmacy Order Form" formEncounterType="d7151f82-c1f3-4152-a605-2f9ea7414a79" formVersion="1.0">
 	<!-- Pharmacy Order Form Initial development 06-April-2018 -->
 
     <macros>
@@ -82,8 +82,8 @@
 			<br/>
 				<tr>
 					<th>
-					<label>Program Area</label>
-						<!-- <obs conceptId="9999" id="ProgramArea" answerConceptIds="99999,99999"/> -->						
+					<label>Treatment Status</label>
+						<!-- <obs conceptId="999999" id="treatmentStatus" answerConceptIds="99999,999999"/> -->						
 						<select name="Program Area">
 							<option></option>
 							<option>ART</option>
@@ -100,25 +100,11 @@
 					<th></th> <th></th> <th></th> <th></th>
 					<th>
 					<label>Visit Type</label>
-						<!-- <obs conceptId="99999" id="VisitType" answerConceptIds="99999,9999"/> -->						
-						<select name="Visit Type">
-							<option></option>
-							<option>Initial Visit</option>
-							<option>Follow-Up Visit</option>
-						</select>
+						<obs conceptId="164181" id="VisitType" answerConceptIds="164180,160530" answerLabels="New Visit,Retuern Visit"/>						
 					</th>
 				</tr>
 			</table>
 			</fieldset>
-
-
-
-	<br/>
-		
-	<fieldset>
-    <legend class="legend_style">Demographic</legend>
-	</fieldset>
-
 
 	
 	<br/>
@@ -141,19 +127,30 @@
 						<th></th> <th></th> <th></th> <th></th>
 					<th>
 							
-						<label>Drug Refill</label>
-							<obs conceptId="165662" id="CurrentlyPregnant" answerConceptIds="1065,1066"/>
+						<label>Drug Refil</label>
+							<!-- <obs conceptId="999999" id="CurrentlyPregnant" answerConceptIds="99999,99999"/> -->
+							<select name="Drug Refill">
+								<option></option>
+								<option>Yes</option>
+								<option>No</option>
+							</select>
 					</th>
 						<th></th> <th></th> <th></th> <th></th>
 						
 					<th>
-						<label>Regimen Change</label>
-							<obs conceptId="165663" id="ART Change" />
+						<label>Pick Up Reason</label>
+							<!-- <obs conceptId="99999" id="ARTchange" answerConceptIds="99999,99999,99999,999999"/> -->
+							<select name="Drug Refill">
+								<option></option>
+								<option>New</option>
+								<option>Refil</option>
+								<option>Substitution</option>
+								<option>Switch</option>
+							</select>
 					</th>
 				</tr>
 			</table>
 			</fieldset>
-
 
 
 		<br/>
@@ -164,9 +161,9 @@
 			<br/>
 				<tr>
 					<th>
-						<label>(A) Number of missed doeses per month</label>
-						<!-- <obs conceptId="99999" answerConceptIds="9999,99999"/> -->
-							<select name="Pregnancy Status">
+						<label>(A) Number of missed doses per month</label>
+						<!-- <obs conceptId="99999" answerConceptIds="9999,99999,99999"/> -->
+							<select name="Number Missed">
 								<option></option>
 								<option>Less than 3 doeses</option>
 								<option>4 - 8 doeses</option>
@@ -187,18 +184,64 @@
 				</tr>
 			</table>
 			</fieldset>
+			
+		<br/>
+		
+		<fieldset>
+		<legend class="legend_style">Specifics</legend>
+			<table class="baseline-aligned">
+			<br/>
+				<tr>
+				<!-- <obsgroup groupingConceptId="999999"> -->
+					<th>						
+						<label>Regimen Line</label>
+						<obs conceptId="165708" id="currentRegimen"/>
+					</th> <th></th><th></th>
+					<th>						
+						<label>Adult 1st Line Regimens</label>
+						<obs conceptId="164506" id="Adult1stLine"/>
+					</th>
+					<th>						
+						<label>Adult 2nd Line Regimens</label>
+						<obs conceptId="164513" id="Adult2ndLine"/>
+					</th>
+					<th>						
+						<label>Adult 3rd Line Regimens</label>
+						<obs conceptId="165702" id="Adult3rdLine"/>
+					</th>
+					<th>						
+						<label>Pediatric 1st Line Regimens</label>
+						<obs conceptId="164507" id="Ped1stLine"/>
+					</th>
+					<th>						
+						<label>Pediatric 2nd Line Regimens</label>
+						<obs conceptId="164514" id="Ped2ndLine"/>
+					</th>
+					<th>						
+						<label>Pediatric 3rd Line Regimens</label>
+						<obs conceptId="165703" id="Ped3rdLine"/>
+					</th>
+				<!-- </obsgroup> -->
+				</tr>
+			</table>
+			</fieldset>
 		
 		
 		<br/>
 		
  
+		<includeIf velocityTest = "($patient.age &gt;= 14)">
 		<fieldset>
  		<legend class="legend_style">2. Adult ARV Medications</legend>
 			<br/>
 				<table class="baseline-aligned">
-				<br/>
 				<tr>
-						<th>ARV Medications</th> <th></th><th></th>
+					<th><label>Regimen Line</label></th>
+					<th><obs conceptId="165708" id="currentRegimen"/></th>
+				</tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr>
+				
+				<tr>
+						<th>Medications</th> <th></th><th></th>
 						<th>Strength</th> <th></th><th></th>
 						<th>Frequency</th> <th></th><th></th>
 						<th>Medication Duration</th> <th></th><th></th>
@@ -209,96 +252,46 @@
 
 
                      <tr>
-                        <obsgroup groupingConceptId="165629">
+                        <!-- <obsgroup groupingConceptId="99999"> -->
                             <th>     
-                                <obs conceptId="165632" answerConceptIds="792,1652,161364,630,103166,75523,86663,159809,794,74258,83412,165631" answerLabels="TDF&#45;3TC&#45;EFV,AZT&#45;3TC&#45;NVP,TDF&#45;3TC,AZT&#45;3TC ,ABC&#45;3TC,EFV, AZT, ATV&#45;RTV, LPV/R,Darunavir,RTV,Dolutegravir" />                     
+                              <obs conceptId="164506"/>                    
                             </th> <th></th><th></th>
 							<th>
-                                <obs conceptId="165628" answerConceptIds="165617,165074,165616,165618,165619,165620,165621,165622,165623,165624,165625,165626,165627"  />                                                                           
+                              <!-- <obs conceptId="99999"/>   -->                                                                       
                             </th> <th></th><th></th>
 							<th>
-                                <obs conceptId="160855" answerConceptIds="160862,160858" answerLabels="OD,BD" />
+                               <!-- <obs conceptId="9999" answerConceptIds="99999,99999" answerLabels="OD,BD" /> -->
 							</th> <th></th><th></th>
 							<th>
-                                <obs conceptId="159368" />                                                                          
+                               <!-- <obs conceptId="99999" />   -->                                                                       
                             </th> <th></th><th></th>
 							<th>
-                                <obs conceptId="1732" answerConceptIds="162583,1733,1822,1072,1073,1074,1734" />
+                               <!-- <obs conceptId="9999" answerConceptIds="9999,9999,9999,9999,9999,9999,9999" /> -->
+							</th> 
+							<th>
+                               <!-- <obs conceptId="9999" /> -->
                             </th> <th></th><th></th>
 							<th>
-                                <obs conceptId="160856" />
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="165630"/>
+                              <!--  <obs conceptId="99999"/> -->
                             </th>
-                        </obsgroup>
+                      <!--  </obsgroup> -->
                     </tr>
-					
-					<tr>
-                        <obsgroup groupingConceptId="165629"> 					
-                            <th>     
-                                <obs conceptId="165632" answerConceptIds="792,1652,161364,630,103166,75523,86663,159809,794,74258,83412,165631" answerLabels="TDF&#45;3TC&#45;EFV,AZT&#45;3TC&#45;NVP,TDF&#45;3TC,AZT&#45;3TC ,ABC&#45;3TC,EFV, AZT, ATV&#45;RTV, LPV/R,Darunavir,RTV,Dolutegravir" />                     
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="165628" answerConceptIds="165617,165074,165616,165618,165619,165620,165621,165622,165623,165624,165625,165626,165627"  />                                                                           
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="160855" answerConceptIds="160862,160858" answerLabels="OD,BD" />
-							</th> <th></th><th></th>
-							<th>
-                                <obs conceptId="159368" />                                                                          
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="1732" answerConceptIds="162583,1733,1822,1072,1073,1074,1734" />
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="160856" />
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="165630"/>
-                            </th>
-                        </obsgroup>
-                    </tr>
-				
-					<tr>
-                        <obsgroup groupingConceptId="165629">
-                            <th>     
-                                <obs conceptId="165632" answerConceptIds="792,1652,161364,630,103166,75523,86663,159809,794,74258,83412,165631" answerLabels="TDF&#45;3TC&#45;EFV,AZT&#45;3TC&#45;NVP,TDF&#45;3TC,AZT&#45;3TC ,ABC&#45;3TC,EFV, AZT, ATV&#45;RTV, LPV/R,Darunavir,RTV,Dolutegravir" />                     
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="165628" answerConceptIds="165617,165074,165616,165618,165619,165620,165621,165622,165623,165624,165625,165626,165627"  />                                                                           
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="160855" answerConceptIds="160862,160858" answerLabels="OD,BD" />
-							</th> <th></th><th></th>
-							<th>
-                                <obs conceptId="159368" />                                                                          
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="1732" answerConceptIds="162583,1733,1822,1072,1073,1074,1734" />
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="160856" />
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="165630"/>
-                            </th>
-                        </obsgroup>
-                    </tr> 
+
+
 				</table>
 				</fieldset>
-			
+			</includeIf>
 
 			
 			<br/><br/>
 
-			
+		<includeIf velocityTest = "($patient.age &lt;= 14)">		
 		<fieldset>	
-		<legend class="legend_style">Pediatric ART(Please refer to dosing wheel)</legend>
+		<legend class="legend_style">2. Pediatric ART(Please refer to dosing wheel)</legend>
 			<table class="baseline-aligned">
 				<br/>
 				<tr>
-						<th>ARV Medications</th> <th></th><th></th>
+						<th>Medications</th> <th></th><th></th>
 						<th>Strength</th> <th></th><th></th>
 						<th>Frequency</th> <th></th><th></th>
 						<th>Medication Duration</th> <th></th><th></th>
@@ -309,85 +302,35 @@
 
 
                     <tr>
-                        <obsgroup groupingConceptId="165629">
+                      <!--  <obsgroup groupingConceptId="99999"> -->
                             <th>     
-                                <obs conceptId="165632" answerConceptIds="1652,103166,630,75523,80586,70056,794" answerLabels="AZT&#45;3TC&#45;NVP,ABC&#45;3TC,AZT&#45;3TC ,EFV, NVP, ABC, LPV/R" />                   
+                              <!--  <obs conceptId="9999" answerConceptIds="9999,9999,999,9999,99999,99999,999" answerLabels="AZT&#45;3TC&#45;NVP,ABC&#45;3TC,AZT&#45;3TC ,EFV, NVP, ABC, LPV/R" />   -->                
                             </th> <th></th><th></th>
 							<th>
-                                <obs conceptId="165628" answerConceptIds="165633,165634,165635,165636,165637,165638,165639,165640"  />                                                                           
+                              <!--  <obs conceptId="9999" answerConceptIds="9999,99999,9999,9999,9999,9999,9999,9999"  />   -->                                                                        
                             </th> <th></th><th></th>
 							<th>
-                                <obs conceptId="160855" answerConceptIds="160862,160858" answerLabels="OD,BD" />
+                               <!-- <obs conceptId="99999" answerConceptIds="99999,99999" answerLabels="OD,BD" /> -->
 							</th> <th></th><th></th>
 							<th>
-                                <obs conceptId="159368" />                                                                         
+                              <!--  <obs conceptId="9999" />    -->                                                                     
                             </th> <th></th><th></th>
 							<th>
-                                <obs conceptId="1732" answerConceptIds="162583,1733,1822,1072,1073,1074,1734" />
+                              <!--  <obs conceptId="9999" answerConceptIds="9999,9999,9999,9999,9999,9999,9999" /> -->
                             </th> <th></th><th></th>
 							<th>
-                                <obs conceptId="160856" />
+                               <!-- <obs conceptId="160856" />  -->
                             </th> <th></th><th></th>
 							<th>
-                                <obs conceptId="165630"/>
+                              <!--  <obs conceptId="165630"/>  -->
                             </th>
-                        </obsgroup>
+                      <!--  </obsgroup> -->
                     </tr>
-					
-				    <tr>
-                        <obsgroup groupingConceptId="165629">
-                            <th>     
-                                <obs conceptId="165632" answerConceptIds="1652,103166,630,75523,80586,70056,794" answerLabels="AZT&#45;3TC&#45;NVP,ABC&#45;3TC,AZT&#45;3TC ,EFV, NVP, ABC, LPV/R" />                   
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="165628" answerConceptIds="165633,165634,165635,165636,165637,165638,165639,165640"  />                                                                           
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="160855" answerConceptIds="160862,160858" answerLabels="OD,BD" />
-							</th> <th></th><th></th>
-							<th>
-                                <obs conceptId="159368" />                                                                         
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="1732" answerConceptIds="162583,1733,1822,1072,1073,1074,1734" />
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="160856" />
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="165630"/>
-                            </th>
-                        </obsgroup>
-                    </tr>
-					
-					<tr>
-                        <obsgroup groupingConceptId="165629">
-                            <th>     
-                                <obs conceptId="165632" answerConceptIds="1652,103166,630,75523,80586,70056,794" answerLabels="AZT&#45;3TC&#45;NVP,ABC&#45;3TC,AZT&#45;3TC ,EFV, NVP, ABC, LPV/R" />                   
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="165628" answerConceptIds="165633,165634,165635,165636,165637,165638,165639,165640"  />                                                                           
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="160855" answerConceptIds="160862,160858" answerLabels="OD,BD" />
-							</th> <th></th><th></th>
-							<th>
-                                <obs conceptId="159368" />                                                                         
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="1732" answerConceptIds="162583,1733,1822,1072,1073,1074,1734" />
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="160856" />
-                            </th> <th></th><th></th>
-							<th>
-                                <obs conceptId="165630"/>
-                            </th>
-                        </obsgroup>
-                    </tr>
+
+
 				</table>
 				</fieldset>
-			
+			</includeIf>
 			
 
 	<br/>
@@ -408,82 +351,32 @@
 				</tr>
 
 				<tr>
-                    <obsgroup groupingConceptId="165629">                                
+                   <!-- <obsgroup groupingConceptId="99999">   -->                             
                         <th>
-                            <obs conceptId="165632" answerConceptIds="105281,76488,78280,80945" answerLabels="Co-trimoxazole,Fluconazole,Isoniazid,Nystatin" />
+                          <!--  <obs conceptId="9999" answerConceptIds="9999,99999,9999,9999" answerLabels="Co-trimoxazole,Fluconazole,Isoniazid,Nystatin" />  -->
                         </th> <th></th><th></th>
 						<th>
-                            <obs conceptId="165628" answerConceptIds="165068,165062,165641"  />
+                           <!-- <obs conceptId="9999" answerConceptIds="9999,9999,9999"  />  -->
                         </th> <th></th><th></th>
 						<th>
-                            <obs conceptId="160855" answerConceptIds="160862,160858,160870" answerLabels="OD,BD,QDS" />
+                           <!-- <obs conceptId="9999" answerConceptIds="99999,99999,99999" answerLabels="OD,BD,QDS" />  -->
                         </th> <th></th><th></th>
 						<th>
-                            <obs conceptId="159368" />
+                          <!--  <obs conceptId="9999" />  -->
                         </th> <th></th><th></th>
 						<th>
-                            <obs conceptId="1732" answerConceptIds="162583,1733,1822,1072,1073,1074,1734" />
+                           <!-- <obs conceptId="9999" answerConceptIds="9999,9999,9999,9999,9999,9999,9999" /> -->
                         </th> <th></th><th></th>
 						<th>
-                            <obs conceptId="160856" />
+                           <!-- <obs conceptId="9999" /> -->
                         </th> <th></th><th></th>
 						<th>
-                            <obs conceptId="165630"/>
+                          <!--  <obs conceptId="165630"/> -->
                         </th>
-                    </obsgroup>
+                   <!-- </obsgroup> -->
 				</tr>
-				
-				<tr>
-                    <obsgroup groupingConceptId="165629">                                
-                        <th>
-                            <obs conceptId="165632" answerConceptIds="105281,76488,78280,80945" answerLabels="Co-trimoxazole,Fluconazole,Isoniazid,Nystatin" />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="165628" answerConceptIds="165068,165062,165641"  />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="160855" answerConceptIds="160862,160858,160870" answerLabels="OD,BD,QDS" />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="159368" />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="1732" answerConceptIds="162583,1733,1822,1072,1073,1074,1734" />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="160856" />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="165630"/>
-                        </th>
-                    </obsgroup>
-				</tr>
-				
-				<tr>
-                    <obsgroup groupingConceptId="165629">                                
-                        <th>
-                            <obs conceptId="165632" answerConceptIds="105281,76488,78280,80945" answerLabels="Co-trimoxazole,Fluconazole,Isoniazid,Nystatin" />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="165628" answerConceptIds="165068,165062,165641"  />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="160855" answerConceptIds="160862,160858,160870" answerLabels="OD,BD,QDS" />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="159368" />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="1732" answerConceptIds="162583,1733,1822,1072,1073,1074,1734" />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="160856" />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="165630"/>
-                        </th>
-                    </obsgroup>
-				</tr>
+
+
 			</table>
 			</fieldset>
 		
@@ -505,56 +398,31 @@
 				</tr>
 
 				<tr>
-                    <obsgroup groupingConceptId="165629">                                
+                   <!-- <obsgroup groupingConceptId="9999">  -->                            
                         <th>
-                            <obs conceptId="165632" answerConceptIds="105281,76488,78280" answerLabels="RHZE/RH,Rifabutin,Others" />
+                           <!-- <obs conceptId="9999" answerConceptIds="99999,9999,9999" answerLabels="RHZE/RH,Rifabutin,Others" /> -->
                         </th> <th></th><th></th>
 						<th>
-                            <obs conceptId="165628" answerConceptIds="165068,165062,165641"  />
+                           <!-- <obs conceptId="9999" answerConceptIds="999,9999,9999"  /> -->
                         </th> <th></th><th></th>
 						<th>
-                            <obs conceptId="160855" answerConceptIds="160862,160858,160870" answerLabels="OD,BD,QDS" />
+                           <!-- <obs conceptId="9999" answerConceptIds="9999,9999,9999" answerLabels="OD,BD,QDS" /> -->
                         </th> <th></th><th></th>
 						<th>
-                            <obs conceptId="159368" />
+                           <!-- <obs conceptId="9999" /> -->
                         </th> <th></th><th></th>
 						<th>
-                            <obs conceptId="1732" answerConceptIds="162583,1733,1822,1072,1073,1074,1734" />
+                           <!-- <obs conceptId="9999" answerConceptIds="9999,999,9999,9999,9999,999,9999" /> -->
                         </th> <th></th><th></th>
 						<th>
-                            <obs conceptId="160856" />
+                           <!-- <obs conceptId="9999" /> -->
                         </th> <th></th><th></th>
 						<th>
-                            <obs conceptId="165630"/>
+                          <!--  <obs conceptId="9999"/> -->
                         </th>
-                    </obsgroup>
+                   <!-- </obsgroup> -->
 				</tr>
 				
-				<tr>
-                    <obsgroup groupingConceptId="165629">                                
-                        <th>
-                            <obs conceptId="165632" answerConceptIds="105281,76488,78280" answerLabels="RHZE/RH,Rifabutin,Others" />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="165628" answerConceptIds="165068,165062,165641"  />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="160855" answerConceptIds="160862,160858,160870" answerLabels="OD,BD,QDS" />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="159368" />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="1732" answerConceptIds="162583,1733,1822,1072,1073,1074,1734" />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="160856" />
-                        </th> <th></th><th></th>
-						<th>
-                            <obs conceptId="165630"/>
-                        </th>
-                    </obsgroup>
-				</tr>
 
 			</table>
 			</fieldset>
@@ -590,8 +458,7 @@
 				<tr>
 					<th>
 						<label>1. Name of the drug(s)</label>
-						<!-- <obs conceptId="99999" answerConceptIds="9999,99999"/> -->
-						<obs conceptId="165632" answerConceptIds="792,1652,161364,630,103166,75523,86663,159809,794,74258,83412,165631" answerLabels="TDF&#45;3TC&#45;EFV,AZT&#45;3TC&#45;NVP,TDF&#45;3TC,AZT&#45;3TC ,ABC&#45;3TC,EFV, AZT, ATV&#45;RTV, LPV/R,Darunavir,RTV,Dolutegravir" /> 
+						<!-- <obs conceptId="9999" answerConceptIds="999,9999,9999,999,99999,9999,9999,9999,9999,9999,9999,9999" answerLabels="TDF&#45;3TC&#45;EFV,AZT&#45;3TC&#45;NVP,TDF&#45;3TC,AZT&#45;3TC ,ABC&#45;3TC,EFV, AZT, ATV&#45;RTV, LPV/R,Darunavir,RTV,Dolutegravir" />  -->
 					</th>
 						<th></th> <th></th> <th></th> <th></th>
 					<th>
