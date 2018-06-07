@@ -1,16 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package org.openmrs.module.nigeriaemr.ndrfactory;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.xml.datatype.DatatypeConfigurationException;
-import org.apache.commons.lang3.StringUtils;
+import org.openmrs.Encounter;
 import org.openmrs.Obs;
 import org.openmrs.Patient;
 import org.openmrs.PatientIdentifier;
@@ -25,65 +22,90 @@ import org.openmrs.module.nigeriaemr.ndrUtils.Utils;
 
 import static org.openmrs.module.nigeriaemr.ndrUtils.Utils.getXmlDate;
 
-/**
- * @author The Bright
- */
 public class NDRMainDictionary {
-	
-	private static Map<Integer, String> map = new HashMap<Integer, String>();
-	
-	public static void loadDictionary() {
+
+	public final static int Patient_Deceased_Indicator_Concept_Id =  0;
+	public final static int Date_Patient_Died_Concept_Id =  1543;
+	public final static int Dead_Concept_Id =  160432;
+	public final static int Patient_Primary_Language_Code_Concept_Id =0;
+	public final static int Patient_Education_Level_Code_Concept_Id = 0;
+	public final static int Patient_Occupation_Code_Concept_Id = 0;
+	public final static int Patient_Marital_Status_Code_Concept_Id = 0;
+	public final static int HIV_Enrollment_Date_Concept_Id = 160555;
+	public final static int Patient_Died_From_Illness_Value_Concept_Id = 0;
+	public final static int Patient_Died_From_Illness_Concept_Id = 0;
+	public final static int Diagnosis_Date_Concept_Id = 0;
+	public final static int Estimated_Delivery_Date_Concept_Id = 0;
+	public final static int Patient_Pregnancy_Status_Concept_Id = 0;
+	public final static int Care_Entry_Point = 160540;
+	public final static int Date_Confirmed_HIV = 160554;
+	public final static int Mode_of_HIV_Test = 164947;
+	public final static int Date_Transfer_In = 160534;
+	public final static int Prior_ART = 165242;
+	public final static int Facility_Transferred_From= 160535;
+    public final static int CD4_count_at_start_of_ART = 164429;
+	public final static int WHO_Clinical_Stage_ART_Start = 160553;
+	public final static int Reason_Medically_Eligible =162225;
+	public final static int Medically_Eligible_Date =162227;
+    public final static int Weight_At_ART_Start_Concept_Id = 165582;
+    public final static int Height_At_ART_Start_Concept_Id = 165581;
+
+	private static Map<Integer, String> map = new HashMap<>();
+
+	public NDRMainDictionary(){
+		loadDictionary();
+	}
+
+	private void loadDictionary() {
 		map.put(123, "PatientDeceasedIndicator");
 		map.put(124, "DeceasedIndicator");
 		map.put(125, "DeceasedIndicator");
 		map.put(126, "DeceasedIndicator");
+		map.put(122, "P"); //Pregnant
+		map.put(127, "NP");
+		map.put(128,"NK");
+		map.put(129,"PMTCT");
 	}
 	
-	public static String getMappedValue(int conceptID) {
+	private String getMappedValue(int conceptID) {
 		return map.get(conceptID);
 	}
 	
-	public static PatientDemographicsType createPatientDemographicsType(Patient pts, List<Obs> obsList, FacilityType facility)
+	public PatientDemographicsType createPatientDemographicsType(Patient pts, FacilityType facility)
 	        throws DatatypeConfigurationException {
 		PatientDemographicsType demo = new PatientDemographicsType();
 		
 		//Identifier 4 is Pepfar ID
-		PatientIdentifier pidPepfar, pidHospital, pidOthers;
-		pidPepfar = pts.getPatientIdentifier(3);
+		PatientIdentifier pepfarid, pidHospital, pidOthers;
+		pepfarid = pts.getPatientIdentifier(3);
 		pidHospital = pts.getPatientIdentifier(3);
 		pidOthers = pts.getPatientIdentifier(3);
-		
-		//Identifier 4 is Pepfar ID
-		//pidPepfar=pts.getPatientIdentifier(4);
+
 		demo.setPatientIdentifier(pts.getPatientIdentifier(3).getIdentifier());
 		
-		IdentifierType idt = null;
-		IdentifiersType idtss = new IdentifiersType();
-		//String hospID = pts.getPatientIdentifier(3).getIdentifier();
-		//String otherID = pts.getPatientIdentifier(2).getIdentifier();
-		//String pepfarID = pts.getPatientIdentifier(4).getIdentifier();
-		if (pidHospital != null) {//StringUtils.isNotEmpty(hospID)) {
+		IdentifierType idt;
+		IdentifiersType identifiersType = new IdentifiersType();
+		if (pidHospital != null) {
 			idt = new IdentifierType();
 			idt.setIDNumber(pidHospital.getIdentifier());
 			idt.setIDTypeCode("PI");
-			idtss.getIdentifier().add(idt);
+			identifiersType.getIdentifier().add(idt);
 		}
-		if (pidOthers != null) {//StringUtils.isNotEmpty(otherID)) {
+		if (pidOthers != null) {
 			idt = new IdentifierType();
 			idt.setIDNumber(pidOthers.getIdentifier());
 			idt.setIDTypeCode("PE");
-			idtss.getIdentifier().add(idt);
+			identifiersType.getIdentifier().add(idt);
 		}
-		if (pidPepfar != null) {//StringUtils.isNotBlank(pepfarID)) {
+		if (pepfarid != null) {
 			idt = new IdentifierType();
-			idt.setIDNumber(pidPepfar.getIdentifier());//pepfarID.toUpperCase());
+			idt.setIDNumber(pepfarid.getIdentifier());
 			idt.setIDTypeCode("PN");
-			idtss.getIdentifier().add(idt);
+			identifiersType.getIdentifier().add(idt);
 		}
-		demo.setOtherPatientIdentifiers(idtss);
-		
-		FacilityType treatmentFacility = facility;
-		demo.setTreatmentFacility(treatmentFacility);
+		demo.setOtherPatientIdentifiers(identifiersType);
+		demo.setTreatmentFacility(facility);
+
 		String gender = pts.getGender();
 		if (gender.equals("M") || gender.equalsIgnoreCase("Male")) {
 			demo.setPatientSexCode("M");
@@ -91,152 +113,164 @@ public class NDRMainDictionary {
 			demo.setPatientSexCode("F");
 		}
 		demo.setPatientDateOfBirth(getXmlDate(pts.getBirthdate()));
-		
-		int conceptID = 0;
-		int value_coded = 0;
-		String value_text = "";
-		double value_numeric = 0.0;
-		
-		for (Obs obs : obsList) {
-			conceptID = obs.getConcept().getConceptId();
-			switch (conceptID) {
-				case 977: // Termination Concept ID
-					value_coded = obs.getValueCoded().getConceptId();
-					if (value_coded == 975) {
-						demo.setPatientDeceasedIndicator(true);
-						demo.setPatientDeceasedDate(getXmlDate(obs.getObsDatetime()));
-					} else {
-						demo.setPatientDeceasedIndicator(false);
-					}
-					break;
-				case 1083: // Primary Language Concept ID
-					value_coded = obs.getValueCoded().getConceptId();
-					demo.setPatientPrimaryLanguageCode(getMappedValue(value_coded));
-					break;
-				case 1079: // Educational level
-					value_coded = obs.getValueCoded().getConceptId();
-					if (value_coded != 789) {
-						demo.setPatientEducationLevelCode(getMappedValue(value_coded));
-					}
-					break;
-				case 915: // Occupational Code
-					value_coded = obs.getValueCoded().getConceptId();
-					demo.setPatientOccupationCode(getMappedValue(value_coded));
-					break;
-				case 352: // Marrital status
-					value_coded = obs.getValueCoded().getConceptId();
-					demo.setPatientMaritalStatusCode(getMappedValue(value_coded));
-					break;
+
+		String ndrCodedValue;
+		//get all hiv enrollment observations
+		List<Obs> enrollmentObs = Utils.getHIVEnrollmentObs(pts);
+
+		if(enrollmentObs ==null){
+			return demo;
+		}
+
+		//check for disease indicator
+		Obs obs = Utils.extractObs(Patient_Deceased_Indicator_Concept_Id, enrollmentObs);
+		if(obs !=null){
+			if (obs.getValueCoded().getConceptId() == Dead_Concept_Id) {
+				demo.setPatientDeceasedIndicator(true);
+				obs = Utils.extractObs(Date_Patient_Died_Concept_Id, enrollmentObs);
+				//set date
+				if(obs !=null){
+					demo.setPatientDeceasedDate(getXmlDate(obs.getObsDatetime()));
+				}
+			} else {
+				demo.setPatientDeceasedIndicator(false);
 			}
+		}
+		//check Educational level
+		obs = Utils.extractObs(Patient_Education_Level_Code_Concept_Id, enrollmentObs);
+		if(obs !=null){
+			ndrCodedValue = getMappedValue(obs.getValueCoded().getConceptId());
+			demo.setPatientEducationLevelCode(ndrCodedValue);
+		}
+		//check primary Concept Id
+		obs = Utils.extractObs(Patient_Primary_Language_Code_Concept_Id, enrollmentObs);
+		if(obs !=null){
+			ndrCodedValue = getMappedValue(obs.getValueCoded().getConceptId());
+			demo.setPatientPrimaryLanguageCode(ndrCodedValue);
+		}
+		//check Occupational Code
+		obs = Utils.extractObs(Patient_Occupation_Code_Concept_Id, enrollmentObs);
+		if(obs !=null){
+			ndrCodedValue = getMappedValue(obs.getValueCoded().getConceptId());
+			demo.setPatientOccupationCode(ndrCodedValue);
+		}
+		//check Marital Status Code
+		obs = Utils.extractObs(Patient_Marital_Status_Code_Concept_Id, enrollmentObs);
+		if(obs !=null){
+			ndrCodedValue = getMappedValue(obs.getValueCoded().getConceptId());
+			demo.setPatientMaritalStatusCode(ndrCodedValue);
 		}
 		return demo;
 	}
 	
-	public static HIVQuestionsType createHIVQuestionType(Obs obsFirstRegimen, Date artStartDate, Date enrollmentDt,
-	        boolean onART, List<Obs> obsList) throws DatatypeConfigurationException {
+	public HIVQuestionsType createHIVQuestionType(Patient patient, List<Obs> obsList) throws DatatypeConfigurationException {
+
 		HIVQuestionsType hiv = new HIVQuestionsType();
-		if (enrollmentDt != null) {
-			hiv.setEnrolledInHIVCareDate(getXmlDate(enrollmentDt));
+		boolean onART = false;
+
+		//get first regimen
+		Obs FirstRegimen = Utils.getFirstRegimen(patient);
+
+		if (FirstRegimen != null && FirstRegimen.getValueCoded() != null) {
+			String regimenCode = new PharmacyDictionary().getRegimenMapValue(FirstRegimen.getValueCoded().getConceptId());
+			String regimenName = FirstRegimen.getValueCoded().getName().getName();
+			CodedSimpleType codedValue = new CodedSimpleType();
+			if (regimenCode != null) {
+				codedValue.setCode(regimenCode);
+			}
+			if (regimenName != null) {
+				codedValue.setCodeDescTxt(regimenName);
+			}
+			hiv.setFirstARTRegimen(codedValue);
 		}
-		String regimenCode = null;
-		String regimenName = null;
-		if (obsFirstRegimen != null) {
-			regimenName = obsFirstRegimen.getValueCoded().getName().getName();
-			regimenCode = PharmacyDictionary.getRegimenMapValue(obsFirstRegimen.getValueCoded().getConceptId());
+
+		if(FirstRegimen !=null) {
+			onART = true;
+			hiv.setARTStartDate(getXmlDate(FirstRegimen.getObsDatetime()));
 		}
-		CodedSimpleType cst1 = null;
-		int conceptID = 0;
-		int form_id = 0;
-		double value_numeric = 0.0;
-		int value_coded = 0;
-		String value_text = "";
-		Date value_datetime = null;
-		FacilityType ft = null;
-		if (regimenCode != null && regimenName != null) {
-			cst1 = new CodedSimpleType();
-			cst1.setCode(regimenCode);
-			cst1.setCodeDescTxt(regimenName);
-			hiv.setFirstARTRegimen(cst1);
-		}
-		if (artStartDate != null) {
-			hiv.setARTStartDate(getXmlDate(artStartDate));
-		} else if (regimenCode != null && obsFirstRegimen != null) {
-			hiv.setARTStartDate(getXmlDate(obsFirstRegimen.getObsDatetime()));
-		}
+
+		int conceptID;
+		double value_numeric;
+		int value_coded;
+		String value_text;
+		Date value_datetime;
+		FacilityType ft;
+
 		for (Obs obs : obsList) {
 			conceptID = obs.getConcept().getConceptId();
 			switch (conceptID) {
-				case 1052:
-					value_coded = obs.getValueCoded().getConceptId();
-					hiv.setCareEntryPoint(NDRMainDictionary.getMappedValue(value_coded));
+				case HIV_Enrollment_Date_Concept_Id:
+					value_datetime = obs.getValueDatetime();
+					if (value_datetime != null) {
+						hiv.setEnrolledInHIVCareDate(getXmlDate(obs.getValueDatetime()));
+					}
 					break;
-				case 859:
+				case Care_Entry_Point:
+					value_coded = obs.getValueCoded().getConceptId();
+					hiv.setCareEntryPoint(getMappedValue(value_coded));
+					break;
+				case Date_Confirmed_HIV:
 					value_datetime = obs.getValueDate();
 					if (value_datetime != null) {
 						hiv.setFirstConfirmedHIVTestDate(getXmlDate(value_datetime));
 					}
 					break;
-				case 7778053:
+				case Mode_of_HIV_Test:
 					value_coded = obs.getValueCoded().getConceptId();
-					hiv.setFirstHIVTestMode(NDRMainDictionary.getMappedValue(value_coded));
+					hiv.setFirstHIVTestMode(getMappedValue(value_coded));
 					break;
 				case 7778238:
 					value_text = obs.getValueText();
 					hiv.setWhereFirstHIVTest(value_text);
 					break;
-				case 7777768:
+				case Prior_ART:
 					value_coded = obs.getValueCoded().getConceptId();
-					hiv.setPriorArt(NDRMainDictionary.getMappedValue(value_coded));
+					hiv.setPriorArt(getMappedValue(value_coded));
 					break;
-				case 1703:
-					value_datetime = obs.getValueDate();
-					if (value_datetime != null) {
-						hiv.setMedicallyEligibleDate(getXmlDate(value_datetime));
-					}
+				case Medically_Eligible_Date:
+					value_datetime = obs.getValueDatetime();
+					hiv.setMedicallyEligibleDate(getXmlDate(value_datetime));
 					break;
-				case 1731:
+				case Reason_Medically_Eligible:
 					value_coded = obs.getValueCoded().getConceptId();
-					hiv.setReasonMedicallyEligible(NDRMainDictionary.getMappedValue(value_coded));
+					hiv.setReasonMedicallyEligible(getMappedValue(value_coded));
 					break;
 				case 7777862:
 					value_datetime = obs.getValueDate();
 					hiv.setInitialAdherenceCounselingCompletedDate(getXmlDate(value_datetime));
 					break;
-				case 978:
-					form_id = obs.getEncounter().getForm().getFormId();
-					if (form_id == 1) {
-						value_datetime = obs.getValueDate();
-						if (value_datetime != null) {
-							hiv.setTransferredInDate(getXmlDate(value_datetime));
-						}
+				case Date_Transfer_In: //TODO: check transfer form in case it is not filled in the hiv enrollment form but documented in the transfer form
+					value_datetime = obs.getValueDate();
+					if (value_datetime != null) {
+						hiv.setTransferredInDate(getXmlDate(value_datetime));
 					}
 					break;
-				case 1732:
+				case Facility_Transferred_From: //TODO: look up the facility and extract the DATIM Code
 					value_text = obs.getValueText();
-					FacilityType ft2 = Utils.createFacilityType(value_text, value_text, "FAC");
-					hiv.setTransferredInFrom(ft2);
+					ft = Utils.createFacilityType(value_text, value_text, "FAC");
+					hiv.setTransferredInFrom(ft);
 					break;
-				case 7778529:
+				case WHO_Clinical_Stage_ART_Start:
 					value_coded = obs.getValueCoded().getConceptId();
-					hiv.setWHOClinicalStageARTStart(NDRMainDictionary.getMappedValue(value_coded));
+					hiv.setWHOClinicalStageARTStart(getMappedValue(value_coded));
 					break;
-				case 1734:
+				case Weight_At_ART_Start_Concept_Id:
 					value_numeric = obs.getValueNumeric();
 					hiv.setWeightAtARTStart((int) value_numeric);
 					break;
-				case 1735:
+				case Height_At_ART_Start_Concept_Id:
 					value_numeric = obs.getValueNumeric();
 					hiv.setChildHeightAtARTStart((int) value_numeric);
 					break;
 				case 7778530:
 					value_coded = obs.getValueCoded().getConceptId();
-					hiv.setFunctionalStatusStartART(NDRMainDictionary.getMappedValue(value_coded));
+					hiv.setFunctionalStatusStartART(getMappedValue(value_coded));
 					break;
-				case 1733:
+				case CD4_count_at_start_of_ART:
 					value_numeric = obs.getValueNumeric();
 					hiv.setCD4AtStartOfART(String.valueOf(value_numeric));
 					break;
-				case 977:
+				case 977: //TODO: transfer out status is outstanding
 					value_coded = obs.getValueCoded().getConceptId();
 					if (value_coded == 211) {
 						hiv.setPatientTransferredOut(true);
@@ -258,77 +292,72 @@ public class NDRMainDictionary {
 				default:
 					break;
 			}
-			
 		}
 		return hiv;
 	}
 	
-	public static CommonQuestionsType createCommonQuestionType(Patient pts, List<Obs> obsList, Date firstVisitDate,
-	        Date lastVisitDate) throws DatatypeConfigurationException {
+	public CommonQuestionsType createCommonQuestionType(Patient pts) throws DatatypeConfigurationException {
+
 		CommonQuestionsType common = new CommonQuestionsType();
-		common.setPatientDieFromThisIllness(pts.isDead());
-		common.setPatientAge(pts.getAge());
+
 		/*  Assuming Hospital No is 3*/
 		common.setHospitalNumber(pts.getPatientIdentifier(3).getIdentifier());
-		if (firstVisitDate != null) {
-			common.setDateOfFirstReport(getXmlDate(firstVisitDate));
-		}
-		if (lastVisitDate != null) {
-			common.setDateOfLastReport(getXmlDate(lastVisitDate));
-		}
-		int value_coded = 0;
-		Date value_datetime = null;
-		int conceptID = 0;
-		String gender = pts.getGender();
-		for (Obs obs : obsList) {
-			conceptID = obs.getConcept().getConceptId();
-			switch (conceptID) {
-				case 7777871:
-					value_coded = obs.getValueCoded().getConceptId();
-					if (gender.equals("F")) {
-						switch (value_coded) {
-							case 47:
-								common.setPatientPregnancyStatusCode("P");
-								break;
-							case 7777870:
-								common.setPatientPregnancyStatusCode("NP");
-								break;
-							case 13:
-								common.setPatientPregnancyStatusCode("NK");
-								break;
-							case 1259:
-								common.setPatientPregnancyStatusCode("PMTCT");
-								break;
-							default:
-								break;
-						}
-					}
-					break;
-				case 577:
-					value_datetime = obs.getValueDate();
-					if (gender.equals("F")) {
-						common.setEstimatedDeliveryDate(getXmlDate(value_datetime));
-					}
-					break;
-				case 859:
-					value_datetime = obs.getValueDate();
-					common.setDiagnosisDate(getXmlDate(value_datetime));
-					break;
-				case 977:
-					value_coded = obs.getValueCoded().getConceptId();
-					if (value_coded == 975) {
-						common.setPatientDieFromThisIllness(true);
-					}
-					break;
-				default:
-					break;
+
+		List<Obs> enrollmentObs = Utils.getHIVEnrollmentObs(pts);
+		if(enrollmentObs !=null){
+			Obs enrolmentDateObs = Utils.extractObs(HIV_Enrollment_Date_Concept_Id, enrollmentObs);
+			if (enrolmentDateObs != null) {
+				common.setDateOfFirstReport(getXmlDate(enrolmentDateObs.getValueDatetime()));
 			}
 		}
+
+		Encounter lastEncounterDate = Utils.getLastEncounter(pts);
+		if (lastEncounterDate != null) {
+			common.setDateOfLastReport(getXmlDate(lastEncounterDate.getEncounterDatetime()));
+		}
+
+		List<Obs> hivEnrollmentObs = Utils.getHIVEnrollmentObs(pts);
+		if(hivEnrollmentObs == null){
+			return common;
+		}
+
+		Obs obs;
+
+		//set the patient pregnancy status code
+		if (pts.getGender().equalsIgnoreCase("F")) {
+			obs = Utils.extractObs(Patient_Pregnancy_Status_Concept_Id, hivEnrollmentObs);
+			if(obs !=null && obs.getValueCoded() !=null){
+				String pregnancyStatus = getMappedValue(obs.getValueCoded().getConceptId());
+				common.setPatientPregnancyStatusCode(pregnancyStatus);
+			}
+
+			//set estimated delivery date concept id
+			obs = Utils.extractObs(Estimated_Delivery_Date_Concept_Id, hivEnrollmentObs);
+			if (obs != null) {
+				common.setEstimatedDeliveryDate(getXmlDate(obs.getObsDatetime()));
+			}
+		}
+
+		//set diagnosis date
+		obs = Utils.extractObs(Diagnosis_Date_Concept_Id, hivEnrollmentObs);
+		if (obs != null) {
+			common.setDiagnosisDate(getXmlDate(obs.getValueDatetime()));
+		}
+
+		//set Patient Die From This Illness tag
+		obs = Utils.extractObs(Patient_Died_From_Illness_Concept_Id, hivEnrollmentObs);
+		if (obs != null && obs.getValueCoded().getConceptId() == Patient_Died_From_Illness_Value_Concept_Id) {
+			common.setPatientDieFromThisIllness(true);
+		}
+
+		common.setPatientDieFromThisIllness(pts.isDead());
+		common.setPatientAge(pts.getAge());
+
 		return common;
 	}
 	
-	static HIVQuestionsType createHIVQuestionType(Obs firstRegimenObs, Date ARTStartDate, Date EnrollmentDate, List<Obs> obs) {
+	/*static HIVQuestionsType createHIVQuestionType(Obs firstRegimenObs, Date ARTStartDate, Date EnrollmentDate, List<Obs> obs) {
 		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-	}
+	}*/
 	
 }
