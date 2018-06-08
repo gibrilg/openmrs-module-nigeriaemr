@@ -44,7 +44,7 @@ public class AdminList extends AdministrationSectionExt {
 		Map<String, String> map = new HashMap<String, String>();
 		
 		map.put("module/nigeriaemr/nigeriaemr.form", "nigeriaemr.title");
-		map.put("nigeriaemr/nigeriaemr.page", "nigeriaemr.refapp.title");
+		map.put("nigeriaemr/biometricform.page", "nigeriaemr.biometricform");
 		map.put("nigeriaemr/customreport.page", "nigeriaemr.customreport");
 		
 		return map;
