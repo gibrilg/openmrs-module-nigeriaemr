@@ -13,7 +13,7 @@ import org.openmrs.ui.framework.page.PageModel;
 
 public class BiometricFormController {
 	
-	public void controller(PageModel model) throws Exception {
+	public void controller(PageModel model) {
 		
 	}
 	
