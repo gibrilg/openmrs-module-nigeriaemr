@@ -180,13 +180,13 @@
                 <td class="alnright">Episiotomy done?</td>
                 <td><obs conceptId="5577" style="yes_no_dropdown"/></td>
                 <td class="alnright">Vaginal tear</td>
-                <td><obs conceptId="5630" answerConceptIds="1065,1066" answerLabels="Yes,No"/></td>
+                <td><obs conceptId="165929" answerConceptIds="1065,1066" answerLabels="Yes,No"/></td>
             </tr>
             <tr>
                 <td class="alnright">Feeding decision</td>
                 <td><obs conceptId="985" answerConceptIds="5526,164857" answerLabels="EBF,ERF"/></td>
                 <td class="alnright">Maternal outcome</td>
-                <td><obs conceptId="160085" answerConceptIds="160529,134612" answerLabels="Alive,Dead"/></td>
+                <td><obs conceptId="160085" answerConceptIds="160429,134612" answerLabels="Alive,Dead"/></td>
             </tr>
         </table>
     </fieldset>

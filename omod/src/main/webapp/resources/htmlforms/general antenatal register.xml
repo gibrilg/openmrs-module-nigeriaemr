@@ -176,7 +176,7 @@
                 <td class="alnright_s">Syphilis test date</td>
                 <td class="alnleft_s"><obs conceptId="164952"/></td>
                 <td class="alnright_s">Syphilis test result</td>
-                <td class="alnleft_s"><obs conceptId="299" answerConceptIds="1,2,3" answerLabels="Positive,Negative,Indeterminant"/></td>
+                <td class="alnleft_s"><obs conceptId="299" answerConceptIds="1228,1229,1304" answerLabels="Positive,Negative,Indeterminant"/></td>
             </tr>
             <tr>
                 <td class="alnright_s">Treated for syphilis</td>
