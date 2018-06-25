@@ -1,21 +1,19 @@
-<%@ include file="/WEB-INF/template/include.jsp"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
-<%@ include file="/WEB-INF/template/header.jsp"%>
-
-<h2><spring:message code="nigeriaemr-omod.title" /></h2>
-
+<br/>
 <br/>
 <table>
   <tr>
    <th>User Id</th>
-   <th>Username</th>
+   <th>User name</th>
   </tr>
   <c:forEach var="user" items="${users}">
       <tr>
         <td>${user.userId}</td>
-        <td>${user.systemId}</td>
+        <td>${user.username}</td>
       </tr>		
   </c:forEach>
 </table>
 
-<%@ include file="/WEB-INF/template/footer.jsp"%>
+
