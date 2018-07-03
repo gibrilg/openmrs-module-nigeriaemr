@@ -68,19 +68,26 @@ public class NDRConverter {
 		this.ipCode = _ipCode;
 	}
 	
-	/*private Date getLastNDRDate() {
-		Calendar cal = Calendar.getInstance();
-		cal.setTimeInMillis(0);
-		cal.set(Calendar.YEAR, Calendar.MARCH, 1, 0, 0, 0);
-		return cal.getTime();
-	}*/
-	
 	public Container createContainer(Patient pts, FacilityType facility) throws DatatypeConfigurationException {
 		patient = pts;
 		this.facility = facility;
+		this.encounters = new ArrayList<>();
 		Date lastDate = Utils.getLastNDRDate();
-		this.encounters = Context.getEncounterService().getEncountersByPatient(pts);
-		
+
+		List<Encounter> encs = Context.getEncounterService().getEncountersByPatient(pts);
+
+
+		if(lastDate !=null){
+			for(Encounter enc : encs){
+				if(enc.getEncounterDatetime().after(lastDate)){
+					this.encounters.add(enc);
+				}
+			}
+		}
+		else{ // assume this is the first time running this report
+			this.encounters.addAll(encs);
+		}
+
 		if (this.encounters == null || this.encounters.size() == 0) {
 			return null;
 		}
@@ -104,6 +111,7 @@ public class NDRConverter {
 	 */
 	private IndividualReportType createIndividualReportType() throws DatatypeConfigurationException {
 
+		try{
 		IndividualReportType individualReport = new IndividualReportType();
 		individualReport.setPatientDemographics(createPatientDemographicsType());
 		
@@ -123,6 +131,7 @@ public class NDRConverter {
 		HIVEncounterType hivEncounter;
 		List<HIVEncounterType> hivEncounterList = new ArrayList<>();
 		ClinicalDictionary clinicalDictionary = new ClinicalDictionary();
+
 
 		for(Encounter enc : this.encounters){
 
@@ -161,8 +170,13 @@ public class NDRConverter {
 		hivSpecificQuestions.setHIVQuestions(createHIVQuestionsType(conditionSpecificQObs));
 		condition.setConditionSpecificQuestions(hivSpecificQuestions);
 
-		individualReport.getCondition().add(condition);
-		return individualReport;
+
+			individualReport.getCondition().add(condition);
+			return individualReport;
+		}catch (Exception ex ){
+			System.out.println(ex.getMessage());
+		}
+		return  null;
 	}
 	
 	private ProgramAreaType createProgramArea() {
@@ -254,9 +268,13 @@ public class NDRConverter {
 		
 		javax.xml.validation.Validator validator = jaxbMarshaller.getSchema().newValidator();
 		
-		jaxbMarshaller.marshal(container, file);
-		validator.setErrorHandler(errorHandler);
-		validator.validate(new StreamSource(file));
-		
+		try {
+			jaxbMarshaller.marshal(container, file);
+			validator.setErrorHandler(errorHandler);
+			validator.validate(new StreamSource(file));
+		}
+		catch (Exception ex) {
+			System.out.println("File " + file.getName() + " throw an exception \n" + ex.getMessage());
+		}
 	}
 }

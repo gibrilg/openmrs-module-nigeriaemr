@@ -36,9 +36,9 @@ public class PharmacyDictionary {
 	public final static int Pediatric_2nd_Regimen_Line_Concept_Id=164514;
 	public final static int Adult_3rd_Regimen_Line_Concept_Id=165702;
 	public final static int Pediatric_3rd_Regimen_Line_Concept_Id=165703;
-	public final static int Pick_Up_Reason_Concept_Id = 0;
-	public final static int switch_Indicator_Concept_Id = 0;
-	public final static int substitution_Indicator_Concept_Id =0;
+	public final static int Pick_Up_Reason_Concept_Id = 165774;
+	public final static int switch_Indicator_Concept_Id = 165772;
+	public final static int substitution_Indicator_Concept_Id =165665;
 
 
 	public PharmacyDictionary() {
@@ -123,12 +123,16 @@ public class PharmacyDictionary {
 		if(obs !=null){
 			regimenType.setPrescribedRegimenLineCode(getRegimenMapValue(obs.getValueCoded().getConceptId()));
 
-			//set regimen
+			//set regimen code
 			obs = Utils.extractObs(obs.getValueCoded().getConceptId(), pharmacyObsList);
 			if(obs !=null && obs.getValueCoded() !=null){
 				cst = new CodedSimpleType();
 				cst.setCode(getRegimenMapValue(obs.getValueCoded().getConceptId()));
 				regimenType.setPrescribedRegimen(cst);
+			}
+			else{ //if no prescribed regimen, discard the entire regimen object
+
+				return new RegimenType();
 			}
 		}
 
@@ -160,8 +164,21 @@ public class PharmacyDictionary {
 		regimenType.setDateRegimenEndedMM(String.valueOf(cal.get(Calendar.MONTH) + 1));
 		regimenType.setDateRegimenEndedYYYY(String.valueOf(cal.get(Calendar.YEAR)));
 
-		//TODO: set switch and substitution values
-
+		// drug pick up reason
+		obs = Utils.extractObs(Pick_Up_Reason_Concept_Id, pharmacyObsList);
+		if(obs !=null){
+			obs = Utils.extractObs(obs.getValueCoded().getConceptId(), pharmacyObsList);
+			if(obs !=null && obs.getValueCoded() !=null){
+				if(obs.getValueCoded().getConceptId() == substitution_Indicator_Concept_Id){
+					regimenType.setSubstitutionIndicator(true);
+				}
+				//TODO: set switch reason
+				if(obs.getValueCoded().getConceptId() == switch_Indicator_Concept_Id){
+					regimenType.setSwitchIndicator(true);
+					regimenType.setReasonForRegimenSwitchSubs("");
+				}
+			}
+		}
 		return regimenType;
 	}
 

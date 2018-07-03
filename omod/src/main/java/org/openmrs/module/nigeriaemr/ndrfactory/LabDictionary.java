@@ -5,6 +5,7 @@
  */
 package org.openmrs.module.nigeriaemr.ndrfactory;
 
+import java.io.Console;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -165,6 +166,7 @@ public class LabDictionary {
 		try{
 			return labTestDictionary.get(conceptID);
 		}catch (Exception ex){
+			System.out.println(ex.getMessage());
 			throw ex;
 		}
 	}
@@ -181,7 +183,6 @@ public class LabDictionary {
 			throws DatatypeConfigurationException {
 		
 		LaboratoryReportType labReportType = new LaboratoryReportType();
-		List<LaboratoryOrderAndResult> laboratoryOrderAndResultList;
 
 		XMLGregorianCalendar convertedDate = Utils.getXmlDate(enc.getEncounterDatetime());
 		labReportType.setVisitID(Utils.getVisitId(pts,enc));
@@ -218,14 +219,24 @@ public class LabDictionary {
 			labReportType.setReportedBy(obs.getValueText());
 		}
 
-		try{
-			laboratoryOrderAndResultList = createLaboratoryOrderAndResult(enc, labObsList);
-			labReportType.getLaboratoryOrderAndResult().addAll(laboratoryOrderAndResultList);
+
+		try{ //if there is no lab order and result, discard
+
+			List<LaboratoryOrderAndResult> laboratoryOrderAndResultList = createLaboratoryOrderAndResult(enc, labObsList);
+			if(laboratoryOrderAndResultList !=null && laboratoryOrderAndResultList.size() > 0){
+				labReportType.getLaboratoryOrderAndResult().addAll(laboratoryOrderAndResultList);
+				return labReportType;
+			}
+			else{
+				return null;
+			}
+
 		}catch (Exception ex){
+			System.out.println(ex.getMessage());
 			throw ex;
 		}
 
-		return labReportType;
+
 	}
 	
 	private List<LaboratoryOrderAndResult> createLaboratoryOrderAndResult(Encounter enc, List<Obs> obsList)
@@ -235,7 +246,6 @@ public class LabDictionary {
 
 		int conceptID;
 		int dataType;
-		int value_coded;
 		CodedSimpleType cst;
 
 		AnswerType answer;

@@ -86,7 +86,7 @@ public class Utils {
 			return null;
 		} else {
 			try {
-				return new SimpleDateFormat("yyyy-MM-dd").parse(lastRunDateString);
+				return new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").parse(lastRunDateString);
 			}
 			catch (Exception e) {
 				System.out.println("Last Date was not in the correct format");
@@ -96,7 +96,7 @@ public class Utils {
 	}
 	
 	public static void updateLast_NDR_Run_Date(Date date) {
-		String dateString = new SimpleDateFormat("yyyy-MM-dd").format(date);
+		String dateString = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(date);
 		Context.getAdministrationService().updateGlobalProperty("ndr_last_run_date", dateString);
 	}
 	
@@ -261,7 +261,7 @@ public class Utils {
 		return todayFolders;
 	}
 	
-	public String ZipFolder(HttpServletRequest request, String folderToZip, String reportType) {
+	public String ZipFolder(HttpServletRequest request, String folderToZip, String zipFileName, String reportType) {
 		
 		File toZIP = new File(folderToZip);
 		if (!toZIP.exists() || toZIP.listFiles() == null || Objects.requireNonNull(toZIP.listFiles()).length == 0) {
@@ -269,7 +269,8 @@ public class Utils {
 		}
 		
 		//Zip today's folder and name it with today's date
-		String zipFileName = new SimpleDateFormat("dd-MM-yyyy").format(new Date()) + ".zip";
+		
+		//String zipFileName = new SimpleDateFormat("dd-MM-yyyy").format(new Date()) + ".zip";
 		ZipUtil appZip = new ZipUtil(folderToZip);
 		appZip.generateFileList(toZIP);
 		appZip.zipIt(toZIP.getParent() + "/" + zipFileName);

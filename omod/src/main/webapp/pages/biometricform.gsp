@@ -2,37 +2,11 @@
 
 <%= ui.resourceLinks() %>
 
-<form onsubmit="return false">
-    <input id="patient-search" placeholder="Search by ID or Name" autocomplete="off" type="text">
-</form>
-<input type="button" value="Search" class="confirm button" onclick="Search()">
-<br />
-<br />
-<div id="patient-search-results" style="display: block;">
-    <div id="patient-search-results-table_wrapper" class="dataTables_wrapper" role="grid">
-        <table id="patient-search-results-table" class="dataTable" aria-describedby="patient-search-results-table_info">
-            <thead>
-            <tr role="row">
-                <th  style="width: 100px;"></th>
-                <th class="ui-state-default" role="columnheader" style="width: 219px;">
-                    <div class="DataTables_sort_wrapper">Identifier</div></th>
-                <th class="ui-state-default" role="columnheader" style="width: 151px;">
-                    <div class="DataTables_sort_wrapper">Name</div></th>
-                <th class="ui-state-default" role="columnheader" style="width: 177px;">
-                    <div class="DataTables_sort_wrapper">Gender</div></th>
-                <th class="ui-state-default" role="columnheader" style="width: 105px;">
-                    <div class="DataTables_sort_wrapper">Age</div></th>
-            </tr>
-            </thead>
-            <tbody id="tblSearch" aria-live="polite" aria-relevant="all"></tbody>
-        </table>
-    </div>
-</div>
 
 <table>
     <tr>
         <td>
-            <img id="LEFT_THUMB" border="1"  onclick="captureFP(0)" alt="LEFT THUMB" height=200 width=150 src=""> <br>
+            <img id="LEFT_THUMB" border="1"  onclick="captureFP(0)" alt="LEFT THUMB" style="margin-left:30px;" height=200 width=150 src=""> <br>
             <input type="button" value="Scan" id="BTN_LEFT_THUMB" onclick="captureFP(1)">
         </td>
         <td>
@@ -112,24 +86,44 @@
 <br />
 <div >
     <input type="button" value="Reset" onclick="location.reload(true);">
-    <input type="button" value="Save" class="confirm button" onclick="Save()">
+    <input type="button" value="Save"  class="confirm button" onclick="Save()" disabled>
     <br>
 </div>
 
 <script type="text/javascript">
     let patientId;
+    patientId = getUrlVars()["patientId"];
     let newPrint;
     let capturedPrint = [];
     let	fingerPosition = ["","LEFT_THUMB", "LEFT_INDEX", "LEFT_MIDDLE", "LEFT_RING", "LEFT_LITTLE",
         "RIGHT_THUMB", "RIGHT_INDEX", "RIGHT_MIDDLE", "RIGHT_RING", "RIGHT_LITTLE" ];
     let url = 'http://localhost:2018/api/FingerPrint';
 
+    let PreviousCaptureURL =url + '/CheckForPreviousCapture?PatientUUID='+patientId;
+
+    //check if there is a previod record
+    jQuery.getJSON(PreviousCaptureURL)
+        .success(function(data) {
+            if(data  !== undefined  && data !== null && data.length > 0){
+                alert('Finger Print already captured for this patient');
+                jQuery('input').attr('disabled','disabled');
+            }
+        })
+        .error(function(xhr, status, err) {
+            alert('System error. Please check that the Biometric service is running');
+        });
+
+
+
+
     function captureFP( position ){
 
-        if(patientId === undefined){
-            alert('Select a patient first');
-            return;
-        }
+        // if(patientId === undefined){
+        //     alert('Select a patient first');
+        //     return;
+        // }
+
+
 
          let captureURL =url + '/CapturePrint?fingerPosition='+position;
 
@@ -139,31 +133,51 @@
                     let	imgId = fingerPosition[position];
                     document.getElementById(imgId).src = "data:image/bmp;base64," + data.Image;
                     newPrint = data;
-                    newPrint.PatienId = patientId;
+                    //newPrint.PatienId = patientId;
                     newPrint.Image ='';
                     capturedPrint.push(newPrint);
+                    if(capturedPrint.length > 5){
+                        jQuery('input').removeAttr('disabled');
+                    }
                 }
                 else{
                     alert(data.ErrorMessage);
                 }
             })
             .error(function(xhr, status, err) {
-                alert('AJAX error ' + err);
+                alert('System error. Please check that the Biometric service is running');
             });
+    }
+
+    function getUrlVars()
+    {
+        let vars = [], hash;
+        let hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for(let i = 0; i < hashes.length; i++)
+        {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
     }
 
     function Save(){
 
        let  saveUrl = url + '/SaveToDatabase';
+       let model = {};
+        model.FingerPrintList = capturedPrint;
+        model.PatientUUID= patientId;
 
         jQuery.ajax({
             type: "Post",
             url: saveUrl,
             contentType: "application/json; charset=utf-8",
-            data : JSON.stringify(capturedPrint),
+            data : JSON.stringify(model),
             cache: false,
         }).done(function (response) {
             alert(response.ErrorMessage);
+            window.location.reload(true);
         }) .error(function(xhr, status, err) {
             alert(err);
             console.log(err);
