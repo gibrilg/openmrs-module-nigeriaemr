@@ -213,7 +213,8 @@
                 <td class="alnright">CTX given to child</td>
                 <td class="alnleft"><obs conceptId="165837" style="yes_no_dropdown" answerLabel=""/></td>
                 <td class="alnright">Feeding method</td>
-                <td class="alnleft"><obs conceptId="165876"/></td>
+                <td class="alnleft"><obs conceptId="1151" answerConceptIds="5254,6046,5526" answerLabels="Infant formula,Mixed feeding,Exclusively Breastfed"/></td>
+
 
             </tr>
         </table>

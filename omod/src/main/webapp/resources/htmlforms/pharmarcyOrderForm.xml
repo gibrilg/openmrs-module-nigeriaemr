@@ -134,7 +134,7 @@
 				</td>
 				<td>
 					<label>Pregnancy Status</label>
-					<obs style="yes_no_dropdown" conceptId="1434"/>
+					<obs conceptId="165050" answerLabel=""/>
 				</td>
 				<td>
 					<label>Pick Up Reason</label>

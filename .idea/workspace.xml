@@ -1,0 +1,1325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb80a1c1-ab92-4606-bbbe-2add40b3a41f" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/api/target/" />
+    <ignored path="$PROJECT_DIR$/omod/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockManager">
+    <window id="4">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="pharmarcyOrderForm.xml" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/pharmarcyOrderForm.xml">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="343">
+                    <caret line="524" column="22" lean-forward="false" selection-start-line="524" selection-start-column="22" selection-end-line="524" selection-end-column="22" />
+                    <folding>
+                      <element signature="n#fieldset#4;n#htmlform#0;n#!!top" expanded="false" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="Pharmacy_order.json" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Pharmacy_order.json">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="4676">
+                    <caret line="1049" column="23" lean-forward="false" selection-start-line="1049" selection-start-column="23" selection-end-line="1049" selection-end-column="23" />
+                    <folding>
+                      <element signature="e#287#1681#0" expanded="false" />
+                      <element signature="e#1695#2335#0" expanded="false" />
+                      <element signature="e#2349#3144#0" expanded="false" />
+                      <element signature="e#3158#4098#0" expanded="false" />
+                      <element signature="e#4140#5785#0" expanded="false" />
+                      <element signature="e#4270#5097#0" expanded="false" />
+                      <element signature="e#5111#5749#0" expanded="false" />
+                      <element signature="e#5916#6705#0" expanded="false" />
+                      <element signature="e#6719#15207#0" expanded="false" />
+                      <element signature="e#7004#7139#0" expanded="false" />
+                      <element signature="e#15221#15551#0" expanded="false" />
+                      <element signature="e#15565#15897#0" expanded="false" />
+                      <element signature="e#15911#16241#0" expanded="false" />
+                      <element signature="e#16705#17234#0" expanded="false" />
+                      <element signature="e#17252#17949#0" expanded="false" />
+                      <element signature="e#17967#18823#0" expanded="false" />
+                      <element signature="e#18841#19213#0" expanded="false" />
+                      <element signature="e#19231#19605#0" expanded="false" />
+                      <element signature="e#19623#19993#0" expanded="false" />
+                      <element signature="e#21031#21728#0" expanded="false" />
+                      <element signature="e#21746#22602#0" expanded="false" />
+                      <element signature="e#22620#22992#0" expanded="false" />
+                      <element signature="e#23010#23384#0" expanded="false" />
+                      <element signature="e#23402#23772#0" expanded="false" />
+                      <element signature="e#25521#26377#0" expanded="false" />
+                      <element signature="e#26395#26767#0" expanded="false" />
+                      <element signature="e#26785#27159#0" expanded="false" />
+                      <element signature="e#27177#27547#0" expanded="false" />
+                      <element signature="e#28580#29277#0" expanded="false" />
+                      <element signature="e#29295#30151#0" expanded="false" />
+                      <element signature="e#30169#30541#0" expanded="false" />
+                      <element signature="e#30559#30933#0" expanded="false" />
+                      <element signature="e#30951#31321#0" expanded="false" />
+                      <element signature="e#32330#32860#0" expanded="false" />
+                      <element signature="e#32878#34066#0" expanded="false" />
+                      <element signature="e#34084#34456#0" expanded="false" />
+                      <element signature="e#34474#34842#0" expanded="false" />
+                      <element signature="e#34860#35230#0" expanded="false" />
+                      <element signature="e#36794#37982#0" expanded="false" />
+                      <element signature="e#38000#38372#0" expanded="false" />
+                      <element signature="e#38390#38758#0" expanded="false" />
+                      <element signature="e#38776#39146#0" expanded="false" />
+                      <element signature="e#39220#40099#0" expanded="false" />
+                      <element signature="e#40105#41022#0" expanded="false" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="admission.json" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/admission.json">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="-281">
+                    <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Child_follow_up.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Child_follow_up.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="487" column="12" lean-forward="false" selection-start-line="487" selection-start-column="12" selection-end-line="534" selection-end-column="13" />
+              <folding>
+                <element signature="e#692#1065#0" expanded="false" />
+                <element signature="e#1079#1469#0" expanded="false" />
+                <element signature="e#1483#1891#0" expanded="false" />
+                <element signature="e#1905#2534#0" expanded="false" />
+                <element signature="e#2548#3356#0" expanded="false" />
+                <element signature="e#3533#4533#0" expanded="false" />
+                <element signature="e#4547#5549#0" expanded="false" />
+                <element signature="e#5563#6562#0" expanded="false" />
+                <element signature="e#6576#7125#0" expanded="false" />
+                <element signature="e#7139#7992#0" expanded="false" />
+                <element signature="e#8006#8708#0" expanded="false" />
+                <element signature="e#8750#11850#0" expanded="false" />
+                <element signature="e#8897#11814#0" expanded="false" />
+                <element signature="e#9168#9578#0" expanded="false" />
+                <element signature="e#9596#10001#0" expanded="false" />
+                <element signature="e#10019#10440#0" expanded="false" />
+                <element signature="e#10458#10874#0" expanded="false" />
+                <element signature="e#10892#11784#0" expanded="false" />
+                <element signature="e#11856#13660#0" expanded="false" />
+                <element signature="e#12274#12684#0" expanded="false" />
+                <element signature="e#12702#13594#0" expanded="false" />
+                <element signature="e#13813#15441#0" expanded="false" />
+                <element signature="e#14521#15411#0" expanded="false" />
+                <element signature="e#15630#17260#0" expanded="false" />
+                <element signature="e#15904#16308#0" expanded="false" />
+                <element signature="e#16326#17230#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="child_birth_information.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/child_birth_information.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="119" column="10" lean-forward="false" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="child_follow_up.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/child_follow_up.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="314" column="24" lean-forward="false" selection-start-line="314" selection-start-column="19" selection-end-line="314" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mytest.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/mytest.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Assessment</find>
+      <find>missed</find>
+      <find>standard</find>
+      <find>yes</find>
+      <find>Feeding Decision</find>
+      <find>row</find>
+      <find>phys</find>
+      <find>Head/</find>
+      <find>repea</find>
+      <find>the</find>
+      <find>HIV TESTING</find>
+      <find>dr</find>
+      <find>duration</find>
+      <find>prote</find>
+      <find>previous</find>
+      <find>thenDisplay</find>
+      <find>id</find>
+      <find>asym</find>
+      <find>Anti</find>
+      <find>165304</find>
+      <find>pregnant</find>
+      <find>28</find>
+      <find>star</find>
+      <find>pregna</find>
+      <find>req</find>
+      <find>date</find>
+      <find>rr(</find>
+      <find>da</find>
+      <find>obsg</find>
+      <find>then</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\Users\Arinze\openmrs-module-nigeriaemr</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Arinze" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/test.html" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/test.js" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/requestandresult.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/patient_program_enrollment.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/registration.json" />
+        <option value="$USER_HOME$/AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/new 7.html" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/client_tracking_and_terminatio.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/partnerregister.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/pediatric_initial_clinical_evaluation.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/adult_clinical_evaluation.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/CareCard.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/transfer_form.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/hiv_enrollment_register.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/test2.json" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/general antenatal register.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/General_Antenatal_Care.json" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/deliveryregister.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Delivey_Information.json" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/child_birth_information.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Child_Birth_Information.json" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/vital.json" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/test.json" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Partner_Register.json" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/Laboratory_Order_and_Results_Form.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Laboratory_Order_and_Results_Form.json" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/client_intake_form.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/child_follow_up.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Client_Intake.json" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Child_follow_up.json" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/pharmarcyOrderForm.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Pharmacy_order.json" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/admission.json" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/mytest.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1909" />
+    <option name="y" value="-11" />
+    <option name="width" value="1292" />
+    <option name="height" value="693" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="openmrs-module-nigeriaemr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="openmrs-module-nigeriaemr" type="462c0819:PsiDirectoryNode" />
+              <item name="omod" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/nAIJA_emr/openmrs-module-nigeriaemr" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.standard" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Arinze\openmrs-module-nigeriaemr\omod\src\main\webapp\resources\htmlforms" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb80a1c1-ab92-4606-bbbe-2add40b3a41f" name="Default" comment="" />
+      <created>1522948289663</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522948289663</updated>
+      <workItem from="1522948294304" duration="1760000" />
+      <workItem from="1523005705751" duration="11023000" />
+      <workItem from="1523089368253" duration="29478000" />
+      <workItem from="1523288041701" duration="70387000" />
+      <workItem from="1523544552907" duration="27851000" />
+      <workItem from="1523864292590" duration="29012000" />
+      <workItem from="1524409773889" duration="109395000" />
+      <workItem from="1525689111610" duration="1242000" />
+      <workItem from="1525858726248" duration="32469000" />
+      <workItem from="1526898637722" duration="1066000" />
+      <workItem from="1527683815206" duration="38751000" />
+      <workItem from="1528181734919" duration="55424000" />
+      <workItem from="1528798114263" duration="31971000" />
+      <workItem from="1529264076733" duration="16162000" />
+      <workItem from="1529380413880" duration="65629000" />
+    </task>
+    <task id="LOCAL-00001" summary="My first commit">
+      <created>1523017110254</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1523017110254</updated>
+    </task>
+    <task id="LOCAL-00002" summary="My first commit&#10;Added more fields on child follow up forms">
+      <created>1523099971527</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1523099971527</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Improved on the css for Child Follow up">
+      <created>1523116927737</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1523116927737</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added more style">
+      <created>1523261921593</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1523261921593</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added more style">
+      <created>1523298402058</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1523298402058</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added more style">
+      <created>1523348337616</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1523348337616</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added more style">
+      <created>1523351094162</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1523351094162</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added more style">
+      <created>1523352901911</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1523352901911</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added child birth information">
+      <created>1523435181408</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1523435181408</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added adult clinical evaluation">
+      <created>1523446972531</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1523446972531</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added hiv_enrollment_register">
+      <created>1523710342539</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1523710342539</updated>
+    </task>
+    <task id="LOCAL-00012" summary="General Modification">
+      <created>1528372596464</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1528372596464</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added Json form for the mobile client">
+      <created>1529944390644</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1529944390644</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="613278000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1909" y="-11" width="1942" height="1072" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.037162162" sideWeight="0.51458335" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289183" sideWeight="0.48541668" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="My first commit" />
+    <MESSAGE value="My first commit&#10;Added more fields on child follow up forms" />
+    <MESSAGE value="Improved on the css for Child Follow up" />
+    <MESSAGE value="Added more style" />
+    <MESSAGE value="Added child birth information" />
+    <MESSAGE value="Added adult clinical evaluation" />
+    <MESSAGE value="Added hiv_enrollment_register" />
+    <MESSAGE value="General Modification" />
+    <MESSAGE value="Added Json form for the mobile client" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Json form for the mobile client" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/deliveryregister.txt" />
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/CodedType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/Patient.class" />
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NdrFragmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="78" column="16" lean-forward="false" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/RadetFragmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/UsersFragmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/PharmacyDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/api/NigeriaemrService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/ClinicalDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="44" column="28" lean-forward="false" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/api/dao/NigeriaemrDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/api/impl/NigeriaemrServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/api/UserService.class" />
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/LabDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/web/controller/NigeriaemrController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-723">
+          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRMainDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/contactTrackingAndtermination2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/test.js" />
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/requestandresult.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3645">
+          <caret line="135" column="16" lean-forward="false" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="16" />
+          <folding>
+            <marker date="1525532991822" expanded="true" signature="4816:4839" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/patient_program_enrollment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="121" selection-end-column="11" />
+          <folding>
+            <element signature="e#842#847#0" expanded="false" />
+            <element signature="e#864#869#0" expanded="false" />
+            <element signature="e#1130#1135#0" expanded="false" />
+            <element signature="e#1143#1148#0" expanded="false" />
+            <element signature="e#1193#1198#0" expanded="false" />
+            <element signature="e#1480#1485#0" expanded="false" />
+            <element signature="e#1493#1498#0" expanded="false" />
+            <element signature="e#1543#1548#0" expanded="false" />
+            <element signature="e#1786#1791#0" expanded="false" />
+            <element signature="e#1799#1804#0" expanded="false" />
+            <element signature="e#1849#1854#0" expanded="false" />
+            <element signature="e#2092#2097#0" expanded="false" />
+            <element signature="e#2105#2110#0" expanded="false" />
+            <element signature="e#2155#2160#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/samplehtmlform.xml" />
+    <entry file="file://$USER_HOME$/AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/new 7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="363" column="37" lean-forward="false" selection-start-line="363" selection-start-column="37" selection-end-line="363" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/client_tracking_and_terminatio.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="294" column="16" lean-forward="true" selection-start-line="294" selection-start-column="16" selection-end-line="294" selection-end-column="16" />
+          <folding>
+            <element signature="n#td#1;n#tr#0;n#table#0;n#fieldset#1;n#htmlform#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/pediatric_initial_clinical_evaluation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6642">
+          <caret line="252" column="46" lean-forward="false" selection-start-line="252" selection-start-column="46" selection-end-line="252" selection-end-column="85" />
+          <folding>
+            <element signature="n#td#1;n#tr#1;n#table#0;n#fieldset#0;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#td#0;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#1;n#fieldset#2;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#td#1;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#1;n#fieldset#2;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#td#3;n#tr#0;n#table#1;n#fieldset#2;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#td#0;n#tr#0;n#table#0;n#td#3;n#tr#0;n#table#1;n#fieldset#2;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#td#1;n#tr#0;n#table#0;n#td#3;n#tr#0;n#table#1;n#fieldset#2;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#table#4;n#fieldset#3;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#table#8;n#fieldset#3;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#td#0;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#8;n#fieldset#3;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#td#1;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#8;n#fieldset#3;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#td#1;n#tr#0;n#table#0;n#td#3;n#tr#0;n#table#8;n#fieldset#3;n#htmlform#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/hiv_enrollment_register.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5238">
+          <caret line="194" column="18" lean-forward="false" selection-start-line="194" selection-start-column="18" selection-end-line="194" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/registration.json" />
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/transfer_form.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4455">
+          <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+          <folding>
+            <element signature="n#fieldset#3;n#htmlform#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/CareCard.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="222" column="14" lean-forward="false" selection-start-line="222" selection-start-column="14" selection-end-line="222" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/adult_clinical_evaluation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="814" column="16" lean-forward="false" selection-start-line="814" selection-start-column="16" selection-end-line="814" selection-end-column="16" />
+          <folding>
+            <element signature="n#table#1;n#fieldset#6;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#table#2;n#fieldset#6;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#obs#0;n#td#1;n#tr#0;n#table#0;n#fieldset#7;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#td#2;n#tr#0;n#table#0;n#fieldset#7;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#td#3;n#tr#0;n#table#0;n#fieldset#7;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#table#0;n#td#3;n#tr#0;n#table#0;n#fieldset#7;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#tr#0;n#table#0;n#td#3;n#tr#0;n#table#0;n#fieldset#7;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#td#1;n#tr#0;n#table#1;n#fieldset#7;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#2;n#fieldset#8;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#td#1;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#2;n#fieldset#8;n#htmlform#0;n#!!top" expanded="false" />
+            <element signature="n#td#1;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#3;n#tr#0;n#table#2;n#fieldset#8;n#htmlform#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/deliveryregister.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="188" column="42" lean-forward="false" selection-start-line="188" selection-start-column="36" selection-end-line="188" selection-end-column="42" />
+          <folding>
+            <element signature="e#5434#5439#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/maternal_followup_register.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3650">
+          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/general antenatal register.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="139" column="53" lean-forward="false" selection-start-line="139" selection-start-column="53" selection-end-line="139" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Laboratory_Order_and_Results_Form.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="62" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="700" selection-end-column="1" />
+          <folding>
+            <element signature="e#299#696#0" expanded="false" />
+            <element signature="e#710#1081#0" expanded="false" />
+            <element signature="e#1095#1469#0" expanded="false" />
+            <element signature="e#1483#1867#0" expanded="false" />
+            <element signature="e#1881#2267#0" expanded="false" />
+            <element signature="e#2281#2668#0" expanded="false" />
+            <element signature="e#2682#3071#0" expanded="false" />
+            <element signature="e#3085#3460#0" expanded="false" />
+            <element signature="e#3474#3858#0" expanded="false" />
+            <element signature="e#3900#8099#0" expanded="false" />
+            <element signature="e#4024#4409#0" expanded="false" />
+            <element signature="e#4423#4808#0" expanded="false" />
+            <element signature="e#4822#5204#0" expanded="false" />
+            <element signature="e#5218#5602#0" expanded="false" />
+            <element signature="e#5616#5994#0" expanded="false" />
+            <element signature="e#6008#6388#0" expanded="false" />
+            <element signature="e#6402#6790#0" expanded="false" />
+            <element signature="e#6804#7432#0" expanded="false" />
+            <element signature="e#7446#8060#0" expanded="false" />
+            <element signature="e#8105#12044#0" expanded="false" />
+            <element signature="e#8229#8845#0" expanded="false" />
+            <element signature="e#8859#9244#0" expanded="false" />
+            <element signature="e#9258#9631#0" expanded="false" />
+            <element signature="e#9645#10035#0" expanded="false" />
+            <element signature="e#10049#10423#0" expanded="false" />
+            <element signature="e#10437#10827#0" expanded="false" />
+            <element signature="e#10841#11237#0" expanded="false" />
+            <element signature="e#11251#11622#0" expanded="false" />
+            <element signature="e#11636#12005#0" expanded="false" />
+            <element signature="e#12050#16644#0" expanded="false" />
+            <element signature="e#12174#12569#0" expanded="false" />
+            <element signature="e#12583#12982#0" expanded="false" />
+            <element signature="e#12996#13367#0" expanded="false" />
+            <element signature="e#13381#13753#0" expanded="false" />
+            <element signature="e#13767#14138#0" expanded="false" />
+            <element signature="e#14152#14523#0" expanded="false" />
+            <element signature="e#14537#14930#0" expanded="false" />
+            <element signature="e#14944#15325#0" expanded="false" />
+            <element signature="e#15339#15961#0" expanded="false" />
+            <element signature="e#15975#16605#0" expanded="false" />
+            <element signature="e#16752#17142#0" expanded="false" />
+            <element signature="e#17156#17787#0" expanded="false" />
+            <element signature="e#17801#19190#0" expanded="false" />
+            <element signature="e#19204#19545#0" expanded="false" />
+            <element signature="e#19559#19915#0" expanded="false" />
+            <element signature="e#19929#20294#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/Laboratory_Order_and_Results_Form.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="308" column="39" lean-forward="false" selection-start-line="308" selection-start-column="36" selection-end-line="308" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Partner_Register.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="193" selection-end-column="1" />
+          <folding>
+            <element signature="e#689#1318#0" expanded="false" />
+            <element signature="e#1332#1973#0" expanded="false" />
+            <element signature="e#1987#2627#0" expanded="false" />
+            <element signature="e#2641#3293#0" expanded="false" />
+            <element signature="e#3307#3931#0" expanded="false" />
+            <element signature="e#3945#4569#0" expanded="false" />
+            <element signature="e#4583#5221#0" expanded="false" />
+            <element signature="e#5235#6044#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/General_Antenatal_Care.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="98" column="12" lean-forward="false" selection-start-line="98" selection-start-column="12" selection-end-line="117" selection-end-column="14" />
+          <folding>
+            <element signature="e#210#2641#0" expanded="false" />
+            <element signature="e#307#668#0" expanded="false" />
+            <element signature="e#1094#1469#0" expanded="false" />
+            <element signature="e#1483#1846#0" expanded="false" />
+            <element signature="e#1860#2229#0" expanded="false" />
+            <element signature="e#2243#2611#0" expanded="false" />
+            <element signature="e#2763#3403#0" expanded="false" />
+            <element signature="e#3417#3784#0" expanded="false" />
+            <element signature="e#3798#4602#0" expanded="false" />
+            <element signature="e#4616#5398#0" expanded="false" />
+            <element signature="e#5412#5784#0" expanded="false" />
+            <element signature="e#5798#6434#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/test2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1728">
+          <caret line="64" column="66" lean-forward="false" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Child_Birth_Information.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="112" column="17" lean-forward="false" selection-start-line="112" selection-start-column="17" selection-end-line="115" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/partnerregister.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="126" column="150" lean-forward="false" selection-start-line="126" selection-start-column="144" selection-end-line="126" selection-end-column="150" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Delivey_Information.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="111" column="14" lean-forward="true" selection-start-line="111" selection-start-column="14" selection-end-line="111" selection-end-column="14" />
+          <folding>
+            <element signature="e#295#1289#0" expanded="false" />
+            <element signature="e#1303#1939#0" expanded="false" />
+            <element signature="e#1953#2360#0" expanded="false" />
+            <element signature="e#2374#3009#0" expanded="false" />
+            <element signature="e#3023#3658#0" expanded="false" />
+            <element signature="e#3672#4303#0" expanded="false" />
+            <element signature="e#4317#4970#0" expanded="false" />
+            <element signature="e#4984#5646#0" expanded="false" />
+            <element signature="e#5660#6470#0" expanded="false" />
+            <element signature="e#6484#7107#0" expanded="false" />
+            <element signature="e#7752#8378#0" expanded="false" />
+            <element signature="e#8392#9021#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/vital.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="23" column="70" lean-forward="true" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/client_intake_form.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="350" column="60" lean-forward="false" selection-start-line="350" selection-start-column="54" selection-end-line="350" selection-end-column="60" />
+          <folding>
+            <element signature="e#4967#4971#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Client_Intake.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="955" column="12" lean-forward="false" selection-start-line="955" selection-start-column="12" selection-end-line="984" selection-end-column="14" />
+          <folding>
+            <element signature="e#137#9753#0" expanded="false" />
+            <element signature="e#260#2184#0" expanded="false" />
+            <element signature="e#2198#2787#0" expanded="false" />
+            <element signature="e#2801#3564#0" expanded="false" />
+            <element signature="e#3578#5330#0" expanded="false" />
+            <element signature="e#5344#5682#0" expanded="false" />
+            <element signature="e#5696#7225#0" expanded="false" />
+            <element signature="e#7239#7624#0" expanded="false" />
+            <element signature="e#7985#8616#0" expanded="false" />
+            <element signature="e#8630#9374#0" expanded="false" />
+            <element signature="e#9388#9716#0" expanded="false" />
+            <element signature="e#9759#14642#0" expanded="false" />
+            <element signature="e#9909#10544#0" expanded="false" />
+            <element signature="e#10558#11223#0" expanded="false" />
+            <element signature="e#11237#11895#0" expanded="false" />
+            <element signature="e#11909#12575#0" expanded="false" />
+            <element signature="e#12589#13254#0" expanded="false" />
+            <element signature="e#13268#13946#0" expanded="false" />
+            <element signature="e#13960#14606#0" expanded="false" />
+            <element signature="e#14648#18955#0" expanded="false" />
+            <element signature="e#14798#15435#0" expanded="false" />
+            <element signature="e#15449#16087#0" expanded="false" />
+            <element signature="e#16101#16921#0" expanded="false" />
+            <element signature="e#16935#17615#0" expanded="false" />
+            <element signature="e#17629#18254#0" expanded="false" />
+            <element signature="e#18268#18919#0" expanded="false" />
+            <element signature="e#18961#21788#0" expanded="false" />
+            <element signature="e#19112#19729#0" expanded="false" />
+            <element signature="e#19743#20356#0" expanded="false" />
+            <element signature="e#20370#21122#0" expanded="false" />
+            <element signature="e#21136#21752#0" expanded="false" />
+            <element signature="e#21794#25809#0" expanded="false" />
+            <element signature="e#25815#30961#0" expanded="false" />
+            <element signature="e#25963#27391#0" expanded="false" />
+            <element signature="e#27405#28842#0" expanded="false" />
+            <element signature="e#28856#30283#0" expanded="false" />
+            <element signature="e#31117#31433#0" expanded="false" />
+            <element signature="e#31447#31797#0" expanded="false" />
+            <element signature="e#31811#32864#0" expanded="false" />
+            <element signature="e#33176#33581#0" expanded="false" />
+            <element signature="e#33599#33971#0" expanded="false" />
+            <element signature="e#34815#41039#0" expanded="false" />
+            <element signature="e#34966#35601#0" expanded="false" />
+            <element signature="e#35615#36260#0" expanded="false" />
+            <element signature="e#36274#36943#0" expanded="false" />
+            <element signature="e#36957#37619#0" expanded="false" />
+            <element signature="e#37633#38335#0" expanded="false" />
+            <element signature="e#38349#39004#0" expanded="false" />
+            <element signature="e#39018#39661#0" expanded="false" />
+            <element signature="e#39675#40326#0" expanded="false" />
+            <element signature="e#41045#46268#0" expanded="false" />
+            <element signature="e#41196#41860#0" expanded="false" />
+            <element signature="e#41874#42547#0" expanded="false" />
+            <element signature="e#42561#43234#0" expanded="false" />
+            <element signature="e#43248#43904#0" expanded="false" />
+            <element signature="e#43918#44573#0" expanded="false" />
+            <element signature="e#44587#45232#0" expanded="false" />
+            <element signature="e#45246#45905#0" expanded="false" />
+            <element signature="e#45919#46232#0" expanded="false" />
+            <element signature="e#46274#52094#0" expanded="false" />
+            <element signature="e#46754#47115#0" expanded="false" />
+            <element signature="e#47133#47827#0" expanded="false" />
+            <element signature="e#47845#48208#0" expanded="false" />
+            <element signature="e#48226#48922#0" expanded="false" />
+            <element signature="e#48940#49303#0" expanded="false" />
+            <element signature="e#49321#50017#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Pharmacy_order.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4676">
+          <caret line="1049" column="23" lean-forward="false" selection-start-line="1049" selection-start-column="23" selection-end-line="1049" selection-end-column="23" />
+          <folding>
+            <element signature="e#287#1681#0" expanded="false" />
+            <element signature="e#1695#2335#0" expanded="false" />
+            <element signature="e#2349#3144#0" expanded="false" />
+            <element signature="e#3158#4098#0" expanded="false" />
+            <element signature="e#4140#5785#0" expanded="false" />
+            <element signature="e#4270#5097#0" expanded="false" />
+            <element signature="e#5111#5749#0" expanded="false" />
+            <element signature="e#5916#6705#0" expanded="false" />
+            <element signature="e#6719#15207#0" expanded="false" />
+            <element signature="e#7004#7139#0" expanded="false" />
+            <element signature="e#15221#15551#0" expanded="false" />
+            <element signature="e#15565#15897#0" expanded="false" />
+            <element signature="e#15911#16241#0" expanded="false" />
+            <element signature="e#16705#17234#0" expanded="false" />
+            <element signature="e#17252#17949#0" expanded="false" />
+            <element signature="e#17967#18823#0" expanded="false" />
+            <element signature="e#18841#19213#0" expanded="false" />
+            <element signature="e#19231#19605#0" expanded="false" />
+            <element signature="e#19623#19993#0" expanded="false" />
+            <element signature="e#21031#21728#0" expanded="false" />
+            <element signature="e#21746#22602#0" expanded="false" />
+            <element signature="e#22620#22992#0" expanded="false" />
+            <element signature="e#23010#23384#0" expanded="false" />
+            <element signature="e#23402#23772#0" expanded="false" />
+            <element signature="e#25521#26377#0" expanded="false" />
+            <element signature="e#26395#26767#0" expanded="false" />
+            <element signature="e#26785#27159#0" expanded="false" />
+            <element signature="e#27177#27547#0" expanded="false" />
+            <element signature="e#28580#29277#0" expanded="false" />
+            <element signature="e#29295#30151#0" expanded="false" />
+            <element signature="e#30169#30541#0" expanded="false" />
+            <element signature="e#30559#30933#0" expanded="false" />
+            <element signature="e#30951#31321#0" expanded="false" />
+            <element signature="e#32330#32860#0" expanded="false" />
+            <element signature="e#32878#34066#0" expanded="false" />
+            <element signature="e#34084#34456#0" expanded="false" />
+            <element signature="e#34474#34842#0" expanded="false" />
+            <element signature="e#34860#35230#0" expanded="false" />
+            <element signature="e#36794#37982#0" expanded="false" />
+            <element signature="e#38000#38372#0" expanded="false" />
+            <element signature="e#38390#38758#0" expanded="false" />
+            <element signature="e#38776#39146#0" expanded="false" />
+            <element signature="e#39220#40099#0" expanded="false" />
+            <element signature="e#40105#41022#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/pharmarcyOrderForm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="524" column="22" lean-forward="false" selection-start-line="524" selection-start-column="22" selection-end-line="524" selection-end-column="22" />
+          <folding>
+            <element signature="n#fieldset#4;n#htmlform#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Child_follow_up.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="487" column="12" lean-forward="false" selection-start-line="487" selection-start-column="12" selection-end-line="534" selection-end-column="13" />
+          <folding>
+            <element signature="e#692#1065#0" expanded="false" />
+            <element signature="e#1079#1469#0" expanded="false" />
+            <element signature="e#1483#1891#0" expanded="false" />
+            <element signature="e#1905#2534#0" expanded="false" />
+            <element signature="e#2548#3356#0" expanded="false" />
+            <element signature="e#3533#4533#0" expanded="false" />
+            <element signature="e#4547#5549#0" expanded="false" />
+            <element signature="e#5563#6562#0" expanded="false" />
+            <element signature="e#6576#7125#0" expanded="false" />
+            <element signature="e#7139#7992#0" expanded="false" />
+            <element signature="e#8006#8708#0" expanded="false" />
+            <element signature="e#8750#11850#0" expanded="false" />
+            <element signature="e#8897#11814#0" expanded="false" />
+            <element signature="e#9168#9578#0" expanded="false" />
+            <element signature="e#9596#10001#0" expanded="false" />
+            <element signature="e#10019#10440#0" expanded="false" />
+            <element signature="e#10458#10874#0" expanded="false" />
+            <element signature="e#10892#11784#0" expanded="false" />
+            <element signature="e#11856#13660#0" expanded="false" />
+            <element signature="e#12274#12684#0" expanded="false" />
+            <element signature="e#12702#13594#0" expanded="false" />
+            <element signature="e#13813#15441#0" expanded="false" />
+            <element signature="e#14521#15411#0" expanded="false" />
+            <element signature="e#15630#17260#0" expanded="false" />
+            <element signature="e#15904#16308#0" expanded="false" />
+            <element signature="e#16326#17230#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/child_birth_information.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="119" column="10" lean-forward="false" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/admission.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281">
+          <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/child_follow_up.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="314" column="24" lean-forward="false" selection-start-line="314" selection-start-column="19" selection-end-line="314" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/mytest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>nigeriaemr</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

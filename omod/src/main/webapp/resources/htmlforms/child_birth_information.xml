@@ -57,7 +57,7 @@
         box-shadow: 1px 1px 25px rgba(0,0,0,0.10);
         border-radius: 2px;
         border: 1px solid #305a72;
-        border-bottom-left-radius: 25px;
+        border-bottom-left-radius: 2px;
         text-transform:initial;
 
         }
@@ -154,9 +154,9 @@
                 <td class="alnright">High risk HIV exposed Infant?:</td>
                 <td class="alnleft"><obs conceptId="165668"/></td>
                 <td class="alnright">ARV Prophylaxis</td>
-                <td class="alnleft"><obs conceptId="164971" answers="80586,165544" answerLabels="NVP, AZT-NVP"/></td>
+                <td class="alnleft"><obs conceptId="164971" answers="164970,165544" answerLabels="NVP, AZT-NVP"/></td>
                 <td class="alnright">Timing of ARV Prophylaxis:</td>
-                <td class="alnleft"><obs conceptId="165668"/></td>
+                <td class="alnleft"><obs conceptId="165864"/></td>
             </tr>
         </table>
     </fieldset><br/>
@@ -167,9 +167,9 @@
             <tr>
                 <td width="25%">Immunization received at birth:</td>
                 <td width="25%">
-                    <obs conceptId="164464"  answerConceptId="71902"/><br/>
-                    <obs conceptId="164464"  answerConceptId="782"/><br/>
-                    <obs conceptId="164464"  answerConceptId="783" answerLabel="ORAL POLIO VACCINATION"/>
+                    <obs conceptId="165930"  answerConceptId="71902" answerLabel="BCG Vaccination"/><br/>
+                    <obs conceptId="165930"  answerConceptId="782" answerLabel="Hepatitis B Vaccination"/><br/>
+                    <obs conceptId="165930"  answerConceptId="783" answerLabel="Oral Polio Vaccination"/>
                 </td>
                 <td width="25%"></td>
                 <td width="25%"></td>
