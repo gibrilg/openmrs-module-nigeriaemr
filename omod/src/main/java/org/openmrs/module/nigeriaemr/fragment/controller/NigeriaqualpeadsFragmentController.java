@@ -10,6 +10,7 @@ import org.xml.sax.SAXException;
 import javax.servlet.http.HttpServletRequest;
 import javax.xml.bind.JAXBException;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -45,7 +46,9 @@ public class NigeriaqualpeadsFragmentController {
 			generator.createPediatricTuberculosisFile(patient);
 		}
 		
-		return util.ZipFolder(request, reportFolder, reportType);
+		String zipFileName = Utils.getIPShortName() + "_" + Utils.getFacilityDATIMId() + "_"
+		        + new SimpleDateFormat("yyyy-MM-dd").format(new Date()) + ".zip";
+		return util.ZipFolder(request, reportFolder, zipFileName, reportType);
 	}
 	
 }

@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.xml.bind.JAXBException;
 import javax.xml.stream.XMLStreamException;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -52,6 +53,7 @@ public class NigeriaqualFragmentController {
 			generator.createPatientMonitoringReviewPeriodFile(patient,reportFolder);
 		}
 
-		return util.ZipFolder(request, reportFolder, reportType);
+		String zipFileName = Utils.getIPShortName()+ "_" +Utils.getFacilityDATIMId()+"_"+ new SimpleDateFormat("yyyy-MM-dd").format(new Date())+".zip";
+		return util.ZipFolder(request, reportFolder,zipFileName, reportType);
 	}
 }

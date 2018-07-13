@@ -196,6 +196,10 @@ public class NDRMainDictionary {
 		Date value_datetime;
 		FacilityType ft;
 
+		if(obsList ==null || obsList.size() ==0){
+			return  hiv;
+		}
+
 		for (Obs obs : obsList) {
 			conceptID = obs.getConcept().getConceptId();
 			switch (conceptID) {
