@@ -567,7 +567,7 @@
               "type": "obs",
               "id": "Current_Cough",
               "questionOptions": {
-                "rendering": "radio",
+                "rendering": "select",
                 "concept": "143264AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "answers": [
                   {
@@ -586,7 +586,7 @@
               "type": "obs",
               "id": "Weight_Loss",
               "questionOptions": {
-                "rendering": "radio",
+                "rendering": "select",
                 "concept": "832AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "answers": [
                   {
@@ -605,7 +605,7 @@
               "type": "obs",
               "id": "Fever",
               "questionOptions": {
-                "rendering": "radio",
+                "rendering": "select",
                 "concept": "140238AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "answers": [
                   {
@@ -629,7 +629,7 @@
               "type": "obs",
               "id": "Night_sweats",
               "questionOptions": {
-                "rendering": "radio",
+                "rendering": "select",
                 "concept": "133027AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "answers": [
                   {
@@ -659,7 +659,7 @@
               "type": "obs",
               "id": "Complaints_of_vaginal_discharge",
               "questionOptions": {
-                "rendering": "radio",
+                "rendering": "select",
                 "concept": "2cabc6b8-ec7d-463c-9e47-d3de7599feca",
                 "answers": [
                   {
@@ -678,7 +678,7 @@
               "type": "obs",
               "id": "Complaints_of_lower_abdominal_pains",
               "questionOptions": {
-                "rendering": "radio",
+                "rendering": "select",
                 "concept": "4ea92538-9196-4d11-ae72-a61c41260e37",
                 "answers": [
                   {
@@ -697,7 +697,7 @@
               "type": "obs",
               "id": "Complaints_of_urethral_discharge",
               "questionOptions": {
-                "rendering": "radio",
+                "rendering": "select",
                 "concept": "a0b14cd4-b0d4-49ef-86ed-096c503cf72b",
                 "answers": [
                   {
@@ -721,7 +721,7 @@
               "type": "obs",
               "id": "Complaints_of_scrotal_swelling_and_pain",
               "questionOptions": {
-                "rendering": "radio",
+                "rendering": "select",
                 "concept": "a86c9235-9b7b-4a9d-8117-68b998a6a5b5",
                 "answers": [
                   {
@@ -740,7 +740,7 @@
               "type": "obs",
               "id": "Complaints_of_genital_sore",
               "questionOptions": {
-                "rendering": "radio",
+                "rendering": "select",
                 "concept": "2da686d5-71a6-4d3d-8ec8-1b2dea069be3",
                 "answers": [
                   {

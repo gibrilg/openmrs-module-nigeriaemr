@@ -1,7 +1,4 @@
-<htmlform formUuid="e1590b71-ff4b-4092-9778-b40c22a602db" formName="AdultCS"
-          formEncounterType="4635d9a9-ca8f-4451-ba27-47e5bb57cf11 " formVersion="2016">
-
-
+<htmlform>
     <style>
         .section {
         border: 1px solid $headerColor;
@@ -92,6 +89,18 @@
         }
 
     </style>
+    <script type="text/javascript">
+        beforeSubmit.push(function() {
+        var val_encounterDate = getValue('encounterDate.value');
+        var val_next_appointment = getValue('next_appointment.value');
+        if (val_encounterDate > val_next_appointment) {
+        getField('date_confirmed_hiv.error').html('Next appointment date has to be later than visit date').show();
+        return false;
+        }
+
+        return true;
+        });
+    </script>
     <div class="hidden" id="encounter-details" sectionTag="section" headerStyle="title" headerLabel="Encounter Details">
         <fieldset>
             <legend class="legend_style">When?</legend>
@@ -126,7 +135,7 @@
         <tr>
             <td class="alnright">Visit Date</td>
             <td>
-                <encounterDate default="now" showTime="false" allowFutureDates="false"/>
+                <encounterDate default="now" id="encounterDate" showTime="false" allowFutureDates="false"/>
             </td>
             <td>
 
@@ -194,9 +203,13 @@
             <tr>
                 <td class="alnright_s">Body Mass Index (BMI)</td>
                 <td><obs conceptId="1342"/></td>
-                <td class="alnright_s">MUAC (cm)</td>
-                <td><obs conceptId="1343"/></td>
-                <td class="alnright">Is Patient on Family Planning</td>
+                <td class="alnright_s">MUAC</td>
+                <td class="alnright_s"><obs conceptId="165935" answerConceptIds="165932, 165933,165934" answerLabels="Over, Under, Normal"/></td>
+
+
+                <td class="alnright_s">BMI/MUAC</td>
+                <td class="alnright_s"><obs conceptId="165243" /></td>
+                <td class="alnright_s">Is Patient on Family Planning</td>
                 <td>
                     <obs id="family_planning" style="yes_no_dropdown" conceptId="5271" >
                         <controls>
@@ -243,35 +256,36 @@
         <br/>
         <table>
             <tr>
-                <th style="width:50%; text-align: left;">Other OIs/Other problems</th>
-                <th style="width:50%; text-align: left;">Noted Side Effects</th>
+                <th style="width:40%; text-align: left;">Other OIs/Other problems</th>
+                <th style="width:60%; text-align: left;">Noted Side Effects</th>
             </tr>
             <tr>
 
-                <td style="width:50%" class="alnVertical">
-                    <obs conceptId="160170" answerConceptId="117543" answerLabel="Herpes Zoster"/> <br/>
-                    <obs conceptId="160170" answerConceptId="114100" answerLabel="Pneumonia"/><br/>
-                    <obs conceptId="160170" answerConceptId="119566" answerLabel="Dementia / Encephalitis"/><br/>
-                    <obs conceptId="160170" answerConceptId="5334" answerLabel="Thrush, Oral/Virginal"/><br/>
-                    <obs conceptId="160170" answerConceptId="140238" answerLabel="Fever"/><br/>
-                    <obs conceptId="160170" answerConceptId="143264" answerLabel="Cough"/>
+                <td style="width:40%" class="alnVertical">
+                    Herpes Zoster<obs conceptId="160170" answerConceptId="117543" answerLabel=""/> <br/>
+                    Pneumonia<obs conceptId="160170" answerConceptId="114100" answerLabel=""/><br/>
+                    Dementia / Encephalitis<obs conceptId="160170" answerConceptId="119566" answerLabel=""/><br/>
+                    Thrush, Oral/Virginal<obs conceptId="160170" answerConceptId="5334" answerLabel=""/><br/>
+                    Fever<obs conceptId="160170" answerConceptId="140238" answerLabel=""/><br/>
+                    Cough<obs conceptId="160170" answerConceptId="143264" answerLabel=""/>
                 </td>
-                <td style="width:50%">
+                <td style="width:60%">
                     <table>
                         <tr>
                             <td class="alnVertical">
-                                <obs conceptId="159935" answerConceptId="133473" answerLabel="Nausea and Vomiting"/> <br/>
-                                <obs conceptId="159935" answerConceptId="139084" answerLabel="Headache"/><br/>
-                                <obs conceptId="159935" answerConceptId="119566" answerLabel="Insomnia"/><br/>
-                                <obs conceptId="159935" answerConceptId="5226" answerLabel="Weakness"/><br/>
-                                <obs conceptId="159935" answerConceptId="512" answerLabel="PV Bleeding / Discharge "/><br/>
-                                <obs conceptId="159935" answerConceptId="165052" answerLabel="Fat changes"/>
+                                Nausea and Vomiting<obs conceptId="159935" answerConceptId="133473" answerLabel=""/> <br/>
+                                Headache <obs conceptId="159935" answerConceptId="139084" answerLabel=""/><br/>
+                                Insomnia<obs conceptId="159935" answerConceptId="119566" answerLabel=""/><br/>
+                                Weakness<obs conceptId="159935" answerConceptId="5226" answerLabel=""/><br/>
+                                PV Bleeding / Discharge <obs conceptId="159935" answerConceptId="512" answerLabel=""/><br/>
+                                Fat changes<obs conceptId="159935" answerConceptId="165052" answerLabel=""/>
                             </td>
                             <td class="alnVertical">
-                                <obs conceptId="159935" answerConceptId="121629" answerLabel="Anaemia"/><br/>
-                                <obs conceptId="159935" answerConceptId="165053" answerLabel="Drainage of liquor"/><br/>
-                                <obs conceptId="159935" answerConceptId="125886" answerLabel="Stevens-Johnson Syndrome"/><br/>
-                                <obs conceptId="159935" answerConceptId="138291" answerLabel="Hyperglycemia"/>
+                                Anaemia<obs conceptId="159935" answerConceptId="121629" answerLabel=""/><br/>
+                                Drainage of liquor<obs conceptId="159935" answerConceptId="165053" answerLabel=""/><br/>
+                                Stevens-Johnson Syndrome<obs conceptId="159935" answerConceptId="125886" answerLabel=""/><br/>
+                                Hyperglycemia<obs conceptId="159935" answerConceptId="138291" answerLabel=""/><br/>
+                                Rash<obs conceptId="159935" answerConceptId="512" answerLabel=""/>
                             </td>
                         </tr>
                     </table>
@@ -355,7 +369,7 @@
             <tr>
                 <td>Next Appointment Date:</td>
                 <td>
-                    <obs conceptId="5096"/>
+                    <obs conceptId="5096" id="next_appointment"/>
                 </td>
                 <td>Signature:</td>
                 <td>

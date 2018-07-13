@@ -27,6 +27,9 @@
         color:#000000;
         width: 25%;
         }
+        .error{
+        color:red;
+        }
         .alnright_s{
         text-align: right;
         color:#000000;
@@ -95,13 +98,25 @@
     </style>
     <script type="text/javascript">
         beforeSubmit.push(function() {
-            var val_comfirmed = getValue('date_confirmed_hiv.value');
-            var val_enrolled = getValue('date_enrolled.value');
-            if (val_comfirmed &lt; val_enrolled) {
-                getField('date_confirmed_hiv.error').html('Date Confirmed should be more recent').show();
+        var val_comfirmed = getValue('date_confirmed_hiv.value');
+        var val_enrolled = getValue('date_enrolled.value');
+        var var_art_start_date = getValue('art_start_date.value');
+        if (val_comfirmed > val_enrolled) {
+            getField('date_confirmed_hiv.error').html('Date enrolled has to be later than HIV confirmed date').show();
+            return false;
+        }
+        if (var_art_start_date){
+            if (val_comfirmed > var_art_start_date ){
+            getField('art_start_date.error').html('ART start date has to be later than HIV confirmed date').show();
             return false;
             }
-            return true;
+            if (val_enrolled > var_art_start_date ){
+            getField('art_start_date.error').html('ART start date has to be later than HIV enrollment date').show();
+            return false;
+        }
+        }
+
+        return true;
         });
     </script>
     <div class="hidden" id="encounter-details" sectionTag="section" headerStyle="title" headerLabel="Encounter Details">
@@ -181,7 +196,7 @@
                 <td class="alnleft_s">Prior ART</td>
                 <td class="alnleft_s"><obs conceptId="165242"/></td>
                 <td  class="alnleft_s">ART Start Date</td>
-                <td class="alnleft_s"><obs conceptId="159599"/></td>
+                <td class="alnleft_s"><obs id="art_start_date" conceptId="159599"/></td>
             </tr>
         </table>
     </fieldset>
@@ -198,20 +213,6 @@
             </tr>
         </table>
     </fieldset>
-
-    <!--<fieldset>-->
-        <!--<legend class="legend_style">Contact Information</legend>-->
-        <!--<table width="100%">-->
-            <!--<tr>-->
-                <!--<td class="alnleft_s">Phone Number</td>-->
-                <!--<td class="alnleft_s"><obs conceptId="159635"/></td>-->
-                <!--<td class="alnleft_s" >Address </td>-->
-                <!--<td class="alnleft_s"><obs conceptId="162725"/></td>-->
-                <!--<td class="alnleft_s"></td>-->
-                <!--<td class="alnleft_s"></td>-->
-            <!--</tr>-->
-        <!--</table>-->
-    <!--</fieldset>-->
     <fieldset>
         <legend class="legend_style">Next of Kin Information</legend>
         <table width="100%">

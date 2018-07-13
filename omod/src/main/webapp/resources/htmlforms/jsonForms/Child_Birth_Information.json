@@ -180,7 +180,7 @@
 
               "id": "Immunization_received_at_birth",
               "questionOptions": {
-                "rendering": "select",
+                "rendering": "check",
                 "concept": "8d2ee131-1179-4527-84f0-44e81cc894fc",
                 "answers": [
                   {

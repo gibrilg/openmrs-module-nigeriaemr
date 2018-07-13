@@ -18,27 +18,43 @@
               },
               "questions": [
                 {
-                  "label": "Is the patient HIV positive?",
+                  "label": "Encounter Location",
                   "questionOptions": {
-                    "rendering": "radio",
+                    "rendering": "select",
                     "concept": "138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "answers": [
                       {
                         "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "Yes"
+                        "label": "Unknown Location",
+                        "uuid":"8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
                       },
                       {
                         "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "No"
+                        "label": "Pharmacy",
+                        "uuid":"7f65d926-57d6-4402-ae10-a5b3bcbf7986"
                       },
                       {
                         "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                        "label": "Unknown"
+                        "label": "Laboratory",
+                        "uuid":"7fdfa2cb-bc95-405a-88c6-32b7673c0453"
                       }
                     ]
                   },
                   "type": "obs",
                   "validators": []
+                },
+                {
+                  "label": "Test Date 2",
+                  "questionOptions": {
+                    "rendering": "date",
+                    "concept": "93aaf29a-fc4c-4b54-8c82-ee70030ef660"
+                  },
+                  "type": "encounterDate",
+                  "validators": [
+                    {
+                      "type": "date"
+                    }
+                  ]
                 }
               ]
             }
