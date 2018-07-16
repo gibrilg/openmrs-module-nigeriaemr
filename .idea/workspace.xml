@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb80a1c1-ab92-4606-bbbe-2add40b3a41f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openmrs-client-debug.apk" afterPath="$PROJECT_DIR$/openmrs-client-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/CareCard.xml" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/CareCard.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/adult_clinical_evaluation.xml" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/adult_clinical_evaluation.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/child_birth_information.xml" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/child_birth_information.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/child_follow_up.xml" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/child_follow_up.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/deliveryregister.xml" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/deliveryregister.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/general antenatal register.xml" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/general antenatal register.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/hiv_enrollment_register.xml" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/hiv_enrollment_register.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Child_Birth_Information.json" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Child_Birth_Information.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Child_follow_up.json" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Child_follow_up.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Client_Intake.json" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Client_Intake.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/mytest.json" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/mytest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/vital.json" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/vital.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/partnerregister.xml" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/partnerregister.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/patient_program_enrollment.xml" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/patient_program_enrollment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/pediatric_initial_clinical_evaluation.xml" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/pediatric_initial_clinical_evaluation.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/pharmarcyOrderForm.xml" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/pharmarcyOrderForm.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/api/target/" />
@@ -524,7 +509,7 @@
       <workItem from="1529264076733" duration="16162000" />
       <workItem from="1529380413880" duration="84146000" />
       <workItem from="1530516132259" duration="31418000" />
-      <workItem from="1531484610787" duration="403000" />
+      <workItem from="1531484610787" duration="1496000" />
     </task>
     <task id="LOCAL-00001" summary="My first commit">
       <created>1523017110254</created>
@@ -624,11 +609,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531484986609</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added mobile apk">
+      <created>1531485088001</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1531485088001</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="663616000" />
+    <option name="totallyTimeSpent" value="664709000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1054" extended-state="6" />
