@@ -1,5 +1,4 @@
-<htmlform formUuid="f826d129-dea8-4b6b-86bc-1f448076615b" formName="MedAdhrAssessment"
-          formEncounterType="5519fc4e-01c3-461a-b34b-c7843a2a7395 " formVersion="2016">
+<htmlform>
     <style>
         .section {
         border: 1px solid $headerColor;
@@ -166,7 +165,7 @@
     <fieldset>
         <table class="table" width="100%">
             <tr>
-                <td class="alnright">ROM delivery interval</td>
+                <td class="alnright">Rupture of Membrane delivery interval</td>
                 <td><obs conceptId="165479"/></td>
                 <td class="alnright">Mode of delivery</td>
                 <td>

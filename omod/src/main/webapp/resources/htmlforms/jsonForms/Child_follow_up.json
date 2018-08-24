@@ -121,7 +121,7 @@
 
               "id": "Immunization_provided_during_6_weeks_visit",
               "questionOptions": {
-                "rendering": "select",
+                "rendering": "check",
                 "concept": "6f082c18-a883-4bec-a211-82d0b1d9b372",
                 "answers": [
                   {
@@ -150,7 +150,7 @@
 
               "id": "Immunization_provided_during_10_weeks_visit",
               "questionOptions": {
-                "rendering": "select",
+                "rendering": "check",
                 "concept": "6f082c18-a883-4bec-a211-82d0b1d9b372",
                 "answers": [
                   {
@@ -179,7 +179,7 @@
 
               "id": "Immunization_provided_during_14_weeks_visit",
               "questionOptions": {
-                "rendering": "select",
+                "rendering": "check",
                 "concept": "476d64f0-7bde-4c3a-afd3-ab0c4dc69a7d",
                 "answers": [
                   {
@@ -208,7 +208,7 @@
 
               "id": "Immunization_provided_during_6_months_visit",
               "questionOptions": {
-                "rendering": "select",
+                "rendering": "check",
                 "concept": "	0880a4fa-388b-4dc9-9afe-a1d73afe0ea8",
                 "answers": [
                   {
@@ -224,7 +224,7 @@
 
               "id": "Immunization_provided_during_9_months_visit",
               "questionOptions": {
-                "rendering": "select",
+                "rendering": "check",
                 "concept": "c2867c56-2199-4b77-be55-3be8d9d6c467",
                 "answers": [
                   {
@@ -248,7 +248,7 @@
 
               "id": "Immunization_provided_during_12_months_visit",
               "questionOptions": {
-                "rendering": "select",
+                "rendering": "check",
                 "concept": "871a9976-eeda-43b4-bc36-a95e777e181b",
                 "answers": [
                   {

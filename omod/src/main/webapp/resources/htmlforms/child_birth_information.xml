@@ -80,9 +80,10 @@
         form input, form select, form textarea, form ul.select, .form input, .form select, .form textarea, .form ul.select {
         padding: 2px 10px;
         min-width: 150px;
+        max-width: 150px;
         }
         form select, .form select {
-        max-width: 200px;
+        max-width: 150px;
         min-width: 150px;
         }
         body {
@@ -130,8 +131,8 @@
                 </td>
                 <td class="alnright_s">Enrollment Date</td>
                 <td class="alnleft_s"><enrollInProgram programId="3" showDate="true"/></td>
-                <td class="alnright_s"> .</td>
-                <td class="alnleft_s"> .</td>
+                <td class="alnright_s"> </td>
+                <td class="alnleft_s"> </td>
             </tr>
             <tr>
                 <td class="alnright_s" >Weight(kg):</td>
@@ -143,20 +144,20 @@
 
             </tr>
             <tr>
-                <td class="alnright_s">Mid upper arm circumference(cm)</td>
-                <td class="alnleft_s"><obs conceptId="1343"/></td>
-                <td class="alnright">APGAR Score:</td>
+                <td class="alnright_s">MUAC</td>
+                <td class="alnright_s"><obs conceptId="165935" answerConceptIds="165932, 165933,165934" answerLabels="Over, Under, Normal"/></td>
+                <td class="alnright_s">APGAR Score:</td>
                 <td class="alnleft_s"><obs conceptId="1504"/></td>
-                <td class="alnright">Child given Hepatitis B Immunoglobulin (Hep B Ig)?:</td>
+                <td class="alnright_s">Child given Hepatitis B Immunoglobulin (Hep B Ig)?:</td>
                 <td class="alnleft_s"><obs conceptId="165667"/></td>
             </tr>
             <tr>
-                <td class="alnright">High risk HIV exposed Infant?:</td>
-                <td class="alnleft"><obs conceptId="165668"/></td>
-                <td class="alnright">ARV Prophylaxis</td>
-                <td class="alnleft"><obs conceptId="164971" answers="164970,165544" answerLabels="NVP, AZT-NVP"/></td>
-                <td class="alnright">Timing of ARV Prophylaxis:</td>
-                <td class="alnleft"><obs conceptId="165864"/></td>
+                <td class="alnright_s">High risk HIV exposed Infant?:</td>
+                <td class="alnleft_s"><obs conceptId="165668"/></td>
+                <td class="alnright_s">ARV Prophylaxis</td>
+                <td class="alnleft_s"><obs conceptId="164971" answers="164970,165544" answerLabels="NVP, AZT-NVP"/></td>
+                <td class="alnright_s">Timing of ARV Prophylaxis:</td>
+                <td class="alnleft_s"><obs conceptId="165864"/></td>
             </tr>
         </table>
     </fieldset><br/>

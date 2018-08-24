@@ -1,5 +1,4 @@
-<htmlform formUuid="3595782a-1cdc-44f1-84cc-5682fd405f46" formName="Partner Register" formEncounterType="15a98ee7-0e8d-4ee8-8aaa-99b28c7083ee" formVersion="2018">
-    <!-- Partner Register 11-Apr-2018 -->
+<htmlform>
 
     <macros>
         paperFormId = (Fill this in)

@@ -1,6 +1,6 @@
-<htmlform formUuid="c75f120a-04ec-11e3-8780-2b40bef9a44b" formName="Pharmacy Order Form" formEncounterType="d7151f82-c1f3-4152-a605-2f9ea7414a79" formVersion="1.0">
-	<!-- Pharmacy Order Form Initial development 06-April-2018 -->
-
+<!--<htmlform formUuid="c75f120a-04ec-11e3-8780-2b40bef9a44b" formName="Pharmacy Order Form" formEncounterType="d7151f82-c1f3-4152-a605-2f9ea7414a79" formVersion="1.0">-->
+	<!--&lt;!&ndash; Pharmacy Order Form Initial development 06-April-2018 &ndash;&gt;-->
+<htmlform>
 	<macros>
 		paperFormId = (Fill this in)
 		headerColor =#2f1c55
@@ -117,25 +117,18 @@
 			<tr>
 				<td>
 					<label>Treatment type</label>
-					<select name="Program Area">
-						<option></option>
-						<option>ART</option>
-						<option>Non-ART</option>
-						<option>Occup PEP</option>
-						<option>Non-Occup PEP</option>
-						<option>HIV-Exposed Infant</option>
-						<option>High-Risk HIV Exposed Infant</option>
-						<option>PrEP</option>
-					</select>
+					<obs conceptId="165945" answerLabel=""/>
 				</td>
 				<td>
 					<label>Visit Type</label>
 					<obs conceptId="164181" id="VisitType" answerConceptIds="164180,160530" answerLabels="Initial Visit,Follow-up Visit"/>
 				</td>
+				<includeIf velocityTest="$patient.gender == 'F' ">
 				<td>
 					<label>Pregnancy Status</label>
 					<obs conceptId="165050" answerLabel=""/>
 				</td>
+				</includeIf>
 				<td>
 					<label>Pick Up Reason</label>
 					<obs conceptId="165774" answerLabel=""/>
@@ -146,7 +139,7 @@
 	<br/>
 
 	<fieldset>
-		<legend class="legend_style">Medication Adherence</legend>
+		<legend class="legend_style">ARV Medication Adherence</legend>
 		<table class="baseline-aligned">
 			<tr>
 				<td>
@@ -155,7 +148,7 @@
 				</td>
 				<td>
 
-					<label>Adherence councelling offering</label>
+					<label>Adherence counselling offering</label>
 					<obs conceptId="165832" answerLabel=""/>
 				</td>
 				<td>
@@ -522,7 +515,7 @@
 				</td>
 				<td>
 					<label>Date orderd:</label>
-					<obs conceptId="164989" id="dateDrugOrdered"/>
+					<obs conceptId="164989" id="dateDrugOrdered" required="true"/>
 				</td>
 				<td>
 					<label>Dispensed By:</label>
@@ -530,7 +523,7 @@
 				</td>
 				<td>
 					<label>Date dispensed:</label>
-					<obs conceptId="164989" id="dateDrugOrdered"/>
+					<obs conceptId="164989" id="dateDrugOrdered" required="true"/>
 				</td>
 
 			</tr>

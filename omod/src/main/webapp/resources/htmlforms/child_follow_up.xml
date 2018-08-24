@@ -128,10 +128,10 @@
         <legend class="legend_style">Mother's Information</legend>
         <table width="100%">
             <tr>
-                <td class="alnright">Mother Hosp. Reg. No:</td>
+                <td class="alnright_s">Mother Hosp. Reg. No:</td>
                 <td><lookup class="value" complexExpression="#foreach( $patId in $patientIdentifiers.get('Hospital Number') ) $patId #end "/></td>
 
-                <td class="alnright">Mother's Name:</td>
+                <td class="alnright_s">Mother's Name:</td>
                 <td class="value">
                     <lookup complexExpression="#foreach ( $relationship in $relationshipList )
                         #if( $relationship.relationshipType.bIsToA == 'Child' )
@@ -143,24 +143,26 @@
                         #end
                     #end "/>
                 </td>
+                <td class="alnright_s">Timing of Mother's ART Initiation:</td>
+                <td><obs conceptId="165940"/></td>
             </tr>
         </table>
-        <table width="100%">
-            <tr>
-                <td class="alnright">Mother's Address:</td>
-                <td class="value"><lookup complexExpression="#foreach ( $relationship in $relationshipList )
-                #if( $relationship.relationshipType.bIsToA == 'Child' )
-                  #if( !($relationship.personA.patientId == $patient.patientId ))
-                     #if( $relationship.personA.gender == 'F' )
-                           $relationship.personA.personAddress.address1
-                     #end
-                  #end
-                #end
-                #end "/></td>
-                <td class="alnright">Timing of Mother's ART Initiation:</td>
-                <td class="value"><lookup complexExpression="$fn.latestObs(164851).valueCoded.name"/></td>
-            </tr>
-        </table>
+        <!--<table width="100%">-->
+            <!--<tr>-->
+                <!--<td class="alnright">Mother's Address:</td>-->
+                <!--<td class="value"><lookup complexExpression="#foreach ( $relationship in $relationshipList )-->
+                <!--#if( $relationship.relationshipType.bIsToA == 'Child' )-->
+                  <!--#if( !($relationship.personA.patientId == $patient.patientId ))-->
+                     <!--#if( $relationship.personA.gender == 'F' )-->
+                           <!--$relationship.personA.personAddress.address1-->
+                     <!--#end-->
+                  <!--#end-->
+                <!--#end-->
+                <!--#end "/></td>-->
+                <!--<td class="alnright">Timing of Mother's ART Initiation:</td>-->
+                <!--<td><obs conceptId="165940"/></td>-->
+            <!--</tr>-->
+        <!--</table>-->
     </fieldset><br/>
     <fieldset>
         <legend class="legend_style">Child Birth Details</legend>
@@ -192,28 +194,27 @@
                 <td class="alnleft_s">
                     <encounterDate default="now" showTime="false" allowFutureDates="false"/>
                 </td>
-                <td class="alnright"></td>
-                <td class="alnleft"></td>
+                <td class="alnright_s">Weight(kg):</td>
+                <td class="alnleft_s"><obs conceptId="5916"/></td>
+                <td class="alnright_s">Length(cm):</td>
+                <td class="alnleft_s"><obs conceptId="1503"/></td>
             </tr>
             <tr>
-                <td class="alnright">Weight(kg):</td>
-                <td class="alnleft"><obs conceptId="5916"/></td>
-                <td class="alnright">Length(cm):</td>
-                <td class="alnleft"><obs conceptId="1503"/></td>
+                <td class="alnright_s">Head circumference(cm):</td>
+                <td class="alnleft_s"><obs conceptId="5314"/></td>
+                <td class="alnright_s">Mid upper arm circumference(cm):</td>
+                <td class="alnleft_s"><obs conceptId="1343"/></td>
+                <td class="alnright_s">MUAC</td>
+                <td class="alnleft_s"><obs conceptId="165935" answerConceptIds="165932, 165933,165934" answerLabels="Over, Under, Normal"/></td>
 
-
             </tr>
             <tr>
-                <td class="alnright">Head circumference(cm):</td>
-                <td class="alnleft"><obs conceptId="5314"/></td>
-                <td class="alnright">Mid upper arm circumference(cm):</td>
-                <td class="alnleft"><obs conceptId="1343"/></td>
-            </tr>
-            <tr>
-                <td class="alnright">CTX given to child</td>
-                <td class="alnleft"><obs conceptId="165837" style="yes_no_dropdown" answerLabel=""/></td>
-                <td class="alnright">Feeding method</td>
-                <td class="alnleft"><obs conceptId="1151" answerConceptIds="5254,6046,5526" answerLabels="Infant formula,Mixed feeding,Exclusively Breastfed"/></td>
+                <td class="alnright_s">BMI/MUAC</td>
+                <td class="alnleft_s"><obs conceptId="165243" /></td>
+                <td class="alnright_s">CTX given to child</td>
+                <td class="alnleft_s"><obs conceptId="165837" style="yes_no_dropdown" answerLabel=""/></td>
+                <td class="alnright_s">Feeding method</td>
+                <td class="alnleft_s"><obs conceptId="1151" answerConceptIds="5254,6046,5526" answerLabels="Infant formula,Mixed feeding,Exclusively Breastfed"/></td>
 
 
             </tr>
@@ -227,10 +228,10 @@
                 <td>
                     <table>
                         <tr>
-                            <td><obs conceptId="165669"  answerConceptId="783" answerLabel="OPV 1"/></td>
-                            <td><obs conceptId="165669"  answerConceptId="1685" answerLabel="Penta 1"/></td>
-                            <td><obs conceptId="165669"  answerConceptId="77441" answerLabel="PCV 1"/></td>
-                            <td><obs conceptId="165669"  answerConceptId="83533" answerLabel="Rota 1"/></td>
+                            <td width="25%">OPV 1<obs conceptId="165669"  answerConceptId="783" answerLabel=""/></td>
+                            <td width="25%">Penta 1<obs conceptId="165669"  answerConceptId="1685" answerLabel=""/></td>
+                            <td width="25%">PCV 1<obs conceptId="165669"  answerConceptId="77441" answerLabel=""/></td>
+                            <td width="25%">Rota 1<obs conceptId="165669"  answerConceptId="83533" answerLabel=""/></td>
                         </tr>
                     </table>
                 </td>
@@ -240,10 +241,10 @@
                 <td>
                     <table>
                         <tr>
-                            <td><obs conceptId="165670"  answerConceptId="783" answerLabel="OPV 2"/></td>
-                            <td><obs conceptId="165670"  answerConceptId="1685" answerLabel="Penta 2"/></td>
-                            <td><obs conceptId="165670"  answerConceptId="77441" answerLabel="PCV 2"/></td>
-                            <td><obs conceptId="165670"  answerConceptId="83533" answerLabel="Rota 2"/></td>
+                            <td width="25%">OPV 2<obs conceptId="165670"  answerConceptId="783" answerLabel=""/></td>
+                            <td width="25%">Penta 2<obs conceptId="165670"  answerConceptId="1685" answerLabel=""/></td>
+                            <td width="25%">PCV 2<obs conceptId="165670"  answerConceptId="77441" answerLabel=""/></td>
+                            <td width="25%">Rota 2<obs conceptId="165670"  answerConceptId="83533" answerLabel=""/></td>
                         </tr>
                     </table>
 
@@ -254,10 +255,10 @@
                 <td>
                     <table>
                         <tr>
-                            <td><obs conceptId="165671"  answerConceptId="783" answerLabel="OPV 3"/></td>
-                            <td><obs conceptId="165671"  answerConceptId="1685" answerLabel="Penta 3"/></td>
-                            <td><obs conceptId="165671"  answerConceptId="77441" answerLabel="PCV 3"/></td>
-                            <td><obs conceptId="165671"  answerConceptId="82241" answerLabel="IPV"/></td>
+                            <td width="25%">OPV 3<obs conceptId="165671"  answerConceptId="783" answerLabel=""/></td>
+                            <td width="25%">Penta 3<obs conceptId="165671"  answerConceptId="1685" answerLabel=""/></td>
+                            <td width="25%">PCV 3<obs conceptId="165671"  answerConceptId="77441" answerLabel=""/></td>
+                            <td width="25%">IPV<obs conceptId="165671"  answerConceptId="82241" answerLabel=""/></td>
                         </tr>
                     </table>
                 </td>
@@ -267,7 +268,10 @@
                 <td>
                     <table>
                         <tr>
-                            <td><obs conceptId="165672"  answerConceptId="86339" answerLabel="Vitamin A 1st Dose"/></td>
+                            <td width="50%">Vitamin A 1st Dose<obs conceptId="165672"  answerConceptId="86339" answerLabel=""/></td>
+                            <td width="20%"> </td>
+                            <td width="20%"> </td>
+                            <td width="10%"> </td>
                         </tr>
                     </table>
                 </td>
@@ -277,9 +281,10 @@
                 <td>
                     <table>
                         <tr>
-                            <td><obs conceptId="165673"  answerConceptId="79409" answerLabel="Measle 1"/></td>
-                            <td><obs conceptId="165673"  answerConceptId="86556" answerLabel="Yellow Fever"/></td>
-                            <td><obs conceptId="165673"  answerConceptId="79549" answerLabel="Conjugate A CSM"/></td>
+                            <td width="35%">Measle 1<obs conceptId="165673"  answerConceptId="79409" answerLabel=""/></td>
+                            <td width="35%">Yellow Fever<obs conceptId="165673"  answerConceptId="86556" answerLabel=""/></td>
+                            <td width="30%">Conjugate A CSM<obs conceptId="165673"  answerConceptId="79549" answerLabel=""/></td>
+                            <td width="0%"> </td>
                         </tr>
                     </table>
                 </td>
@@ -289,8 +294,10 @@
                 <td>
                     <table>
                         <tr>
-                            <td><obs conceptId="165674"  answerConceptId="86339" answerLabel="Vitamin A 2nd Dose"/></td>
-                            <td><obs conceptId="165674"  answerConceptId="79409" answerLabel="Measle 2"/></td>
+                            <td width="35%">Vitamin A 2nd Dose<obs conceptId="165674"  answerConceptId="86339" answerLabel=""/></td>
+                            <td width="35%">Measle 2<obs conceptId="165674"  answerConceptId="79409" answerLabel=""/></td>
+                            <td width="20%"> </td>
+                            <td width="10%"> </td>
                         </tr>
                     </table>
                 </td>
@@ -301,7 +308,7 @@
         <legend class="legend_style">EID Lab Monitoring</legend>
         <table class="table" width="100%">
             <tr>
-                <td class="alnleft_s">PCR Lab Monitoring</td>
+                <td class="alnleft_s"><b>PCR Lab Monitoring</b></td>
                 <td class="alnleft_s"><obs id="pcr" conceptId="165868" answerConceptIds="165865,165866,165867 " answerLabels="1st PCR, 2nd PCR, Confirmatory PCR">
                     <control>
                         <when value="165865" thenDisplay="#pcr_1"/>
@@ -356,7 +363,7 @@
         </table>
         <table class="table" width="100%">
             <tr>
-                <td class="alnleft_s">Rapid Test Antibody Lab Monitoring</td>
+                <td class="alnleft_s"><b>Rapid Test Antibody Lab Monitoring</b></td>
                 <td class="alnleft_s"><obs conceptId="165879" /></td>
                 <obsgroup groupingConceptId="165880">
                     <td class="alnright_s">Rapid Test Date</td>
@@ -385,39 +392,4 @@
     </fieldset><br/>
 
     <submit/>
-
-    <!-- END OF FORM
-
-    Simple examples to copy-and-paste. Full reference at http://wiki.openmrs.org/x/kg8z
-
-    SECTION
-      <section headerLabel="\#. Title">
-        Content
-      </section>
-
-    NUMERIC OBSERVATION
-      <obs conceptId="id-of-numeric-concept" labelText="Label before"/>
-
-    DATE OBSERVATION
-      <obs conceptId="id-of-date-concept" labelText="Label before"/>
-
-    CODED OBSERVATION
-    (as a dropdown)
-      <obs conceptId="id-of-coded-concept" labelText="Label before"/>
-    (as radio buttons)
-      <obs conceptId="id-of-coded-concept" labelText="Label before" style="radio"/>
-    (as an autocomplete)
-      <obs conceptId="id-of-coded-concept" labelText="Label before" style="autocomplete" answerClasses="Diagnosis"/>
-    (as a checkbox for a specific answer)
-      <obs conceptId="id-of-coded-concept" labelText="Label before" answerConceptId="id-of-answer-concept" answerLabel="label for answer"/>
-    (as a dropdown with specific choices)
-      <obs conceptId="id-of-coded-concept" labelText="Label before" answerConceptIds="concept-id-1,concept-id-2,concept-id-3" answerLabels="Label 1,Label 2, Label 3"/>
-
-
-    FREE TEXT OBSERVATION
-    (as a normal text field)
-      <obs conceptId="id-of-text-concept" labelText="Label before"/>
-    (as a textarea)
-      <obs conceptId="id-of-text-concept" labelText="Label before" rows="4" cols="80"/>
-    -->
 </htmlform>
