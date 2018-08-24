@@ -111,9 +111,10 @@ public class HTSDictionary {
 	}
 
 	private HIVTestDetailsType createTestDetail() throws DatatypeConfigurationException {
-		Obs obs;
+
 		HIVTestDetailsType hivTestDetailsType = new HIVTestDetailsType();
 
+		Obs obs;
 		obs = Utils.extractObs(client_Code_concept_Id, this.obs);
 		if(obs !=null){
 			hivTestDetailsType.setClientCode(obs.getValueText());
