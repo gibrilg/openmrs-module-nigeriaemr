@@ -52,39 +52,73 @@ public class PharmacyDictionary {
 	public void loadDictionary() {
 		//key is concept id, value is NDR coded value
 
-		regimenMap.put(165691,"10a");
-		regimenMap.put(165693,"10b");
-		regimenMap.put(165696,"10c");
-		regimenMap.put(165692,"10d");
-		regimenMap.put(165694,"10e");
-		regimenMap.put(165690,"10f");
-		regimenMap.put(165695,"10g");
-		regimenMap.put(165530,"10i");
-		regimenMap.put(165698,"10j");
-		regimenMap.put(165700,"10k");
-		regimenMap.put(165689,"10l");
-		regimenMap.put(165688,"10m");
-		regimenMap.put(165701,"10o");
-		regimenMap.put(165697,"10p");
-		regimenMap.put(165699,"10q");
-		regimenMap.put(165681,"10r");
-		regimenMap.put(165686,"10t");
-		regimenMap.put(165537,"10v");
-		regimenMap.put(165682,"10w");
-		regimenMap.put(165687,"10y");
-		regimenMap.put(162563,"4c");
-		regimenMap.put(162199,"4d");
-		regimenMap.put(162200,"5a");
-		regimenMap.put(164511,"2f");
-		regimenMap.put(160124,"1a");
-		regimenMap.put(162561,"2e");
-		regimenMap.put(1652,"1b");
-		regimenMap.put(164512,"2d");
-		regimenMap.put(164505,"1e");
-		regimenMap.put(162201,"2b");
-		regimenMap.put(162565,"1f");
-		regimenMap.put(104565,"1c");
-		regimenMap.put(164854,"1d");
+		regimenMap.put(160124, "1a");//"AZT-3TC-EFV"
+		regimenMap.put(1652, "1b");//"AZT-3TC-NVP"
+		regimenMap.put(104565, "1c");//"TDF-FTC-EFV"
+		regimenMap.put(164854, "1d");//"TDF-FTC-NVP"
+		regimenMap.put(164505, "1e"); //"TDF-3TC-EFV"
+		regimenMap.put(162565, "1f");//"TDF-3TC-NVP"
+		regimenMap.put(817, "1g"); //"AZT-3TC-ABC"
+		regimenMap.put(165522, "1h"); //"AZT-3TC-TDF”
+		regimenMap.put(162563, "1l"); //"ABC-3TC-EFV"
+		regimenMap.put(165681, "1m"); //"TDF-3TC-DTG"
+		regimenMap.put(165686, "1n"); //"TDF-3TC-EFV400"
+		regimenMap.put(165682, "1o"); //"TDF-FTC-DTG"
+		regimenMap.put(165687, "1p"); //"TDF-FTC-EFV400"
+		regimenMap.put(165523, "2a"); //"TDF-FTC-LPV/r"
+		regimenMap.put(162201, "2b");//"TDF-3TC-LPV/r"
+		regimenMap.put(165524, "2c"); //"TDF-FTC-ATV/r"
+		regimenMap.put(164512, "2d");//"TDF-3TC-ATV/r"
+		regimenMap.put(162561, "2e");//"AZT-3TC-LPV/r"
+		regimenMap.put(164511, "2f");//"AZT-3TC-ATV/r"
+		regimenMap.put(165530, "2h");//"AZT-TDF-3TC-LPV/r"
+		regimenMap.put(165537, "2i");//"TDF-AZT-3TC-ATV/r"
+		regimenMap.put(165688, "3a ");//"DRV/r-DTG + 1-2 NRTIs"
+		regimenMap.put(160124, "4a");//"AZT-3TC-EFV"
+		regimenMap.put(1652, "4b");//"AZT-3TC-NVP"
+		regimenMap.put(162563, "4c");//"ABC-3TC-EFV"
+		regimenMap.put(162199, "4d");//"ABC-3TC-NVP"
+		regimenMap.put(817, "4e");//"AZT-3TC-ABC"
+		regimenMap.put(792, "4f");//"d4T-3TC-NVP"
+		regimenMap.put(165691,"4h"); //ABC-3TC-DTG
+		regimenMap.put(165693, "4i"); //ABC-3TC-EFV400
+		regimenMap.put(162200, "4j"); //ABC-3TC-LPV/r
+		regimenMap.put(165692, "4k"); //ABC-FTC-DTG
+		regimenMap.put(165694, "4l" ); //ABC-FTC-EFV400
+		regimenMap.put(165690, "4m"); //ABC-FTC-NVP
+				regimenMap.put(162561 ,"4n"); //AZT-3TC-LPV/r
+				regimenMap.put(165695,"4o");//AZT-3TC-RAL
+				regimenMap.put(165681, "4p"); //TDF-3TC-DTG
+				regimenMap.put(164505, "4q"); //TDF-3TC-EFV
+				regimenMap.put(165686, "4r"); //TDF-3TC-EFV400
+				regimenMap.put(162565, "4s"); // TDF-3TC-NVP
+				regimenMap.put(165682,"4t"); // TDF-FTC-DTG
+				regimenMap.put(104565,"4u"); //TDF-FTC-EFV
+				regimenMap.put(165687, "4v"); // TDF-FTC-EFV400
+				regimenMap.put(164854, "4w");// TDF-FTC-NVP
+				regimenMap.put(162200, "5a");;//"ABC-3TC-LPV/r"
+		regimenMap.put(162561, "5b");;//"AZT-3TC-LPV/r"
+		regimenMap.put(162560, "5c");;//"d4T-3TC-LPV/r"
+		regimenMap.put(165526, "5e");;//"ABC-3TC-ddi"
+		regimenMap.put(165696,"5g");//ABC-3TC-RAL
+		regimenMap.put(164511,"5h"); // AZT-3TC-ATV/r
+		regimenMap.put (165695,"5i");  //AZT-3TC-RAL
+		regimenMap.put(164512,"5j"); //TDF-3TC-ATV/r
+		regimenMap.put(162201,"5k");//TDF-3TC-LPV/r
+		regimenMap.put(165698,"6a"); //DRV/r + 2 NRTIs + 2 NNRTI
+		regimenMap.put(165700,"6b"); //DRV/r +2NRTIs
+		regimenMap.put(165688,"6c"); //DRV/r-DTG + 1-2 NRTIs
+		regimenMap.put(165701,"6d"); //DRV/r-RAL + 1-2NRTIs
+		regimenMap.put(165697, "6e"); //DTG+2 NRTIs
+		regimenMap.put(165699, "6f"); //RAL + 2 NRTIs
+		regimenMap.put(26, "9a");//"AZT"
+		regimenMap.put(27, "9b");//"3TC"
+		regimenMap.put(28, "9c");//"NVP"
+		regimenMap.put(29, "9d");//"AZT-3TC"
+		regimenMap.put(30, "9e");//"AZT-NVP"
+		regimenMap.put(31, "9f");//"FTC-TDF"
+		regimenMap.put(32, "9g");//"3TC-d4T"
+		regimenMap.put(33, "9h"); //"3TC-d4T"
 
 
 		//OI drug
