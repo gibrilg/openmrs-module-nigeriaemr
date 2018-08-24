@@ -29,16 +29,10 @@ public class ZipUtil {
 		SOURCE_FOLDER = sourceFolder;
 	}
 	
-	/*public static void main(String[] args) {
-		ZipUtil appZip = new ZipUtil();
-		appZip.generateFileList(new File(SOURCE_FOLDER));
-		appZip.zipIt(OUTPUT_ZIP_FILE);
-	}*/
-	
 	public void zipIt(String output_zipFile) {
 		byte[] buffer = new byte[1024];
 		String source = new File(SOURCE_FOLDER).getName();
-		FileOutputStream fos = null;
+		FileOutputStream fos;
 		ZipOutputStream zos = null;
 		try {
 			fos = new FileOutputStream(output_zipFile);
@@ -59,7 +53,10 @@ public class ZipUtil {
 					}
 				}
 				finally {
-					in.close();
+					if (in != null) {
+						in.close();
+					}
+					
 				}
 			}
 			
@@ -72,7 +69,9 @@ public class ZipUtil {
 		}
 		finally {
 			try {
-				zos.close();
+				if (zos != null) {
+					zos.close();
+				}
 			}
 			catch (IOException e) {
 				e.printStackTrace();
@@ -88,8 +87,10 @@ public class ZipUtil {
 		
 		if (node.isDirectory()) {
 			String[] subNote = node.list();
-			for (String filename : subNote) {
-				generateFileList(new File(node, filename));
+			if (subNote != null) {
+				for (String filename : subNote) {
+					generateFileList(new File(node, filename));
+				}
 			}
 		}
 	}

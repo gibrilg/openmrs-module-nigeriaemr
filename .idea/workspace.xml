@@ -1,7 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb80a1c1-ab92-4606-bbbe-2add40b3a41f" name="Default" comment="" />
+    <list default="true" id="fb80a1c1-ab92-4606-bbbe-2add40b3a41f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ca_uhn_hapi_hapi_structures_v23_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ca_uhn_hapi_hapi_structures_v24_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_c3p0_0_9_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_4_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_4_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_facet_4_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_4_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_4_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_4_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_2_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_c3p0_4_3_9_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_9_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_ehcache_4_3_9_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_search_engine_5_1_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_search_orm_5_1_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_api_openmrs_api_2_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/serviceExtensions/EncounterDAOExt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/serviceExtensions/EncounterServiceExt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/HTSDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/PMTCTDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/nigeriaemr-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/nigeriaemr-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ConditionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ConditionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/NDR 1.2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/NDR 1.3.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/util/ZipUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/util/ZipUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/nigeriaemr-omod.iml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/nigeriaemr-omod.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NdrFragmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NdrFragmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrUtils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrUtils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRConverter.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/api/target/" />
     <ignored path="$PROJECT_DIR$/omod/target/" />
@@ -12,158 +68,88 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="4">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="pharmarcyOrderForm.xml" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/pharmarcyOrderForm.xml">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="343">
-                    <caret line="524" column="22" lean-forward="false" selection-start-line="524" selection-start-column="22" selection-end-line="524" selection-end-column="22" />
-                    <folding>
-                      <element signature="n#fieldset#4;n#htmlform#0;n#!!top" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="Pharmacy_order.json" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Pharmacy_order.json">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="4676">
-                    <caret line="1049" column="23" lean-forward="false" selection-start-line="1049" selection-start-column="23" selection-end-line="1049" selection-end-column="23" />
-                    <folding>
-                      <element signature="e#287#1681#0" expanded="false" />
-                      <element signature="e#1695#2335#0" expanded="false" />
-                      <element signature="e#2349#3144#0" expanded="false" />
-                      <element signature="e#3158#4098#0" expanded="false" />
-                      <element signature="e#4140#5785#0" expanded="false" />
-                      <element signature="e#4270#5097#0" expanded="false" />
-                      <element signature="e#5111#5749#0" expanded="false" />
-                      <element signature="e#5916#6705#0" expanded="false" />
-                      <element signature="e#6719#15207#0" expanded="false" />
-                      <element signature="e#7004#7139#0" expanded="false" />
-                      <element signature="e#15221#15551#0" expanded="false" />
-                      <element signature="e#15565#15897#0" expanded="false" />
-                      <element signature="e#15911#16241#0" expanded="false" />
-                      <element signature="e#16705#17234#0" expanded="false" />
-                      <element signature="e#17252#17949#0" expanded="false" />
-                      <element signature="e#17967#18823#0" expanded="false" />
-                      <element signature="e#18841#19213#0" expanded="false" />
-                      <element signature="e#19231#19605#0" expanded="false" />
-                      <element signature="e#19623#19993#0" expanded="false" />
-                      <element signature="e#21031#21728#0" expanded="false" />
-                      <element signature="e#21746#22602#0" expanded="false" />
-                      <element signature="e#22620#22992#0" expanded="false" />
-                      <element signature="e#23010#23384#0" expanded="false" />
-                      <element signature="e#23402#23772#0" expanded="false" />
-                      <element signature="e#25521#26377#0" expanded="false" />
-                      <element signature="e#26395#26767#0" expanded="false" />
-                      <element signature="e#26785#27159#0" expanded="false" />
-                      <element signature="e#27177#27547#0" expanded="false" />
-                      <element signature="e#28580#29277#0" expanded="false" />
-                      <element signature="e#29295#30151#0" expanded="false" />
-                      <element signature="e#30169#30541#0" expanded="false" />
-                      <element signature="e#30559#30933#0" expanded="false" />
-                      <element signature="e#30951#31321#0" expanded="false" />
-                      <element signature="e#32330#32860#0" expanded="false" />
-                      <element signature="e#32878#34066#0" expanded="false" />
-                      <element signature="e#34084#34456#0" expanded="false" />
-                      <element signature="e#34474#34842#0" expanded="false" />
-                      <element signature="e#34860#35230#0" expanded="false" />
-                      <element signature="e#36794#37982#0" expanded="false" />
-                      <element signature="e#38000#38372#0" expanded="false" />
-                      <element signature="e#38390#38758#0" expanded="false" />
-                      <element signature="e#38776#39146#0" expanded="false" />
-                      <element signature="e#39220#40099#0" expanded="false" />
-                      <element signature="e#40105#41022#0" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="admission.json" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/admission.json">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-281">
-                    <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Child_follow_up.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Child_follow_up.json">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="NdrFragmentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NdrFragmentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="487" column="12" lean-forward="false" selection-start-line="487" selection-start-column="12" selection-end-line="534" selection-end-column="13" />
+            <state relative-caret-position="210">
+              <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NDRConverter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="262" column="35" lean-forward="true" selection-start-line="262" selection-start-column="35" selection-end-line="262" selection-end-column="35" />
               <folding>
-                <element signature="e#692#1065#0" expanded="false" />
-                <element signature="e#1079#1469#0" expanded="false" />
-                <element signature="e#1483#1891#0" expanded="false" />
-                <element signature="e#1905#2534#0" expanded="false" />
-                <element signature="e#2548#3356#0" expanded="false" />
-                <element signature="e#3533#4533#0" expanded="false" />
-                <element signature="e#4547#5549#0" expanded="false" />
-                <element signature="e#5563#6562#0" expanded="false" />
-                <element signature="e#6576#7125#0" expanded="false" />
-                <element signature="e#7139#7992#0" expanded="false" />
-                <element signature="e#8006#8708#0" expanded="false" />
-                <element signature="e#8750#11850#0" expanded="false" />
-                <element signature="e#8897#11814#0" expanded="false" />
-                <element signature="e#9168#9578#0" expanded="false" />
-                <element signature="e#9596#10001#0" expanded="false" />
-                <element signature="e#10019#10440#0" expanded="false" />
-                <element signature="e#10458#10874#0" expanded="false" />
-                <element signature="e#10892#11784#0" expanded="false" />
-                <element signature="e#11856#13660#0" expanded="false" />
-                <element signature="e#12274#12684#0" expanded="false" />
-                <element signature="e#12702#13594#0" expanded="false" />
-                <element signature="e#13813#15441#0" expanded="false" />
-                <element signature="e#14521#15411#0" expanded="false" />
-                <element signature="e#15630#17260#0" expanded="false" />
-                <element signature="e#15904#16308#0" expanded="false" />
-                <element signature="e#16326#17230#0" expanded="false" />
+                <element signature="method#createMessageHeaderType#0;class#NDRConverter#0" />
+                <element signature="method#createMarshaller#0;class#NDRConverter#0" />
+                <element signature="method#writeFile#0;class#NDRConverter#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="child_birth_information.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/child_birth_information.xml">
+      <file leaf-file-name="HTSDictionary.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/HTSDictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="119" column="10" lean-forward="false" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="10" />
-              <folding />
+            <state relative-caret-position="245">
+              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#HTSDictionary#0;class#HTSDictionary#0" />
+                <element signature="method#createHIVTestingEncounter#0;class#HTSDictionary#0" />
+                <element signature="method#createPreTestCounselling#0;class#HTSDictionary#0" />
+                <element signature="e#8547#8548#0" expanded="true" />
+                <element signature="e#8565#8566#0" expanded="true" />
+                <element signature="e#8629#8630#0" expanded="true" />
+                <element signature="e#8646#8647#0" expanded="true" />
+                <element signature="e#8715#8716#0" expanded="true" />
+                <element signature="e#8733#8734#0" expanded="true" />
+                <element signature="e#7818#7819#0" expanded="true" />
+                <element signature="e#7835#7836#0" expanded="true" />
+                <element signature="e#3051#3052#0" expanded="true" />
+                <element signature="e#3069#3070#0" expanded="true" />
+                <element signature="e#3134#3135#0" expanded="true" />
+                <element signature="e#3152#3153#0" expanded="true" />
+                <element signature="e#3205#3206#0" expanded="true" />
+                <element signature="e#3223#3224#0" expanded="true" />
+                <element signature="e#3289#3290#0" expanded="true" />
+                <element signature="e#3307#3308#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="child_follow_up.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/child_follow_up.xml">
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrUtils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="314" column="24" lean-forward="false" selection-start-line="314" selection-start-column="19" selection-end-line="314" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="161">
+              <caret line="220" column="46" selection-start-line="220" selection-start-column="46" selection-end-line="220" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mytest.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/mytest.json">
+      <file leaf-file-name="NDRMainDictionary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRMainDictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="272">
+              <caret line="132" column="51" lean-forward="true" selection-start-line="132" selection-start-column="51" selection-end-line="132" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HIVTestDetailsType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/HIVTestDetailsType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="126" column="31" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -175,12 +161,12 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Assessment</find>
       <find>missed</find>
       <find>standard</find>
       <find>yes</find>
@@ -210,7 +196,11 @@
       <find>da</find>
       <find>obsg</find>
       <find>then</find>
+      <find>'</find>
     </findStrings>
+    <replaceStrings>
+      <replace>&quot;</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Arinze\openmrs-module-nigeriaemr</dir>
     </dirStrings>
@@ -222,11 +212,6 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -264,6 +249,20 @@
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Pharmacy_order.json" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/admission.json" />
         <option value="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/mytest.json" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/util/ZipUtil.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NdrFragmentController.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/PregnancyEncounterType.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/AntenatalRegistrationType.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ChildBirthDetailsType.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/HIVTestResultsType.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/HIVPreTestCounsellingType.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ConditionType.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/serviceExtensions/EncounterDAOExt.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/serviceExtensions/EncounterServiceExt.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/PMTCTDictionary.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrUtils/Utils.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRConverter.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/HTSDictionary.java" />
       </list>
     </option>
   </component>
@@ -280,69 +279,106 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1909" />
-    <option name="y" value="-11" />
-    <option name="width" value="1292" />
-    <option name="height" value="693" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="1944" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="openmrs-module-nigeriaemr" type="462c0819:PsiDirectoryNode" />
+              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="openmrs-module-nigeriaemr" type="462c0819:PsiDirectoryNode" />
+              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
               <item name="omod" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
+              <item name="omod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
+              <item name="omod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
+              <item name="omod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
+              <item name="omod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
+              <item name="omod" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
+              <item name="ndrUtils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/nAIJA_emr/openmrs-module-nigeriaemr" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="" />
-    <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.selected.package.standard" value="" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MGIC\Project\JavaProjects\OpenMRS\nigeriaemr\omod\src\main\resources" />
+      <recent name="C:\MGIC\Project\JavaProjects\OpenMRS\nigeriaemr\api\src\main\java\org\openmrs\module\nigeriaemr\model\ndr" />
       <recent name="C:\Users\Arinze\openmrs-module-nigeriaemr\omod\src\main\webapp\resources\htmlforms" />
     </key>
   </component>
@@ -360,29 +396,12 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -392,30 +411,39 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+    <configuration name="NigMRS debug" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="openmrs-sdk:run" />
+                <option value="-DserverId=openmrs_server" />
+                <option value="-Dfork=false" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -428,21 +456,31 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
     </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -466,6 +504,15 @@
       <workItem from="1528798114263" duration="31971000" />
       <workItem from="1529264076733" duration="16162000" />
       <workItem from="1529380413880" duration="65629000" />
+      <workItem from="1530623992131" duration="410000" />
+      <workItem from="1530624453691" duration="1586000" />
+      <workItem from="1532522550704" duration="3383000" />
+      <workItem from="1534146422128" duration="2324000" />
+      <workItem from="1534245908925" duration="12625000" />
+      <workItem from="1534316496371" duration="14895000" />
+      <workItem from="1534767239575" duration="1310000" />
+      <workItem from="1535016681887" duration="489000" />
+      <workItem from="1535019176448" duration="23130000" />
     </task>
     <task id="LOCAL-00001" summary="My first commit">
       <created>1523017110254</created>
@@ -562,42 +609,44 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="613278000" />
+    <option name="totallyTimeSpent" value="673430000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1909" y="-11" width="1942" height="1072" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="704" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.037162162" sideWeight="0.51458335" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289183" sideWeight="0.48541668" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5004088" side_tool="true" weight="0.32902032" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.4840556" weight="0.3271719" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2051756" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30228758" />
+      <window_info anchor="right" id="Bean Validation" order="7" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35674676" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49959117" weight="0.32852387" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="10" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,630 +668,448 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added Json form for the mobile client" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NdrFragmentController.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="8" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>ex.getMessage()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.describeParamsForErrorMessage(method, params)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>var18</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Thread.currentThread().getContextClassLoader().getResource(&quot;NDR 1.2.xsd&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Thread.currentThread().getContextClassLoader().getResource(&quot;NDR 1.3.xsd&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Thread.currentThread().getContextClassLoader().getPackages()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Thread.currentThread().getContextClassLoader()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/deliveryregister.txt" />
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/CodedType.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/child_follow_up.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/Patient.class" />
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NdrFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="78" column="16" lean-forward="false" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/RadetFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/UsersFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/PharmacyDictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/api/NigeriaemrService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/ClinicalDictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="44" column="28" lean-forward="false" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/api/dao/NigeriaemrDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/api/impl/NigeriaemrServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/api/UserService.class" />
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/LabDictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/web/controller/NigeriaemrController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-723">
-          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRMainDictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/contactTrackingAndtermination2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/test.js" />
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/requestandresult.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3645">
-          <caret line="135" column="16" lean-forward="false" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="16" />
-          <folding>
-            <marker date="1525532991822" expanded="true" signature="4816:4839" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/patient_program_enrollment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="121" selection-end-column="11" />
-          <folding>
-            <element signature="e#842#847#0" expanded="false" />
-            <element signature="e#864#869#0" expanded="false" />
-            <element signature="e#1130#1135#0" expanded="false" />
-            <element signature="e#1143#1148#0" expanded="false" />
-            <element signature="e#1193#1198#0" expanded="false" />
-            <element signature="e#1480#1485#0" expanded="false" />
-            <element signature="e#1493#1498#0" expanded="false" />
-            <element signature="e#1543#1548#0" expanded="false" />
-            <element signature="e#1786#1791#0" expanded="false" />
-            <element signature="e#1799#1804#0" expanded="false" />
-            <element signature="e#1849#1854#0" expanded="false" />
-            <element signature="e#2092#2097#0" expanded="false" />
-            <element signature="e#2105#2110#0" expanded="false" />
-            <element signature="e#2155#2160#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/samplehtmlform.xml" />
-    <entry file="file://$USER_HOME$/AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/new 7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="363" column="37" lean-forward="false" selection-start-line="363" selection-start-column="37" selection-end-line="363" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/client_tracking_and_terminatio.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="294" column="16" lean-forward="true" selection-start-line="294" selection-start-column="16" selection-end-line="294" selection-end-column="16" />
-          <folding>
-            <element signature="n#td#1;n#tr#0;n#table#0;n#fieldset#1;n#htmlform#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/pediatric_initial_clinical_evaluation.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6642">
-          <caret line="252" column="46" lean-forward="false" selection-start-line="252" selection-start-column="46" selection-end-line="252" selection-end-column="85" />
-          <folding>
-            <element signature="n#td#1;n#tr#1;n#table#0;n#fieldset#0;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#td#0;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#1;n#fieldset#2;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#td#1;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#1;n#fieldset#2;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#td#3;n#tr#0;n#table#1;n#fieldset#2;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#td#0;n#tr#0;n#table#0;n#td#3;n#tr#0;n#table#1;n#fieldset#2;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#td#1;n#tr#0;n#table#0;n#td#3;n#tr#0;n#table#1;n#fieldset#2;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#table#4;n#fieldset#3;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#table#8;n#fieldset#3;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#td#0;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#8;n#fieldset#3;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#td#1;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#8;n#fieldset#3;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#td#1;n#tr#0;n#table#0;n#td#3;n#tr#0;n#table#8;n#fieldset#3;n#htmlform#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/hiv_enrollment_register.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5238">
-          <caret line="194" column="18" lean-forward="false" selection-start-line="194" selection-start-column="18" selection-end-line="194" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/registration.json" />
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/transfer_form.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4455">
-          <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-          <folding>
-            <element signature="n#fieldset#3;n#htmlform#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/CareCard.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="222" column="14" lean-forward="false" selection-start-line="222" selection-start-column="14" selection-end-line="222" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/adult_clinical_evaluation.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="814" column="16" lean-forward="false" selection-start-line="814" selection-start-column="16" selection-end-line="814" selection-end-column="16" />
-          <folding>
-            <element signature="n#table#1;n#fieldset#6;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#table#2;n#fieldset#6;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#obs#0;n#td#1;n#tr#0;n#table#0;n#fieldset#7;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#td#2;n#tr#0;n#table#0;n#fieldset#7;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#td#3;n#tr#0;n#table#0;n#fieldset#7;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#table#0;n#td#3;n#tr#0;n#table#0;n#fieldset#7;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#tr#0;n#table#0;n#td#3;n#tr#0;n#table#0;n#fieldset#7;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#td#1;n#tr#0;n#table#1;n#fieldset#7;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#2;n#fieldset#8;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#td#1;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#2;n#fieldset#8;n#htmlform#0;n#!!top" expanded="false" />
-            <element signature="n#td#1;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#3;n#tr#0;n#table#2;n#fieldset#8;n#htmlform#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/deliveryregister.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="188" column="42" lean-forward="false" selection-start-line="188" selection-start-column="36" selection-end-line="188" selection-end-column="42" />
-          <folding>
-            <element signature="e#5434#5439#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/maternal_followup_register.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3650">
-          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/general antenatal register.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="139" column="53" lean-forward="false" selection-start-line="139" selection-start-column="53" selection-end-line="139" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Laboratory_Order_and_Results_Form.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="62" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="700" selection-end-column="1" />
-          <folding>
-            <element signature="e#299#696#0" expanded="false" />
-            <element signature="e#710#1081#0" expanded="false" />
-            <element signature="e#1095#1469#0" expanded="false" />
-            <element signature="e#1483#1867#0" expanded="false" />
-            <element signature="e#1881#2267#0" expanded="false" />
-            <element signature="e#2281#2668#0" expanded="false" />
-            <element signature="e#2682#3071#0" expanded="false" />
-            <element signature="e#3085#3460#0" expanded="false" />
-            <element signature="e#3474#3858#0" expanded="false" />
-            <element signature="e#3900#8099#0" expanded="false" />
-            <element signature="e#4024#4409#0" expanded="false" />
-            <element signature="e#4423#4808#0" expanded="false" />
-            <element signature="e#4822#5204#0" expanded="false" />
-            <element signature="e#5218#5602#0" expanded="false" />
-            <element signature="e#5616#5994#0" expanded="false" />
-            <element signature="e#6008#6388#0" expanded="false" />
-            <element signature="e#6402#6790#0" expanded="false" />
-            <element signature="e#6804#7432#0" expanded="false" />
-            <element signature="e#7446#8060#0" expanded="false" />
-            <element signature="e#8105#12044#0" expanded="false" />
-            <element signature="e#8229#8845#0" expanded="false" />
-            <element signature="e#8859#9244#0" expanded="false" />
-            <element signature="e#9258#9631#0" expanded="false" />
-            <element signature="e#9645#10035#0" expanded="false" />
-            <element signature="e#10049#10423#0" expanded="false" />
-            <element signature="e#10437#10827#0" expanded="false" />
-            <element signature="e#10841#11237#0" expanded="false" />
-            <element signature="e#11251#11622#0" expanded="false" />
-            <element signature="e#11636#12005#0" expanded="false" />
-            <element signature="e#12050#16644#0" expanded="false" />
-            <element signature="e#12174#12569#0" expanded="false" />
-            <element signature="e#12583#12982#0" expanded="false" />
-            <element signature="e#12996#13367#0" expanded="false" />
-            <element signature="e#13381#13753#0" expanded="false" />
-            <element signature="e#13767#14138#0" expanded="false" />
-            <element signature="e#14152#14523#0" expanded="false" />
-            <element signature="e#14537#14930#0" expanded="false" />
-            <element signature="e#14944#15325#0" expanded="false" />
-            <element signature="e#15339#15961#0" expanded="false" />
-            <element signature="e#15975#16605#0" expanded="false" />
-            <element signature="e#16752#17142#0" expanded="false" />
-            <element signature="e#17156#17787#0" expanded="false" />
-            <element signature="e#17801#19190#0" expanded="false" />
-            <element signature="e#19204#19545#0" expanded="false" />
-            <element signature="e#19559#19915#0" expanded="false" />
-            <element signature="e#19929#20294#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/Laboratory_Order_and_Results_Form.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="308" column="39" lean-forward="false" selection-start-line="308" selection-start-column="36" selection-end-line="308" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Partner_Register.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="193" selection-end-column="1" />
-          <folding>
-            <element signature="e#689#1318#0" expanded="false" />
-            <element signature="e#1332#1973#0" expanded="false" />
-            <element signature="e#1987#2627#0" expanded="false" />
-            <element signature="e#2641#3293#0" expanded="false" />
-            <element signature="e#3307#3931#0" expanded="false" />
-            <element signature="e#3945#4569#0" expanded="false" />
-            <element signature="e#4583#5221#0" expanded="false" />
-            <element signature="e#5235#6044#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/General_Antenatal_Care.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="98" column="12" lean-forward="false" selection-start-line="98" selection-start-column="12" selection-end-line="117" selection-end-column="14" />
-          <folding>
-            <element signature="e#210#2641#0" expanded="false" />
-            <element signature="e#307#668#0" expanded="false" />
-            <element signature="e#1094#1469#0" expanded="false" />
-            <element signature="e#1483#1846#0" expanded="false" />
-            <element signature="e#1860#2229#0" expanded="false" />
-            <element signature="e#2243#2611#0" expanded="false" />
-            <element signature="e#2763#3403#0" expanded="false" />
-            <element signature="e#3417#3784#0" expanded="false" />
-            <element signature="e#3798#4602#0" expanded="false" />
-            <element signature="e#4616#5398#0" expanded="false" />
-            <element signature="e#5412#5784#0" expanded="false" />
-            <element signature="e#5798#6434#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/test2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="64" column="66" lean-forward="false" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Child_Birth_Information.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="112" column="17" lean-forward="false" selection-start-line="112" selection-start-column="17" selection-end-line="115" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/partnerregister.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="126" column="150" lean-forward="false" selection-start-line="126" selection-start-column="144" selection-end-line="126" selection-end-column="150" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Delivey_Information.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="111" column="14" lean-forward="true" selection-start-line="111" selection-start-column="14" selection-end-line="111" selection-end-column="14" />
-          <folding>
-            <element signature="e#295#1289#0" expanded="false" />
-            <element signature="e#1303#1939#0" expanded="false" />
-            <element signature="e#1953#2360#0" expanded="false" />
-            <element signature="e#2374#3009#0" expanded="false" />
-            <element signature="e#3023#3658#0" expanded="false" />
-            <element signature="e#3672#4303#0" expanded="false" />
-            <element signature="e#4317#4970#0" expanded="false" />
-            <element signature="e#4984#5646#0" expanded="false" />
-            <element signature="e#5660#6470#0" expanded="false" />
-            <element signature="e#6484#7107#0" expanded="false" />
-            <element signature="e#7752#8378#0" expanded="false" />
-            <element signature="e#8392#9021#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/vital.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="23" column="70" lean-forward="true" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/client_intake_form.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="350" column="60" lean-forward="false" selection-start-line="350" selection-start-column="54" selection-end-line="350" selection-end-column="60" />
-          <folding>
-            <element signature="e#4967#4971#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Client_Intake.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="955" column="12" lean-forward="false" selection-start-line="955" selection-start-column="12" selection-end-line="984" selection-end-column="14" />
-          <folding>
-            <element signature="e#137#9753#0" expanded="false" />
-            <element signature="e#260#2184#0" expanded="false" />
-            <element signature="e#2198#2787#0" expanded="false" />
-            <element signature="e#2801#3564#0" expanded="false" />
-            <element signature="e#3578#5330#0" expanded="false" />
-            <element signature="e#5344#5682#0" expanded="false" />
-            <element signature="e#5696#7225#0" expanded="false" />
-            <element signature="e#7239#7624#0" expanded="false" />
-            <element signature="e#7985#8616#0" expanded="false" />
-            <element signature="e#8630#9374#0" expanded="false" />
-            <element signature="e#9388#9716#0" expanded="false" />
-            <element signature="e#9759#14642#0" expanded="false" />
-            <element signature="e#9909#10544#0" expanded="false" />
-            <element signature="e#10558#11223#0" expanded="false" />
-            <element signature="e#11237#11895#0" expanded="false" />
-            <element signature="e#11909#12575#0" expanded="false" />
-            <element signature="e#12589#13254#0" expanded="false" />
-            <element signature="e#13268#13946#0" expanded="false" />
-            <element signature="e#13960#14606#0" expanded="false" />
-            <element signature="e#14648#18955#0" expanded="false" />
-            <element signature="e#14798#15435#0" expanded="false" />
-            <element signature="e#15449#16087#0" expanded="false" />
-            <element signature="e#16101#16921#0" expanded="false" />
-            <element signature="e#16935#17615#0" expanded="false" />
-            <element signature="e#17629#18254#0" expanded="false" />
-            <element signature="e#18268#18919#0" expanded="false" />
-            <element signature="e#18961#21788#0" expanded="false" />
-            <element signature="e#19112#19729#0" expanded="false" />
-            <element signature="e#19743#20356#0" expanded="false" />
-            <element signature="e#20370#21122#0" expanded="false" />
-            <element signature="e#21136#21752#0" expanded="false" />
-            <element signature="e#21794#25809#0" expanded="false" />
-            <element signature="e#25815#30961#0" expanded="false" />
-            <element signature="e#25963#27391#0" expanded="false" />
-            <element signature="e#27405#28842#0" expanded="false" />
-            <element signature="e#28856#30283#0" expanded="false" />
-            <element signature="e#31117#31433#0" expanded="false" />
-            <element signature="e#31447#31797#0" expanded="false" />
-            <element signature="e#31811#32864#0" expanded="false" />
-            <element signature="e#33176#33581#0" expanded="false" />
-            <element signature="e#33599#33971#0" expanded="false" />
-            <element signature="e#34815#41039#0" expanded="false" />
-            <element signature="e#34966#35601#0" expanded="false" />
-            <element signature="e#35615#36260#0" expanded="false" />
-            <element signature="e#36274#36943#0" expanded="false" />
-            <element signature="e#36957#37619#0" expanded="false" />
-            <element signature="e#37633#38335#0" expanded="false" />
-            <element signature="e#38349#39004#0" expanded="false" />
-            <element signature="e#39018#39661#0" expanded="false" />
-            <element signature="e#39675#40326#0" expanded="false" />
-            <element signature="e#41045#46268#0" expanded="false" />
-            <element signature="e#41196#41860#0" expanded="false" />
-            <element signature="e#41874#42547#0" expanded="false" />
-            <element signature="e#42561#43234#0" expanded="false" />
-            <element signature="e#43248#43904#0" expanded="false" />
-            <element signature="e#43918#44573#0" expanded="false" />
-            <element signature="e#44587#45232#0" expanded="false" />
-            <element signature="e#45246#45905#0" expanded="false" />
-            <element signature="e#45919#46232#0" expanded="false" />
-            <element signature="e#46274#52094#0" expanded="false" />
-            <element signature="e#46754#47115#0" expanded="false" />
-            <element signature="e#47133#47827#0" expanded="false" />
-            <element signature="e#47845#48208#0" expanded="false" />
-            <element signature="e#48226#48922#0" expanded="false" />
-            <element signature="e#48940#49303#0" expanded="false" />
-            <element signature="e#49321#50017#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Pharmacy_order.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4676">
-          <caret line="1049" column="23" lean-forward="false" selection-start-line="1049" selection-start-column="23" selection-end-line="1049" selection-end-column="23" />
-          <folding>
-            <element signature="e#287#1681#0" expanded="false" />
-            <element signature="e#1695#2335#0" expanded="false" />
-            <element signature="e#2349#3144#0" expanded="false" />
-            <element signature="e#3158#4098#0" expanded="false" />
-            <element signature="e#4140#5785#0" expanded="false" />
-            <element signature="e#4270#5097#0" expanded="false" />
-            <element signature="e#5111#5749#0" expanded="false" />
-            <element signature="e#5916#6705#0" expanded="false" />
-            <element signature="e#6719#15207#0" expanded="false" />
-            <element signature="e#7004#7139#0" expanded="false" />
-            <element signature="e#15221#15551#0" expanded="false" />
-            <element signature="e#15565#15897#0" expanded="false" />
-            <element signature="e#15911#16241#0" expanded="false" />
-            <element signature="e#16705#17234#0" expanded="false" />
-            <element signature="e#17252#17949#0" expanded="false" />
-            <element signature="e#17967#18823#0" expanded="false" />
-            <element signature="e#18841#19213#0" expanded="false" />
-            <element signature="e#19231#19605#0" expanded="false" />
-            <element signature="e#19623#19993#0" expanded="false" />
-            <element signature="e#21031#21728#0" expanded="false" />
-            <element signature="e#21746#22602#0" expanded="false" />
-            <element signature="e#22620#22992#0" expanded="false" />
-            <element signature="e#23010#23384#0" expanded="false" />
-            <element signature="e#23402#23772#0" expanded="false" />
-            <element signature="e#25521#26377#0" expanded="false" />
-            <element signature="e#26395#26767#0" expanded="false" />
-            <element signature="e#26785#27159#0" expanded="false" />
-            <element signature="e#27177#27547#0" expanded="false" />
-            <element signature="e#28580#29277#0" expanded="false" />
-            <element signature="e#29295#30151#0" expanded="false" />
-            <element signature="e#30169#30541#0" expanded="false" />
-            <element signature="e#30559#30933#0" expanded="false" />
-            <element signature="e#30951#31321#0" expanded="false" />
-            <element signature="e#32330#32860#0" expanded="false" />
-            <element signature="e#32878#34066#0" expanded="false" />
-            <element signature="e#34084#34456#0" expanded="false" />
-            <element signature="e#34474#34842#0" expanded="false" />
-            <element signature="e#34860#35230#0" expanded="false" />
-            <element signature="e#36794#37982#0" expanded="false" />
-            <element signature="e#38000#38372#0" expanded="false" />
-            <element signature="e#38390#38758#0" expanded="false" />
-            <element signature="e#38776#39146#0" expanded="false" />
-            <element signature="e#39220#40099#0" expanded="false" />
-            <element signature="e#40105#41022#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/pharmarcyOrderForm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="524" column="22" lean-forward="false" selection-start-line="524" selection-start-column="22" selection-end-line="524" selection-end-column="22" />
-          <folding>
-            <element signature="n#fieldset#4;n#htmlform#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Child_follow_up.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="487" column="12" lean-forward="false" selection-start-line="487" selection-start-column="12" selection-end-line="534" selection-end-column="13" />
-          <folding>
-            <element signature="e#692#1065#0" expanded="false" />
-            <element signature="e#1079#1469#0" expanded="false" />
-            <element signature="e#1483#1891#0" expanded="false" />
-            <element signature="e#1905#2534#0" expanded="false" />
-            <element signature="e#2548#3356#0" expanded="false" />
-            <element signature="e#3533#4533#0" expanded="false" />
-            <element signature="e#4547#5549#0" expanded="false" />
-            <element signature="e#5563#6562#0" expanded="false" />
-            <element signature="e#6576#7125#0" expanded="false" />
-            <element signature="e#7139#7992#0" expanded="false" />
-            <element signature="e#8006#8708#0" expanded="false" />
-            <element signature="e#8750#11850#0" expanded="false" />
-            <element signature="e#8897#11814#0" expanded="false" />
-            <element signature="e#9168#9578#0" expanded="false" />
-            <element signature="e#9596#10001#0" expanded="false" />
-            <element signature="e#10019#10440#0" expanded="false" />
-            <element signature="e#10458#10874#0" expanded="false" />
-            <element signature="e#10892#11784#0" expanded="false" />
-            <element signature="e#11856#13660#0" expanded="false" />
-            <element signature="e#12274#12684#0" expanded="false" />
-            <element signature="e#12702#13594#0" expanded="false" />
-            <element signature="e#13813#15441#0" expanded="false" />
-            <element signature="e#14521#15411#0" expanded="false" />
-            <element signature="e#15630#17260#0" expanded="false" />
-            <element signature="e#15904#16308#0" expanded="false" />
-            <element signature="e#16326#17230#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="314" column="24" selection-start-line="314" selection-start-column="19" selection-end-line="314" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/child_birth_information.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
-          <caret line="119" column="10" lean-forward="false" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="10" />
-          <folding />
+          <caret line="119" column="10" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/admission.json">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/Child_follow_up.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-281">
-          <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="272">
+          <caret line="487" column="12" selection-start-line="487" selection-start-column="12" selection-end-line="534" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/child_follow_up.xml">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/NigeriaemrActivator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="314" column="24" lean-forward="false" selection-start-line="314" selection-start-column="19" selection-end-line="314" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="136">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/jsonForms/mytest.json">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/NigeriaemrConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/BaseOpenmrsData.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/Initializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/HtmlFormsInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/util/ExtensionFormUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-347">
+          <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/NDR 1.2.xsd" />
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/util/ZipUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="48" column="72" selection-start-line="48" selection-start-column="72" selection-end-line="48" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/javax/xml/bind/JAXBContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6474">
+          <caret line="664" column="31" selection-start-line="664" selection-start-column="31" selection-end-line="664" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/extension/html/AdminList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/IndividualReportType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="73" column="44" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/AddressType.java" />
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ConditionType.java" />
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/NDR 1.3.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="154" selection-start-line="152" selection-end-line="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/resources/NDR 1.3.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="58" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/AddressType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/AntenatalRegistrationType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ChildBirthDetailsType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/HIVTestResultsType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/HIVRiskAssessmentType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/HIVRecencyTestResultType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/HIVPreTestCounsellingType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/HealthFacilityVisitType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/DeliveryEncounterType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="144" column="13" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ClinicalTBScreeningType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/module/uiframework-api/3.13.0/uiframework-api-3.13.0.jar!/org/openmrs/ui/framework/fragment/FragmentFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="459" selection-start-line="459" selection-end-line="459" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/PregnancyEncounterType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ChildFollowUpType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ChildType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ConditionType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="284" column="48" lean-forward="true" selection-start-line="284" selection-start-column="48" selection-end-line="284" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/serviceExtensions/EncounterDAOExt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/Patient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="282" column="19" selection-start-line="282" selection-start-column="19" selection-end-line="282" selection-end-column="19" />
+          <folding>
+            <element signature="e#8444#8445#0" expanded="true" />
+            <element signature="e#8486#8487#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/test/java/org/openmrs/module/nigeriaemr/NigeriaemrServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/nigeriaemr-api.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1870">
+          <caret line="110" column="72" selection-start-line="110" selection-start-column="65" selection-end-line="110" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2652" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NdrFragmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/serviceExtensions/EncounterServiceExt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/HIVTestingEncounterType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="73" column="48" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="48" />
+          <folding>
+            <element signature="e#2837#2838#0" expanded="true" />
+            <element signature="e#2867#2868#0" expanded="true" />
+            <element signature="e#3786#3787#0" expanded="true" />
+            <element signature="e#3825#3826#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/PMTCTDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/HIVTestDetailsType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="126" column="31" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/LabDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="216" column="14" selection-start-line="216" selection-start-column="14" selection-end-line="216" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRMainDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="132" column="51" lean-forward="true" selection-start-line="132" selection-start-column="51" selection-end-line="132" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrUtils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="220" column="46" selection-start-line="220" selection-start-column="46" selection-end-line="220" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/PharmacyDictionary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+          <caret line="54" column="37" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="37" />
+          <folding>
+            <element signature="method#createRegimenType#0;class#PharmacyDictionary#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="262" column="35" lean-forward="true" selection-start-line="262" selection-start-column="35" selection-end-line="262" selection-end-column="35" />
+          <folding>
+            <element signature="method#createMessageHeaderType#0;class#NDRConverter#0" />
+            <element signature="method#createMarshaller#0;class#NDRConverter#0" />
+            <element signature="method#writeFile#0;class#NDRConverter#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/HTSDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#HTSDictionary#0;class#HTSDictionary#0" />
+            <element signature="method#createHIVTestingEncounter#0;class#HTSDictionary#0" />
+            <element signature="method#createPreTestCounselling#0;class#HTSDictionary#0" />
+            <element signature="e#8547#8548#0" expanded="true" />
+            <element signature="e#8565#8566#0" expanded="true" />
+            <element signature="e#8629#8630#0" expanded="true" />
+            <element signature="e#8646#8647#0" expanded="true" />
+            <element signature="e#8715#8716#0" expanded="true" />
+            <element signature="e#8733#8734#0" expanded="true" />
+            <element signature="e#7818#7819#0" expanded="true" />
+            <element signature="e#7835#7836#0" expanded="true" />
+            <element signature="e#3051#3052#0" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+            <element signature="e#3134#3135#0" expanded="true" />
+            <element signature="e#3152#3153#0" expanded="true" />
+            <element signature="e#3205#3206#0" expanded="true" />
+            <element signature="e#3223#3224#0" expanded="true" />
+            <element signature="e#3289#3290#0" expanded="true" />
+            <element signature="e#3307#3308#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

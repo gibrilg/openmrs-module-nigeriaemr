@@ -3,10 +3,12 @@ package org.openmrs.module.nigeriaemr.ndrUtils;
 import org.joda.time.Years;
 import org.openmrs.Concept;
 import org.openmrs.Encounter;
+import org.openmrs.EncounterType;
 import org.openmrs.Obs;
 import org.openmrs.Patient;
 import org.openmrs.PatientIdentifier;
 import org.openmrs.api.context.Context;
+import org.openmrs.parameter.EncounterSearchCriteriaBuilder;
 import org.openmrs.module.nigeriaemr.model.ndr.FacilityType;
 import org.openmrs.module.nigeriaemr.ndrfactory.ClinicalDictionary;
 import org.openmrs.module.nigeriaemr.ndrfactory.LabDictionary;
@@ -22,6 +24,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.Iterator;
@@ -46,6 +49,7 @@ public class Utils {
 	public final static int Adult_Ped_Initial_Encounter_Type_Id = 8;
 	
 	public final static int Client_Tracking_And_Termination_Encounter_Type_Id = 15;
+	public final static int Client_Intake_Form_Encounter_Type_Id = 20;
 	
 	public final static int Patient_PEPFAR_Id = 3;
 	
@@ -54,6 +58,8 @@ public class Utils {
 	public final static int Patient_RNLSerial_No = 3;
 	
 	public final static int Reason_For_Termination = 165470;
+
+
 	
 	public static String getFacilityName() {
 		return Context.getAdministrationService().getGlobalProperty("Facility_Name");
@@ -93,6 +99,19 @@ public class Utils {
 				return null;
 			}
 		}
+	}
+
+	public static List<Encounter> getEncounterByPatientAndEncounterTypeId(Patient patient, int encounterTypeId) {
+
+		EncounterType encounterType = Context.getEncounterService().getEncounterType(encounterTypeId);
+		Collection<EncounterType> encounterTypes = new ArrayList<>();
+		encounterTypes.add(encounterType);
+
+		EncounterSearchCriteriaBuilder encounterSearch = new EncounterSearchCriteriaBuilder()
+				.setPatient(patient).setEncounterTypes(encounterTypes).setIncludeVoided(false);
+
+		List<Encounter> encounter =	Context.getEncounterService().getEncounters(encounterSearch.createEncounterSearchCriteria());
+		return encounter;
 	}
 	
 	public static void updateLast_NDR_Run_Date(Date date) {

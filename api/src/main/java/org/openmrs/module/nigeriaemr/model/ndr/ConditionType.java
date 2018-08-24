@@ -35,7 +35,8 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ConditionType", propOrder = { "conditionCode", "programArea", "patientAddress", "commonQuestions",
-        "conditionSpecificQuestions", "encounters", "laboratoryReport", "regimen", "immunization" })
+        "conditionSpecificQuestions", "encounters", "laboratoryReport", "regimen", "immunization", "pregnancyRecord",
+        "hivTestRecords" })
 public class ConditionType {
 	
 	@XmlElement(name = "ConditionCode", required = true)
@@ -64,6 +65,12 @@ public class ConditionType {
 	
 	@XmlElement(name = "Immunization")
 	protected List<ImmunizationType> immunization;
+	
+	@XmlElement(name = "PregnancyRecord")
+	protected List<PregnancyEncounterType> pregnancyRecord;
+	
+	@XmlElement(name = "HIVTestRecords")
+	protected List<HIVTestingEncounterType> hivTestRecords;
 	
 	/**
 	 * Gets the value of the conditionCode property.
@@ -239,4 +246,47 @@ public class ConditionType {
 		return this.immunization;
 	}
 	
+	/**
+	 * Gets the value of the pregnancyRecord property.
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any
+	 * modification you make to the returned list will be present inside the JAXB object. This is
+	 * why there is not a <CODE>set</CODE> method for the pregnancyRecord property.
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 *    getPregnancyRecord().add(newItem);
+	 * </pre>
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link PregnancyEncounterType }
+	 */
+	public List<PregnancyEncounterType> getPregnancyRecord() {
+		if (pregnancyRecord == null) {
+			pregnancyRecord = new ArrayList<PregnancyEncounterType>();
+		}
+		return this.pregnancyRecord;
+	}
+	
+	/**
+	 * Gets the value of the hivTestRecords property.
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any
+	 * modification you make to the returned list will be present inside the JAXB object. This is
+	 * why there is not a <CODE>set</CODE> method for the hivTestRecords property.
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 *    getHIVTestRecords().add(newItem);
+	 * </pre>
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link HIVTestingEncounterType }
+	 */
+	public List<HIVTestingEncounterType> getHIVTestRecords() {
+		if (hivTestRecords == null) {
+			hivTestRecords = new ArrayList<HIVTestingEncounterType>();
+		}
+		return this.hivTestRecords;
+	}
 }
