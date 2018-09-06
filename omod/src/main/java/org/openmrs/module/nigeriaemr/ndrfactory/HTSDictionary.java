@@ -41,6 +41,77 @@ public class HTSDictionary {
 	public final int Client_Identified_From_Index_concept_Id =	165794;
 	public final int Index_Type_concept_Id =	165798;
 	public final int Index_Client_ID_concept_Id =	165859;
+	public final int Vaginal_Discharge_Or_Burning_When_Urinating_concept_Id =	165809 ;
+	public final int Lower_Abdominal_Pains_With_Or_Without_Vaginal_Discharge_concept_Id =	165810 ;
+	public final int Urethral_Discharge_Or_Burning_When_Urinating_concept_Id =	165811;
+	public final int Scrotal_Swelling_And_Pain_concept_Id =	165812;
+	public final int Genital_Sore_Or_Swollen_Inguinal_LymphNodes_concept_Id =	165813;
+
+	// KNOWLEDGE ASSESSMENT
+	public final int PreviouslyTestedHIVNegative_concept_Id = 165799;
+	public final int ClientPregnant_concept_Id = 1434;
+	public final int ClientInformedAboutHIVTransmissionRoutes_concept_Id = 165801;
+	public final int ClientInformedAboutRiskFactors_concept_Id = 165802;
+	public final int ClientInformedAboutPreventingHIV_concept_Id = 165804;
+	public final int ClientInformedAboutPossibleTestResults_concept_Id = 165884;
+	public final int InformedConsentForHIVTestingGiven_concept_Id = 1710;
+
+	//HIVRISKASSESSMENT
+	public final int EverHadSexualIntercourse_concept_Id = 165800;
+	public final int BloodTransfussionInLast3Months_concept_Id = 1063;
+	public final int UnprotectedSexWithCasualPartnerinLast3Months_concept_Id = 159218;
+	public final int UnprotectedSexWithRegularPartnerInLast3Months_concept_Id = 165803;
+	public final int STIInLast3Months_concept_Id = 164809;
+	public final int MoreThan1SexPartnerDuringLast3Months_concept_Id = 165806;
+
+	//CLINICALTBSCREENING
+	public final int CurrentCough_concept_Id = 143264;
+	public final int WeigthLoss_concept_Id = 823;
+	public final int Fever_concept_Id = 140238;
+	public final int NightSweats_concept_Id = 133027;
+
+	//POST-TEST COUNSELLING
+	public final int TestedForHIVBeforeWithinThisYear_concept_Id = 165881;
+	public final int HIVRequestAndResultFormSignedByTester_concept_Id = 165818;
+	public final int HIVRequestAndResultFormFilledWithCTIForm_concept_Id = 165819;
+	public final int ClientRecievedHIVTestResult_concept_Id = 164848;
+	public final int PostTestCounsellingDone_concept_Id = 159382;
+	public final int RiskReductionPlanDeveloped_concept_Id = 165820;
+	public final int PostTestDisclosurePlanDeveloped_concept_Id = 165821;
+	public final int WillBringPartnerForHIVTesting_concept_Id = 165822;
+	public final int WillBringOwnChildrenForHIVTesting_concept_Id = 165823;
+	public final int ProvidedWithInformationOnFPandDualContraception_concept_Id = 1382;
+	public final int ClientOrPartnerUseFPMethodsOtherThanCondoms_concept_Id = 165883;
+	public final int ClientOrPartnerUseCondomsAsOneFPMethods_concept_Id = 5571;
+	public final int CorrectCondomUseDemonstrated_concept_Id = 165823;
+	public final int CondomsProvidedToClient_concept_Id = 159777;
+	public final int ClientReferredToOtherServices_concept_Id = 1648;
+
+	//HIV TEST RESULT
+	public final int ScreeningTestDate_concept_Id = 165844;
+	public final int ScreeningTestResult_concept_Id = 165840;
+	public final int ConfirmatoryTestDate_concept_Id = 165845;
+	public final int ConfirmatoryTestResult_concept_Id = 165841;
+	public final int TieBreakerTestDate_concept_Id = 165846;
+	public final int TieBreakerTestResult_concept_Id = 165842;
+	public final int FinalHIVTestResult_concept_Id = 165843;
+
+	//HIV RECENCY TEST RESULT
+	public final int RecencyTestName_concept_Id = 165849;
+	public final int RecencyTestDate_concept_Id = 165850;
+	public final int RapidRecencyAssay_concept_Id = 165853;
+	public final int ViralLoadTestDate_concept_Id = 165854;
+	public final int ViralLoadTestResult_concept_Id = 165855;
+	public final int FinalHIVRecentTestinResult_concept_Id = 165856;
+
+	//OTHER TESTING SERVICES
+	public final int SyphilisTestResult_concept_Id = 299;
+	public final int HepBTestResult_concept_Id = 159430;
+	public final int HepCTestResult_concept_Id = 161471;
+
+	//PARTNER NOTIFICATION SERVICES
+	public final int PartnerName_concept_Id = 161135;
+	public final int PartnerGender_concept_Id = 165857;
 
 	public HTSDictionary(){
 		valueCodedDictionary.put(978,"Self");
@@ -201,11 +272,81 @@ public class HTSDictionary {
 	}
 
 	private SyndromicSTIScreeningType createSyndromicSTIScreeningType() {
-		return null;
+
+		SyndromicSTIScreeningType syndromicSTIScreeningType = new SyndromicSTIScreeningType();
+
+		Obs obs;
+		obs = Utils.extractObs(Genital_Sore_Or_Swollen_Inguinal_LymphNodes_concept_Id, this.obs);
+		if(obs !=null){
+			syndromicSTIScreeningType.setGenitalSoreOrSwollenInguinalLymphNodes(obs.getValueAsBoolean());
+		}
+
+		obs = Utils.extractObs(Lower_Abdominal_Pains_With_Or_Without_Vaginal_Discharge_concept_Id, this.obs);
+		if(obs !=null && obs.getValueCoded() !=null){
+			String yes_no = valueCodedDictionary.getOrDefault(obs.getValueCoded().getConceptId(), "no");
+			syndromicSTIScreeningType.setLowerAbdominalPainsWithOrWithoutVaginalDischarge(yes_no == "yes" ? true : false);
+		}
+
+		obs = Utils.extractObs(Urethral_Discharge_Or_Burning_When_Urinating_concept_Id, this.obs);
+		if(obs !=null){
+			syndromicSTIScreeningType.setUrethralDischargeOrBurningWhenUrinating(obs.getValueAsBoolean());
+		}
+
+		obs = Utils.extractObs(Scrotal_Swelling_And_Pain_concept_Id, this.obs);
+		if(obs !=null){
+			syndromicSTIScreeningType.setScrotalSwellingAndPain(obs.getValueAsBoolean());
+		}
+
+		obs = Utils.extractObs(Vaginal_Discharge_Or_Burning_When_Urinating_concept_Id, this.obs);
+		if(obs !=null){
+			String yes_no = valueCodedDictionary.getOrDefault(obs.getValueCoded().getConceptId(), "no");
+
+			syndromicSTIScreeningType.setVaginalDischargeOrBurningWhenUrinating(yes_no == "yes" ? true : false);
+		}
+
+		return syndromicSTIScreeningType;
 	}
 
 	private HIVRiskAssessmentType createHIVRiskAssessmentType() {
-		return null;
+		HIVRiskAssessmentType hivRiskAssessmentType = new HIVRiskAssessmentType();
+
+		Obs obs;
+		obs = Utils.extractObs(BloodTransfussionInLast3Months_concept_Id, this.obs);
+		if(obs !=null && obs.getValueCoded() !=null){
+			String yes_no = valueCodedDictionary.getOrDefault(obs.getValueCoded().getConceptId(), "No");
+			hivRiskAssessmentType.setBloodTransfussionInLast3Months(yes_no == "Yes" ? true : false);
+		}
+
+		obs = Utils.extractObs(EverHadSexualIntercourse_concept_Id, this.obs);
+		if(obs !=null && obs.getValueCoded() !=null){
+			String yes_no = valueCodedDictionary.getOrDefault(obs.getValueCoded().getConceptId(), "no");
+			hivRiskAssessmentType.setEverHadSexualIntercourse(yes_no == "Yes" ? true : false);
+		}
+
+		obs = Utils.extractObs(MoreThan1SexPartnerDuringLast3Months_concept_Id, this.obs);
+		if(obs !=null && obs.getValueCoded() !=null){
+			String yes_no = valueCodedDictionary.getOrDefault(obs.getValueCoded().getConceptId(), "no");
+			hivRiskAssessmentType.setMoreThan1SexPartnerDuringLast3Months(yes_no == "Yes" ? true : false);
+		}
+
+		obs = Utils.extractObs(STIInLast3Months_concept_Id, this.obs);
+		if(obs !=null && obs.getValueCoded() !=null){
+			String yes_no = valueCodedDictionary.getOrDefault(obs.getValueCoded().getConceptId(), "no");
+			hivRiskAssessmentType.setSTIInLast3Months(yes_no == "Yes" ? true : false);
+		}
+
+		obs = Utils.extractObs(UnprotectedSexWithCasualPartnerinLast3Months_concept_Id, this.obs);
+		if(obs !=null && obs.getValueCoded() !=null){
+			String yes_no = valueCodedDictionary.getOrDefault(obs.getValueCoded().getConceptId(), "no");
+			hivRiskAssessmentType.setUnprotectedSexWithCasualPartnerinLast3Months(yes_no == "Yes" ? true : false);
+		}
+
+		obs = Utils.extractObs(UnprotectedSexWithRegularPartnerInLast3Months_concept_Id, this.obs);
+		if(obs !=null && obs.getValueCoded() !=null){
+			String yes_no = valueCodedDictionary.getOrDefault(obs.getValueCoded().getConceptId(), "no");
+			hivRiskAssessmentType.setUnprotectedSexWithRegularPartnerInLast3Months( yes_no == "Yes" ? true : false);
+		}
+		return hivRiskAssessmentType;
 	}
 
 	private KnowledgeAssessmentType createKnowledgeAssessmentType() {

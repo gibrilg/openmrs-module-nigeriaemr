@@ -53,13 +53,10 @@ public class PMTCTDictionary {
 		return pregnancyEncounter;
 	}
 	
-	private AntenatalRegistrationType createAntenatalRecord(Patient pts,Encounter enc, List<Obs> ancRegistrationObs) {
+	private AntenatalRegistrationType createAntenatalRecord(Patient pts, Encounter enc, List<Obs> ancRegistrationObs) {
 		
 		AntenatalRegistrationType antenatalRegistration = new AntenatalRegistrationType();
-
-
-
-
+		
 		return antenatalRegistration;
 	}
 	

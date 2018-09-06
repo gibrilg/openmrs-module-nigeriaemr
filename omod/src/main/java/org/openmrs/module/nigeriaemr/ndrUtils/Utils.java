@@ -49,6 +49,7 @@ public class Utils {
 	public final static int Adult_Ped_Initial_Encounter_Type_Id = 8;
 	
 	public final static int Client_Tracking_And_Termination_Encounter_Type_Id = 15;
+	
 	public final static int Client_Intake_Form_Encounter_Type_Id = 20;
 	
 	public final static int Patient_PEPFAR_Id = 3;
@@ -58,8 +59,6 @@ public class Utils {
 	public final static int Patient_RNLSerial_No = 3;
 	
 	public final static int Reason_For_Termination = 165470;
-
-
 	
 	public static String getFacilityName() {
 		return Context.getAdministrationService().getGlobalProperty("Facility_Name");
@@ -100,7 +99,7 @@ public class Utils {
 			}
 		}
 	}
-
+	
 	public static List<Encounter> getEncounterByPatientAndEncounterTypeId(Patient patient, int encounterTypeId) {
 
 		EncounterType encounterType = Context.getEncounterService().getEncounterType(encounterTypeId);
@@ -120,8 +119,9 @@ public class Utils {
 	}
 	
 	public static String getVisitId(Patient pts, Encounter enc) {
-		String dateString = new SimpleDateFormat("dd-MM-yyyy").format(enc.getEncounterDatetime());
-		return pts.getPatientIdentifier(3).getIdentifier() + "-" + dateString;
+		return enc.getVisit().getVisitId().toString();
+		/*String dateString = new SimpleDateFormat("dd-MM-yyyy").format(enc.getEncounterDatetime());
+		return pts.getPatientIdentifier(3).getIdentifier() + "-" + dateString;*/
 	}
 	
 	public static Obs extractObs(int conceptID, List<Obs> obsList) {

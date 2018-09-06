@@ -154,35 +154,33 @@ public class PharmacyDictionary {
 
 		//set regimen line
 		Obs obs = Utils.extractObs(Prescribed_Regimen_Line_Concept_Id, pharmacyObsList);
-		if(obs !=null){
-			regimenType.setPrescribedRegimenLineCode(getRegimenMapValue(obs.getValueCoded().getConceptId()));
+		if(obs ==null){
+			return null;
+		}
+		regimenType.setPrescribedRegimenLineCode(getRegimenMapValue(obs.getValueCoded().getConceptId()));
 
 			//set regimen code
-			obs = Utils.extractObs(obs.getValueCoded().getConceptId(), pharmacyObsList);
-			if(obs !=null && obs.getValueCoded() !=null){
-				cst = new CodedSimpleType();
-				cst.setCode(getRegimenMapValue(obs.getValueCoded().getConceptId()));
-				regimenType.setPrescribedRegimen(cst);
-			}
-			else{ //if no prescribed regimen, discard the entire regimen object
-
-				return new RegimenType();
-			}
+		obs = Utils.extractObs(obs.getValueCoded().getConceptId(), pharmacyObsList);
+		if(obs ==null || obs.getValueCoded() ==null) { //if no prescribed regimen, discard the entire regimen object
+			return null;
 		}
+		cst = new CodedSimpleType();
+		cst.setCode(getRegimenMapValue(obs.getValueCoded().getConceptId()));
+		regimenType.setPrescribedRegimen(cst);
 
-		//set type code
-		regimenType.setPrescribedRegimenTypeCode("ARV");
 
 		//set duration
 		obs = Utils.extractObs(Medication_Duration_Concept_Id, pharmacyObsList);
-		int drugDuration=0;
-		if(obs !=null){
-			drugDuration = (int) Math.round(obs.getValueNumeric());
+		if(obs ==null){
+			return null;
 		}
+		int drugDuration = (int) Math.round(obs.getValueNumeric());
 		regimenType.setPrescribedRegimenDuration(String.valueOf(drugDuration));
-
 		//set dispensed date
 		regimenType.setPrescribedRegimenDispensedDate(Utils.getXmlDate(enc.getEncounterDatetime()));
+
+		//set type code
+		regimenType.setPrescribedRegimenTypeCode("ARV");
 
 		//set regimen start date
 		Calendar cal = Calendar.getInstance();

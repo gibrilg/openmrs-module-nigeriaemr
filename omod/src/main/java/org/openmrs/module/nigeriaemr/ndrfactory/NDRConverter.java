@@ -207,7 +207,7 @@ public class NDRConverter {
 				}
 
 				//add pregnancy records
-				if(enc.getEncounterType().getEncounterTypeId() == 0){ // pregnancy registration type
+				/*if(enc.getEncounterType().getEncounterTypeId() == 0){ // pregnancy registration type
 					 pregnancyEncounter =  pmtctDictionary.createPregnancyRecord(patient, enc);
 					if(pregnancyEncounter !=null){
 						condition.getPregnancyRecord().add(pregnancyEncounter);
@@ -219,7 +219,7 @@ public class NDRConverter {
 					if(hivTestingEncounter !=null){
 						condition.getHIVTestRecords().add(hivTestingEncounter);
 					}
-				}
+				}*/
 			}
 
 			//create the HIV Questions from the conditions specific obs
