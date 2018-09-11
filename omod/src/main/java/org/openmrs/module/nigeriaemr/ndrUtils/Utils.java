@@ -47,6 +47,8 @@ public class Utils {
 	
 	public final static int Client_Tracking_And_Termination_Encounter_Type_Id = 15;
 	
+	public final static int Client_Intake_Form_Encounter_Type_Id = 20;
+	
 	public final static int Patient_PEPFAR_Id = 3;
 	
 	public final static int Patient_Hospital_Id = 3;
@@ -95,14 +97,28 @@ public class Utils {
 		}
 	}
 	
+	/*public static List<Encounter> getEncounterByPatientAndEncounterTypeId(Patient patient, int encounterTypeId) {
+
+		EncounterType encounterType = Context.getEncounterService().getEncounterType(encounterTypeId);
+		Collection<EncounterType> encounterTypes = new ArrayList<>();
+		encounterTypes.add(encounterType);
+
+		EncounterSearchCriteriaBuilder encounterSearch = new EncounterSearchCriteriaBuilder()
+				.setPatient(patient).setEncounterTypes(encounterTypes).setIncludeVoided(false);
+
+		List<Encounter> encounter =	Context.getEncounterService().getEncounters(encounterSearch.createEncounterSearchCriteria());
+		return encounter;
+	}*/
+	
 	public static void updateLast_NDR_Run_Date(Date date) {
 		String dateString = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(date);
 		Context.getAdministrationService().updateGlobalProperty("ndr_last_run_date", dateString);
 	}
 	
 	public static String getVisitId(Patient pts, Encounter enc) {
-		String dateString = new SimpleDateFormat("dd-MM-yyyy").format(enc.getEncounterDatetime());
-		return pts.getPatientIdentifier(3).getIdentifier() + "-" + dateString;
+		return enc.getEncounterId().toString(); //getVisit().getVisitId().toString();
+		/*String dateString = new SimpleDateFormat("dd-MM-yyyy").format(enc.getEncounterDatetime());
+		return pts.getPatientIdentifier(3).getIdentifier() + "-" + dateString;*/
 	}
 	
 	public static Obs extractObs(int conceptID, List<Obs> obsList) {
@@ -325,7 +341,7 @@ public class Utils {
 		List<Encounter> encounters = Context.getEncounterService()
 				.getEncountersByPatient(patient).stream()
 				.filter(x -> x.getEncounterType().getEncounterTypeId() == Care_card_Encounter_Type_Id
-								|| x.getEncounterType().getEncounterTypeId() == Pharmacy_Encounter_Type_Id)
+						|| x.getEncounterType().getEncounterTypeId() == Pharmacy_Encounter_Type_Id)
 				.sorted(Comparator.comparing(Encounter::getEncounterDatetime))
 				.collect(Collectors.toList());
 
@@ -339,8 +355,8 @@ public class Utils {
 
 			Optional<Obs> adherenceObs = lastEncounter.getAllObs().stream()
 					.filter(x-> x.getConcept().getConceptId() == ClinicalDictionary.ARV_Drug_Adherence_Concept_Id
-					|| x.getConcept().getConceptId() == ClinicalDictionary.Cotrimoxazole_Adherence_Concept_Id
-					|| x.getConcept().getConceptId() == ClinicalDictionary.INH_Adherence_Concept_Id)
+							|| x.getConcept().getConceptId() == ClinicalDictionary.Cotrimoxazole_Adherence_Concept_Id
+							|| x.getConcept().getConceptId() == ClinicalDictionary.INH_Adherence_Concept_Id)
 					.findAny();
 
 			if(adherenceObs !=null && adherenceObs.isPresent())

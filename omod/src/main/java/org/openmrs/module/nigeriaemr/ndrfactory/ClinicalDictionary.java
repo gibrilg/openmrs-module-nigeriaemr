@@ -1,6 +1,8 @@
 package org.openmrs.module.nigeriaemr.ndrfactory;
 
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -66,7 +68,13 @@ public class ClinicalDictionary {
 		hivEncounter.setVisitDate(Utils.getXmlDate(enc.getEncounterDatetime()));
 
 		if (artStartDate != null && (enc.getEncounterDatetime().after(artStartDate) || enc.getEncounterDatetime().equals(artStartDate))) {
-			int	monthOnART = enc.getEncounterDatetime().getMonth() - artStartDate.getMonth(); // Months.monthsBetween(d1, d2).getMonths();
+			Calendar startCalendar = new GregorianCalendar();
+			startCalendar.setTime(enc.getEncounterDatetime());
+			Calendar endCalendar = new GregorianCalendar();
+			endCalendar.setTime(artStartDate);
+
+			int diffYear = endCalendar.get(Calendar.YEAR) - startCalendar.get(Calendar.YEAR);
+			int	monthOnART = diffYear * 12 + endCalendar.get(Calendar.MONTH) - startCalendar.get(Calendar.MONTH); //enc.getEncounterDatetime().getMonth() - artStartDate.getMonth(); // Months.monthsBetween(d1, d2).getMonths();
 			hivEncounter.setDurationOnArt(monthOnART);
 		}
 
