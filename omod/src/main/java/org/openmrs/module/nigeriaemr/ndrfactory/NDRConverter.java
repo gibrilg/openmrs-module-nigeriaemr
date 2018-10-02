@@ -243,8 +243,6 @@ public class NDRConverter {
 		return p;
 	}
 	
-
-	
 	private List<RegimenType> createRegimens(Encounter enc,List<Obs> obs) throws DatatypeConfigurationException {
 
 		List<RegimenType> regimenList = new ArrayList<>();

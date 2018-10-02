@@ -2,134 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb80a1c1-ab92-4606-bbbe-2add40b3a41f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/HtmlFormsInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/HtmlFormsInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/Initializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/NigeriaemrActivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/NigeriaemrActivator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/NigeriaemrConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/NigeriaemrConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/api/NigeriaemrService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/api/NigeriaemrService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/api/dao/NigeriaemrDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/api/dao/NigeriaemrDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/api/impl/NigeriaemrServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/api/impl/NigeriaemrServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/AddressType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/AddressType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/AnswerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/AnswerType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/CodedSimpleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/CodedSimpleType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/CodedType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/CodedType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/CommonQuestionsType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/CommonQuestionsType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ConditionSpecificQuestionsType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ConditionSpecificQuestionsType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ConditionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ConditionType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ContactType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ContactType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/Container.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/EncountersType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/EncountersType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/FacilityType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/FacilityType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/HIVEncounterType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/HIVEncounterType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/HIVQuestionsType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/HIVQuestionsType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/IdentifierType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/IdentifierType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/IdentifiersType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/IdentifiersType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ImmunizationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ImmunizationType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/IndividualReportType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/IndividualReportType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/LaboratoryOrderAndResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/LaboratoryOrderAndResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/LaboratoryReportType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/LaboratoryReportType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/MedicationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/MedicationType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/MessageHeaderType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/MessageHeaderType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/NameType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/NameType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/NoteType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/NoteType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/NumericType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/NumericType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/PatientDemographicsType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/PatientDemographicsType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ProgramAreaType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/ProgramAreaType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/RegimenType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/RegimenType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/TelephoneType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/ndr/TelephoneType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/DataPatientMonitoringReviewPeriod.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/DataPatientMonitoringReviewPeriod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/art/ARTRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/art/ARTRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/art/ArtRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/art/ArtRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/art/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/art/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/artadherencerecord/ARTAdherenceRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/artadherencerecord/ARTAdherenceRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/artadherencerecord/ArtAdherenceRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/artadherencerecord/ArtAdherenceRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/artadherencerecord/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/artadherencerecord/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/artregimenduringreviewperiod/ARTRegimenDuringReviewPeriodRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/artregimenduringreviewperiod/ARTRegimenDuringReviewPeriodRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/artregimenduringreviewperiod/ARTRegimenDuringReviewPeriodRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/artregimenduringreviewperiod/ARTRegimenDuringReviewPeriodRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/artregimenduringreviewperiod/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/artregimenduringreviewperiod/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/baselineparameters/BaselineParametersRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/baselineparameters/BaselineParametersRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/baselineparameters/BaselineParametersRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/baselineparameters/BaselineParametersRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/baselineparameters/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/baselineparameters/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/clinicalevaluationvisitsinreviewperiod/ClinicalEvaluationVisitsInReviewPeriodRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/clinicalevaluationvisitsinreviewperiod/ClinicalEvaluationVisitsInReviewPeriodRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/clinicalevaluationvisitsinreviewperiod/ClinicalEvaluationVisitsInReviewPeriodRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/clinicalevaluationvisitsinreviewperiod/ClinicalEvaluationVisitsInReviewPeriodRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/clinicalevaluationvisitsinreviewperiod/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/clinicalevaluationvisitsinreviewperiod/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/cotrimoxazole/COTRIMOXAZOLERecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/cotrimoxazole/COTRIMOXAZOLERecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/cotrimoxazole/COTRIMOXAZOLERecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/cotrimoxazole/COTRIMOXAZOLERecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/cotrimoxazole/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/cotrimoxazole/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/hepatitisb/HepatitisBRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/hepatitisb/HepatitisBRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/hepatitisb/HepatitisBRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/hepatitisb/HepatitisBRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/hepatitisb/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/hepatitisb/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/missedappointmentsandpatienttracking/MissedAppointmentsAndPatientTrackingRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/missedappointmentsandpatienttracking/MissedAppointmentsAndPatientTrackingRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/missedappointmentsandpatienttracking/MissedAppointmentsAndPatientTrackingRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/missedappointmentsandpatienttracking/MissedAppointmentsAndPatientTrackingRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/missedappointmentsandpatienttracking/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/missedappointmentsandpatienttracking/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/patientdemographics/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/patientdemographics/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/patientdemographics/PatientDemographicsRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/patientdemographics/PatientDemographicsRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/patientdemographics/PatientDemographicsRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/patientdemographics/PatientDemographicsRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/patientstatusduringreviewperiod/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/patientstatusduringreviewperiod/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/patientstatusduringreviewperiod/PatientStatusDuringReviewPeriodDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/patientstatusduringreviewperiod/PatientStatusDuringReviewPeriodDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/patientstatusduringreviewperiod/PatientStatusDuringReviewPeriodRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/patientstatusduringreviewperiod/PatientStatusDuringReviewPeriodRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/tuberculosis/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/tuberculosis/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/tuberculosis/TuberculosisRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/tuberculosis/TuberculosisRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/tuberculosis/TuberculosisRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/tuberculosis/TuberculosisRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/viralloadtesting/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/viralloadtesting/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/viralloadtesting/ViralLoadTestingRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/viralloadtesting/ViralLoadTestingRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/viralloadtesting/ViralLoadTestingRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqual/viralloadtesting/ViralLoadTestingRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricartadherencerecord/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricartadherencerecord/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricartadherencerecord/PediatricARTAdherenceRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricartadherencerecord/PediatricARTAdherenceRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricartadherencerecord/PediatricARTAdherenceRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricartadherencerecord/PediatricARTAdherenceRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricartregimensincestartingtreatment/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricartregimensincestartingtreatment/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricartregimensincestartingtreatment/PediatricARTRegimenSinceStartingTreatmentRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricartregimensincestartingtreatment/PediatricARTRegimenSinceStartingTreatmentRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricartregimensincestartingtreatment/PediatricARTRegimenSinceStartingTreatmentRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricartregimensincestartingtreatment/PediatricARTRegimenSinceStartingTreatmentRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricbaselineparameters/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricbaselineparameters/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricbaselineparameters/PediatricBaselineParametersRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricbaselineparameters/PediatricBaselineParametersRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricbaselineparameters/PediatricBaselineParametersRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricbaselineparameters/PediatricBaselineParametersRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricclinicalevaluationInreviewperiod/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricclinicalevaluationInreviewperiod/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricclinicalevaluationInreviewperiod/PediatricClinicalEvaluationInReviewPeriodRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricclinicalevaluationInreviewperiod/PediatricClinicalEvaluationInReviewPeriodRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricclinicalevaluationInreviewperiod/PediatricClinicalEvaluationInReviewPeriodRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricclinicalevaluationInreviewperiod/PediatricClinicalEvaluationInReviewPeriodRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriccotrimoxazolereportingperiod/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriccotrimoxazolereportingperiod/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriccotrimoxazolereportingperiod/PediatricCotrimoxazoleRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriccotrimoxazolereportingperiod/PediatricCotrimoxazoleRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriccotrimoxazolereportingperiod/PediatricCotrimoxazoleRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriccotrimoxazolereportingperiod/PediatricCotrimoxazoleRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriceducation/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriceducation/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriceducation/PediatricEducationRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriceducation/PediatricEducationRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriceducation/PediatricEducationRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriceducation/PediatricEducationRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriclinkage/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriclinkage/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriclinkage/PediatricLinkageRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriclinkage/PediatricLinkageRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriclinkage/PediatricLinkageRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatriclinkage/PediatricLinkageRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientdemographics/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientdemographics/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientdemographics/PediatricPatientDemographicsRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientdemographics/PediatricPatientDemographicsRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientdemographics/PediatricPatientDemographicsRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientdemographics/PediatricPatientDemographicsRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientmonitoringreviewperiod/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientmonitoringreviewperiod/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientmonitoringreviewperiod/PediatricPatientMonitoringDuringReviewPeriodRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientmonitoringreviewperiod/PediatricPatientMonitoringDuringReviewPeriodRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientmonitoringreviewperiod/PediatricPatientMonitoringDuringReviewPeriodRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientmonitoringreviewperiod/PediatricPatientMonitoringDuringReviewPeriodRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientstatusreviewperiod/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientstatusreviewperiod/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientstatusreviewperiod/PediatricPatientStatusRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientstatusreviewperiod/PediatricPatientStatusRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientstatusreviewperiod/PediatricPatientStatusRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatricpatientstatusreviewperiod/PediatricPatientStatusRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatrictuberculosis/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatrictuberculosis/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatrictuberculosis/PediatricTuberculosisRecordDataSetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatrictuberculosis/PediatricTuberculosisRecordDataSetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatrictuberculosis/PediatricTuberculosisRecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/model/nigeriaqualped/pediatrictuberculosis/PediatricTuberculosisRecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/util/ExtensionFormUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/util/ExtensionFormUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/util/ZipUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/util/ZipUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/test/java/org/openmrs/module/nigeriaemr/NigeriaemrServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/org/openmrs/module/nigeriaemr/NigeriaemrServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/test/java/org/openmrs/module/nigeriaemr/api/dao/NigeriaemrDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/org/openmrs/module/nigeriaemr/api/dao/NigeriaemrDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/extension/html/AdminList.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/extension/html/AdminList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NdrFragmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NdrFragmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NigeriaqualFragmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NigeriaqualFragmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NigeriaqualpeadsFragmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NigeriaqualpeadsFragmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrUtils/CustomErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrUtils/CustomErrorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrUtils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrUtils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrUtils/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrUtils/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/ClinicalDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/ClinicalDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/PharmacyDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/PharmacyDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/nigeriaQualFactory/NigQualUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/nigeriaQualFactory/NigQualUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/nigeriaQualFactory/NigeriaQUALGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/nigeriaQualFactory/NigeriaQUALGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/nigeriaQualFactory/NigeriaQualPaedGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/nigeriaQualFactory/NigeriaQualPaedGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/web/controller/BiometricFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/web/controller/BiometricFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/web/controller/CustomReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/web/controller/CustomReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/web/controller/NigeriaemrController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/web/controller/NigeriaemrController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/test/java/org/openmrs/module/nigeriaemr/AdminListExtensionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/test/java/org/openmrs/module/nigeriaemr/AdminListExtensionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/biometricform.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/biometricform.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/images/LEFT_INDEX.png" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/images/LEFT_INDEX.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/images/LEFT_LITTLE.png" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/images/LEFT_LITTLE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/images/LEFT_MIDDLE.png" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/images/LEFT_MIDDLE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/images/LEFT_RING.png" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/images/LEFT_RING.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/images/LEFT_THUMB.png" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/images/LEFT_THUMB.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/images/RIGHT_INDEX.png" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/images/RIGHT_INDEX.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/images/RIGHT_LITTLE.png" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/images/RIGHT_LITTLE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/images/RIGHT_MIDDLE.png" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/images/RIGHT_MIDDLE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/images/RIGHT_RING.png" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/images/RIGHT_RING.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/images/RIGHT_THUMB.png" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/images/RIGHT_THUMB.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/api/target/" />
@@ -146,8 +31,8 @@
       <file leaf-file-name="NdrFragmentController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NdrFragmentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+            <state relative-caret-position="1020">
+              <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -155,8 +40,8 @@
       <file leaf-file-name="NDRConverter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="213" column="86" lean-forward="true" selection-start-line="213" selection-start-column="86" selection-end-line="213" selection-end-column="86" />
+            <state relative-caret-position="4301">
+              <caret line="293" column="8" selection-start-line="293" selection-start-column="8" selection-end-line="293" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,29 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NDRMainDictionary.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRMainDictionary.java">
+      <file leaf-file-name="biometricform.gsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/biometricform.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="249" column="21" lean-forward="true" selection-start-line="249" selection-start-column="21" selection-end-line="249" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClinicalDictionary.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/ClinicalDictionary.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1437">
-              <caret line="90" column="31" lean-forward="true" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PharmacyDictionary.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/PharmacyDictionary.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="215" column="89" lean-forward="true" selection-start-line="215" selection-start-column="89" selection-end-line="215" selection-end-column="89" />
+            <state relative-caret-position="-459">
+              <caret line="9" column="61" lean-forward="true" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -194,8 +61,8 @@
       <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrUtils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="118" column="29" selection-start-line="118" selection-start-column="29" selection-end-line="118" selection-end-column="29" />
+            <state relative-caret-position="1292">
+              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1973#1974#0" expanded="true" />
@@ -206,8 +73,6 @@
                 <element signature="e#2585#2586#0" expanded="true" />
                 <element signature="e#2628#2629#0" expanded="true" />
                 <element signature="e#2716#2717#0" expanded="true" />
-                <element signature="e#10817#10818#0" expanded="true" />
-                <element signature="e#10861#10862#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -309,6 +174,7 @@
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NdrFragmentController.java" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/PharmacyDictionary.java" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRConverter.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/webapp/pages/biometricform.gsp" />
       </list>
     </option>
   </component>
@@ -326,10 +192,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1795" />
-    <option name="y" value="97" />
-    <option name="width" value="1920" />
-    <option name="height" value="1044" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="1944" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -337,6 +203,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -347,32 +216,6 @@
             <path>
               <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
               <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
               <item name="omod" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -394,32 +237,12 @@
               <item name="omod" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
-              <item name="omod" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nigeriaemr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nigeriaemr" type="462c0819:PsiDirectoryNode" />
-              <item name="omod" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,6 +263,9 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MGIC\Project\JavaProjects\OpenMRS\nigeriaemr\omod\src\main\resources" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Arinze\openmrs-module-nigeriaemr\omod\src\main\webapp\resources\htmlforms" />
     </key>
@@ -566,7 +392,10 @@
       <workItem from="1528798114263" duration="31971000" />
       <workItem from="1529264076733" duration="16162000" />
       <workItem from="1529380413880" duration="65629000" />
-      <workItem from="1536576169810" duration="18264000" />
+      <workItem from="1536576169810" duration="19030000" />
+      <workItem from="1538314654448" duration="7133000" />
+      <workItem from="1538328295670" duration="4057000" />
+      <workItem from="1538466280677" duration="1050000" />
     </task>
     <task id="LOCAL-00001" summary="My first commit">
       <created>1523017110254</created>
@@ -663,7 +492,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="631542000" />
+    <option name="totallyTimeSpent" value="644548000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -675,41 +504,41 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32963374" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51458335" side_tool="true" weight="0.037162162" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.48541668" weight="0.29855716" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2754159" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.32963374" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2051756" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.316435" />
+      <window_info anchor="right" id="Bean Validation" order="7" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2774695" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32963374" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32963374" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.48541668" weight="0.29855716" />
-      <window_info anchor="bottom" id="Spring" order="9" weight="0.32963374" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32963374" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2964554" />
-      <window_info anchor="right" id="Bean Validation" order="7" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5120148" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32902032" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Data View" order="10" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -771,12 +600,40 @@
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRConverter.java</url>
+          <line>292</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRConverter.java</url>
+          <line>290</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRConverter.java</url>
+          <line>288</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>Thread.currentThread().getContextClassLoader().getResource(&quot;NDR 1.3.xsd&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Thread.currentThread().getContextClassLoader().getResource</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>ex</expression-string>
         <language-id>JAVA</language-id>
@@ -812,16 +669,6 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>enc.getVisit().getVisitId().toString()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>enc.getVisit()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
@@ -842,9 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/nigeriaemr/api/impl/NigeriaemrServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/api/UserService.class" />
     <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/LabDictionary.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -852,16 +696,6 @@
           <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/web/controller/NigeriaemrController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-723">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/contactTrackingAndtermination2.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/test.js" />
     <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/requestandresult.xml">
@@ -1032,9 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7735">
           <caret line="524" column="22" selection-start-line="524" selection-start-column="22" selection-end-line="524" selection-end-column="22" />
-          <folding>
-            <element signature="n#fieldset#4;n#htmlform#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1042,52 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4607">
           <caret line="1049" column="23" selection-start-line="1049" selection-start-column="23" selection-end-line="1049" selection-end-column="23" />
-          <folding>
-            <element signature="e#287#1681#0" />
-            <element signature="e#1695#2335#0" />
-            <element signature="e#2349#3144#0" />
-            <element signature="e#3158#4098#0" />
-            <element signature="e#4140#5785#0" />
-            <element signature="e#4270#5097#0" />
-            <element signature="e#5111#5749#0" />
-            <element signature="e#5916#6705#0" />
-            <element signature="e#6719#15207#0" />
-            <element signature="e#7004#7139#0" />
-            <element signature="e#15221#15551#0" />
-            <element signature="e#15565#15897#0" />
-            <element signature="e#15911#16241#0" />
-            <element signature="e#16705#17234#0" />
-            <element signature="e#17252#17949#0" />
-            <element signature="e#17967#18823#0" />
-            <element signature="e#18841#19213#0" />
-            <element signature="e#19231#19605#0" />
-            <element signature="e#19623#19993#0" />
-            <element signature="e#21031#21728#0" />
-            <element signature="e#21746#22602#0" />
-            <element signature="e#22620#22992#0" />
-            <element signature="e#23010#23384#0" />
-            <element signature="e#23402#23772#0" />
-            <element signature="e#25521#26377#0" />
-            <element signature="e#26395#26767#0" />
-            <element signature="e#26785#27159#0" />
-            <element signature="e#27177#27547#0" />
-            <element signature="e#28580#29277#0" />
-            <element signature="e#29295#30151#0" />
-            <element signature="e#30169#30541#0" />
-            <element signature="e#30559#30933#0" />
-            <element signature="e#30951#31321#0" />
-            <element signature="e#32330#32860#0" />
-            <element signature="e#32878#34066#0" />
-            <element signature="e#34084#34456#0" />
-            <element signature="e#34474#34842#0" />
-            <element signature="e#34860#35230#0" />
-            <element signature="e#36794#37982#0" />
-            <element signature="e#38000#38372#0" />
-            <element signature="e#38390#38758#0" />
-            <element signature="e#38776#39146#0" />
-            <element signature="e#39220#40099#0" />
-            <element signature="e#40105#41022#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1123,34 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="487" column="12" selection-start-line="487" selection-start-column="12" selection-end-line="534" selection-end-column="13" />
-          <folding>
-            <element signature="e#692#1065#0" />
-            <element signature="e#1079#1469#0" />
-            <element signature="e#1483#1891#0" />
-            <element signature="e#1905#2534#0" />
-            <element signature="e#2548#3356#0" />
-            <element signature="e#3533#4533#0" />
-            <element signature="e#4547#5549#0" />
-            <element signature="e#5563#6562#0" />
-            <element signature="e#6576#7125#0" />
-            <element signature="e#7139#7992#0" />
-            <element signature="e#8006#8708#0" />
-            <element signature="e#8750#11850#0" />
-            <element signature="e#8897#11814#0" />
-            <element signature="e#9168#9578#0" />
-            <element signature="e#9596#10001#0" />
-            <element signature="e#10019#10440#0" />
-            <element signature="e#10458#10874#0" />
-            <element signature="e#10892#11784#0" />
-            <element signature="e#11856#13660#0" />
-            <element signature="e#12274#12684#0" />
-            <element signature="e#12702#13594#0" />
-            <element signature="e#13813#15441#0" />
-            <element signature="e#14521#15411#0" />
-            <element signature="e#15630#17260#0" />
-            <element signature="e#15904#16308#0" />
-            <element signature="e#16326#17230#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1161,10 +918,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/PharmacyDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3264">
+          <caret line="215" column="89" selection-start-line="215" selection-start-column="89" selection-end-line="215" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/web/controller/NigeriaemrController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-687">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/web/controller/BiometricFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/ClinicalDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="90" column="31" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrUtils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="118" column="29" selection-start-line="118" selection-start-column="29" selection-end-line="118" selection-end-column="29" />
+        <state relative-caret-position="1292">
+          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1973#1974#0" expanded="true" />
@@ -1175,47 +960,38 @@
             <element signature="e#2585#2586#0" expanded="true" />
             <element signature="e#2628#2629#0" expanded="true" />
             <element signature="e#2716#2717#0" expanded="true" />
-            <element signature="e#10817#10818#0" expanded="true" />
-            <element signature="e#10861#10862#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NdrFragmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/ClinicalDictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1437">
-          <caret line="90" column="31" lean-forward="true" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/PharmacyDictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="215" column="89" lean-forward="true" selection-start-line="215" selection-start-column="89" selection-end-line="215" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="213" column="86" lean-forward="true" selection-start-line="213" selection-start-column="86" selection-end-line="213" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRMainDictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="249" column="21" lean-forward="true" selection-start-line="249" selection-start-column="21" selection-end-line="249" selection-end-column="21" />
+        <state relative-caret-position="3546">
+          <caret line="269" column="12" lean-forward="true" selection-start-line="269" selection-start-column="12" selection-end-line="269" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/fragment/controller/NdrFragmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/nigeriaemr/ndrfactory/NDRConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4301">
+          <caret line="293" column="8" selection-start-line="293" selection-start-column="8" selection-end-line="293" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/webapp/pages/biometricform.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="9" column="61" lean-forward="true" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
         </state>
       </provider>
     </entry>
