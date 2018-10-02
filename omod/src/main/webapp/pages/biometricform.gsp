@@ -8,29 +8,29 @@
         <td>
             <img id="LEFT_THUMB" border="1"  onclick="captureFP(0)" alt="LEFT THUMB"
                  style="margin-left:30px;" height=200 width=150
-                src="http://localhost/ndr_images/images/left_thumb.png">
+                src="../moduleResources/nigeriaemr/images/left_thumb.png">
             <br>
             <input type="button" value="Scan" id="BTN_LEFT_THUMB" onclick="captureFP(1)">
         </td>
         <td>
             <img id="LEFT_INDEX" border="1" alt="LEFT INDEX" height=200 width=150
-                 src="http://localhost/ndr_images/images/LEFT_INDEX.png"> >
+                 src="../moduleResources/nigeriaemr/images/LEFT_INDEX.png"> >
                <br>
             <input type="button" value="Scan" id="BTN_LEFT_INDEX" onclick="captureFP(2)">
         </td>
         <td>
             <img id="LEFT_MIDDLE" border="1" alt="LEFT MIDDLE" height=200 width=150
-                 src="http://localhost/ndr_images/images/LEFT_MIDDLE.png"> <br>
+                 src="../moduleResources/nigeriaemr/images/LEFT_MIDDLE.png"> <br>
             <input type="button" value="Scan" id="BTN_LEFT_MIDDLE" onclick="captureFP(3)">
         </td>
         <td>
             <img id="LEFT_RING" border="1" alt="LEFT RING" height=200 width=150
-                 src="http://localhost/ndr_images/images/LEFT_RING.png"> <br>
+                 src="../moduleResources/nigeriaemr/images/LEFT_RING.png"> <br>
             <input type="button" value="Scan" id="BTN_LEFT_RING" onclick="captureFP(4)">
         </td>
         <td>
             <img id="LEFT_LITTLE" border="1" alt="LEFT LITTLE" height=200 width=150
-                 src="http://localhost/ndr_images/images/LEFT_LITTLE.png"> <br>
+                 src="../moduleResources/nigeriaemr/images/LEFT_LITTLE.png"> <br>
             <input type="button" value="Scan" id="BTN_LEFT_LITTLE" onclick="captureFP(5)">
         </td>
     </tr>
@@ -54,27 +54,27 @@
     <tr>
         <td>
             <img id="RIGHT_THUMB" border="1"  alt="RIGHT THUMB" height=200 width=150
-                 src="http://localhost/ndr_images/images/RIGHT_THUMB.png"> <br>
+                 src="../moduleResources/nigeriaemr/images/RIGHT_THUMB.png"> <br>
             <input type="button" value="Scan" id="BTN_RIGHT_THUMB" onclick="captureFP(6)">
         </td>
         <td>
             <img id="RIGHT_INDEX" border="1" alt="RIGHT INDEX" height=200 width=150
-                 src="http://localhost/ndr_images/images/RIGHT_INDEX.png"> <br>
+                 src="../moduleResources/nigeriaemr/images/RIGHT_INDEX.png"> <br>
             <input type="button" value="Scan" id="BTN_RIGHT_INDEX" onclick="captureFP(7)">
         </td>
         <td>
             <img id="RIGHT_MIDDLE" border="1" alt="RIGHT MIDDLE" height=200 width=150
-                 src="http://localhost/ndr_images/images/RIGHT_MIDDLE.png"> <br>
+                 src="../moduleResources/nigeriaemr/images/RIGHT_MIDDLE.png"> <br>
             <input type="button" value="Scan" id="BTN_RIGHT_MIDDLE" onclick="captureFP(8)">
         </td>
         <td>
             <img id="RIGHT_RING" border="1" alt="RIGHT RING" height=200 width=150
-                 src="http://localhost/ndr_images/images/RIGHT_RING.png"> <br>
+                 src="../moduleResources/nigeriaemr/images/RIGHT_RING.png"> <br>
             <input type="button" value="Scan" id="BTN_RIGHT_RING" onclick="captureFP(9)">
         </td>
         <td>
             <img id="RIGHT_LITTLE" border="1" alt="RIGHT LITTLE" height=200 width=150
-                 src="http://localhost/ndr_images/images/RIGHT_LITTLE.png"> <br>
+                 src="../moduleResources/nigeriaemr/images/RIGHT_LITTLE.png"> <br>
             <input type="button" value="Scan" id="BTN_RIGHT_LITTLE" onclick="captureFP(10)">
         </td>
     </tr>
