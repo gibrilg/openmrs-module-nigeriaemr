@@ -19,14 +19,12 @@ import org.openmrs.api.impl.EncounterServiceImpl;
 */
 
 public class EncounterServiceExt extends EncounterServiceImpl {
-
+	
 	private EncounterDAO dao;
-
+	
 	@Override
 	public void setEncounterDAO(EncounterDAO dao) {
 		this.dao = dao;
 	}
-
-
-
+	
 }
