@@ -1,4 +1,4 @@
-package org.openmrs.module.aijar.page.controller;
+package org.openmrs.module.nigeriaemr.page.controller;
 
 import static org.openmrs.module.referenceapplication.ReferenceApplicationWebConstants.COOKIE_NAME_LAST_SESSION_LOCATION;
 import static org.openmrs.module.referenceapplication.ReferenceApplicationWebConstants.REQUEST_PARAMETER_NAME_REDIRECT_URL;

@@ -1,4 +1,4 @@
-package org.openmrs.module.aijar.page;
+package org.openmrs.module.nigeriaemr.page;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
